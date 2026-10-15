@@ -1,10 +1,15 @@
-name: Connect Cloud Publish (Manual)
+name: Connect Cloud Publish
 
 on:
+  workflow_run:
+    workflows: ["Quarto Render Check"]
+    types: [completed]
+    branches: ["main"]
   workflow_dispatch:
 
 jobs:
   publish:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
 
     env:
@@ -15,6 +20,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event_name == 'workflow_run' && github.event.workflow_run.head_sha || github.sha }}
 
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
