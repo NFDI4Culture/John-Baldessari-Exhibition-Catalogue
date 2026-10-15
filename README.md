@@ -65,4 +65,4 @@ validated by CI and local development setup.
 This project includes GitHub Actions workflows to:
 
 - Execute notebooks and render-check Quarto content on pushes and PRs.
-- Automatically publish to Posit Connect Cloud after successful render checks on `main`.
+- Optionally publish to Posit Connect Cloud via a manual workflow dispatch.
