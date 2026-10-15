@@ -27,4 +27,4 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Publish to Connect Cloud
-        run: quarto publish posit-connect-cloud --no-prompt --no-browser
+        run: quarto publish posit-cloud --no-prompt --no-browser
