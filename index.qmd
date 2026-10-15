@@ -1,0 +1,40 @@
+---
+title: "Sample Quarto Manuscript"
+author:
+  - name: "Your Name"
+date: today
+abstract: |
+  This starter manuscript demonstrates a Quarto project that combines qmd
+  sections with executable Jupyter notebooks.
+keywords: [quarto, manuscript, jupyter, reproducibility]
+---
+
+# Introduction
+
+This project is configured for:
+
+- Quarto manuscript authoring with `.qmd` files.
+- Jupyter notebooks included as project computations.
+- Publishing from GitHub to Posit Connect Cloud.
+- Reproducible notebook execution on MyBinder.
+
+# Example Figure
+
+The computational workflow is documented in the notebook set:
+
+- [Data Preview](notebooks/01-data-preview.ipynb)
+- [Summary Statistics](notebooks/02-summary-stats.ipynb)
+
+These notebooks are discoverable from the manuscript website and can be
+downloaded by readers.
+
+# Data Stewardship
+
+This starter project follows reproducibility-oriented practices aligned with FAIR
+principles [@wilkinson2016fair].
+
+# Reproducibility Notes
+
+Package dependencies are pinned in `requirements.txt` and Python runtime is pinned in `runtime.txt`.
+
+# References
