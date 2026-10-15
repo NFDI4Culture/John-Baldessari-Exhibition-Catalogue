@@ -1,11 +1,10 @@
 ---
-title: "Sample Quarto Manuscript"
+title: "LOE"
 author:
-  - name: "Your Name"
+  - name: "SW"
 date: today
 abstract: |
-  This starter manuscript demonstrates a Quarto project that combines qmd
-  sections with executable Jupyter notebooks.
+  Notebooks, Quarto.
 keywords: [quarto, manuscript, jupyter, reproducibility]
 ---
 

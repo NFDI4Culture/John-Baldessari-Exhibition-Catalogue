@@ -2,3 +2,1956 @@ Quarto version: 1.10.19
 
 [publish][posit-connect-cloud] Client created for api.connect.posit.cloud
 
+[publish][posit-connect-cloud] Client created for api.connect.posit.cloud
+
+[publish][posit-connect-cloud] Updating existing content
+
+[publish][posit-connect-cloud] PATCH /contents/01a13ee2-8b05-7437-9d7a-db07deda2ed6?new_bundle=true
+
+
+
+Rendering for publish:
+
+
+Loaded deno-dom-native
+
+[NotebookContext]: Get Notebook:C:\git\loe-posit\notebooks\01-data-preview.ipynb
+
+[NotebookContext]: Attempting to Revive Rendering (html-preview):C:\git\loe-posit\notebooks\01-data-preview.ipynb
+
+[NotebookContext]: Attempting to Revive Rendering (jats-subarticle):C:\git\loe-posit\notebooks\01-data-preview.ipynb
+
+[NotebookContext]: Attempting to Revive Rendering (rendered-ipynb):C:\git\loe-posit\notebooks\01-data-preview.ipynb
+
+[NotebookContext]: Attempting to Revive Rendering (qmd-ipynb):C:\git\loe-posit\notebooks\01-data-preview.ipynb
+
+[NotebookContext]: Resolving ExecutedFile (rendered-ipynb):C:\git\loe-posit\notebooks\01-data-preview.ipynb
+
+Windows: Using code page 1252
+
+[execProcess] CMD /C where git
+
+[execProcess] Success: true, code: 0
+
+[execProcess] git rev-parse
+
+[execProcess] Success: true, code: 0
+
+[execProcess] git config --get remote.origin.url
+
+[execProcess] Success: true, code: 0
+
+[execProcess] git ls-remote --quiet --exit-code origin gh-pages
+
+[execProcess] Success: false, code: 2
+
+[execProcess] CMD /C where git
+
+[execProcess] Success: true, code: 0
+
+[execProcess] git show-ref --verify --quiet refs/heads/gh-pages
+
+[execProcess] Success: false, code: 1
+
+[NotebookContext]: Writing all notebooks to C:\git\loe-posit\.quarto\quarto-session-temp302bd6fe04b5710d\a0314b135c25e191.json
+
+-- Searching for R binary --
+
+Looking for 'Rscript' in QUARTO_R: undefined
+
+Looking for 'Rscript' in R_HOME: undefined
+
+Looking for 'Rscript' in PATH.
+
+[execProcess] CMD /C where Rscript
+
+[execProcess] Success: false, code: 1
+
+Looking for 'Rscript' in Windows Registry.
+
+[execProcess] reg query HKCU\Software\R-core\R /v Current Version
+
+[execProcess] Success: false, code: 1
+
+[execProcess] reg query HKLM\Software\R-core\R /v Current Version
+
+[execProcess] Success: false, code: 1
+
+Looking for 'Rscript' in Windows PROGRAMFILES.
+
+Quarto did not find Rscript and will try to use it directly from the path.
+
+[execProcess] C:\Users\worthingtons\AppData\Local\Programs\QuartoPortable\1.10.19\bin\tools\pandoc +RTS -K512m -RTS --defaults C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\quarto-defaultscc59c2e7d83b5dc0.yml C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\quarto-input78897095bfa302b3.md --metadata-file C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\quarto-metadata958dd55c2cd406a.yml --verbose --trace --data-dir C:\Users\worthingtons\AppData\Local\Programs\QuartoPortable\1.10.19\share\pandoc\datadir
+
+[
+INFO] 
+Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\template.patched from C
+:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\template.patched
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\metadata.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc98
+0d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\metadata.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\styles.html from C:\Users\WORTHI~1\AppData\Local\Temp\
+quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\styles.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\title-block.html from C:\Users\WO
+RTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\title-block.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\title-metadata.html from C:\Users\WORTHI~1\AppDat
+a\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\title-metadata.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d
+96451c4c\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\_title-meta-author.html from C:\Users\WORTHI~1\A
+ppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d
+96451c4c\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\title-bl
+ock.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d9645
+1c4c\title-block.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\title-metadata.html
+ from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\title-metada
+ta.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\_title-meta-author.html from C:\Users\WOR
+THI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f
+2d96451c4c\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\_title-meta-author.html from C:\Users\WORTHI
+~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\_title-
+meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\title-block.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\title-block.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\title-metadata.html from C:\Users\WORTHI~1\A
+ppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\title-metadata.html
+
+[
+INF
+O] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d
+56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Lo
+cal\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\_title-meta-
+author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\
+quarto-sessionc980d56cb2409ba2\1c8f05ff7f0
+13b6f\e2aa4f2d96451c4c\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\title-block.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb
+2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\title-block.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba
+2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\title-metadata.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1
+c8f05ff7f013b6f\e2aa4f2d96451c4c\title-metadata.html
+
+[INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\title-block.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f01
+3b6f\e2aa4f2d96451c4c\title-block.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\title-metadata.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\title-metadata.html
+
+[INFO] 
+Loaded C:\Users\WORTHI~1\AppData\Loca
+l\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\_title-meta-a
+uthor.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\_title-meta-author.html from 
+C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\title-block.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\title-block.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\title-metadata.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\title-metadata.html
+
+[INFO] Loaded C:\Users\WORTHI~1\AppData\Local\T
+emp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\_title-meta-author.html
+[INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-se
+ssionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\title-block.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\title-block.html
+
+[INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\title-metada
+ta.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\title-metadata.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f
+05ff7f013b6f\e2aa4f2d96451c4c\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\title-block.html from C
+:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\title-block.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451
+c4c\title-metadata.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4
+f2d96451c4c\title-metadata.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8
+f05ff7f013b6f\e2aa4f2d96451c4c\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sess
+ionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\title-block.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\title-block.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7
+f013b6f\e2aa4f2d96451c4c\title-metadata.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb
+2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\title-metadata.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\_title-meta-author.htm
+l from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f
+05ff7f013b6f\e2aa4f2d96451c4c\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\_title-met
+a-author.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4
+f2d96451c4c\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\toc.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\e2aa4f2d96451c4c\toc.html
+
+[
+trace] Parsed [Plain [Str "../references.bib"]] at line 1
+[trace] Parsed [Plain [Str "all"]] at line 1
+[trace] Parsed [Plain [Str "long"]] at line 1
+
+[
+trace] Parsed [Plain [Str "C:",RawInline (Format "tex") "\\Users",RawInlin at line 1
+[trace] Parsed [Plain [Str "en"]] at line 1
+[trace] Parsed [Plain [Str "auto"]] at line 1
+[trace] Parsed [Plain [Str "../index.qmd"]] at line 1
+[trace] Parsed [Plain [Str "index-meca.zip"]] at line 1
+[trace] Parsed [Plain [Str "../notebooks/01-data-preview.ipynb"]] at line 1
+[trace] Parsed [Plain [Str "../notebooks/02-summary-stats.ipynb
+"]] at line 1
+[trace] Parsed [Plain [Str "C:",RawInline (Format "tex") "\\git",RawInline  at line 1
+[trace] Parsed [Plain [Str "nb-1"]] at line 1
+
+[trace] Parsed [Plain [Str "C:",RawInline (Format "tex") "\\git",RawInline  at line 1
+[trace] Parsed [Plain [Str "nb-2"]] at line 1
+[trace] Parsed [Plain [Str "true"]] at line 1
+
+[trace] Parsed [Plain [Str "1.10.19"]] at line 1
+[trace] 
+Parsed [Plain [Str "none"]] at line 1
+[trace] Parsed
+ [Plain [Str "cosmo"]] at line 1
+[trace] Parsed [Plain [Str "Data",Space,Str "Preview"]] at line 1
+[trace] Parsed [Plain [Str "manuscript"]] at line 1
+[trace] Parsed [Plain [Str "Table",Space,Str "of",Space,Str "contents"]] at line 1
+
+[
+trace] Parsed [] at line 4
+[trace] Parsed [] at line 6
+[trace] Parsed [Para [Str "Starter",Space,Str "notebook",Space,Str "for",Sp at line 8
+[trace] Parsed [Div ("77b33bd2",["cell","markdown"],[]) [Para [Str "Starter at line 10
+[trace] Parsed [CodeBlock ("",["python","cell-code","hidden"],[]) "import n at line 20
+[trace] Parsed [RawBlock (Format "html") "<div>\n<style scoped>\n    .dataf at line 74
+[trace] Parsed [Div ("",["cell-output","cell-output-display"],[("execution_ at line 75
+[trace] Parsed [Div ("f90e7616",["cell"],[("execution_count","2")]) [CodeBl at line 79
+
+[
+INFO] Running filter C:/Users/worthingtons/AppData/Local/Programs/QuartoPortable/1.10.19/share/filters/main.lua
+
+[
+trace] Parsed [Plain [Str "x"]] at line 5
+[trace] Parsed [Plain [Str "y"]] at line 6
+
+[trace] Parsed [Plain [Str "0"]] at line 11
+[trac
+e] Parsed [Plain [Str "0.304717"]] at line 12
+[trace] Parsed [Plain [Str "0.879398"]] at line 1
+3
+[trace] Parsed [Plain [Str "1"]] at line 16
+[trace] Parsed [Plain [Str "-1.039984"]] at line 17
+[trace] Parsed [Plain [Str "0.777792"]] at line 18
+[trace] Parsed [Plain [Str "2"]] at line 21
+[trace] Parsed [Plain [Str "0.750451"]] at line 22
+[trace] Parsed [Plain [
+Str "0.066031"]] at line 23
+[trace] Parsed [Plain [Str "3"]] at line 26
+[trace] Parsed [Plain [Str "0.940565"]] at
+ line 27
+[trace] Parsed [Plain [Str "1.127241"]] at line 28
+[trace] Parsed [Plain [Str "4"]] at line 31
+
+[trace] Parsed [Plain [Str "-1.951035"]] at line 32
+[trace] Parsed [Plain [Str "0.467509"]] at line 33
+[trace] Parsed [Table ("",["dataframe"],[("quarto-postprocess","true
+"),("bo at line 36
+
+[
+INFO] Not rendering RawBlock (Format "ipynb") "<script src=\"https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js\" integrity=\"sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf
+11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4q
+Y6NSrItx\" crossorigin=\"anonymous\"></script>\n<script src=\"https://
+cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js\" integrity=\"sha384-Zv
+pUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2\" crossorigin=\"anony
+mous\" data-relocate-top=\"true\"></script>\n<script type=\"application/javascript\">define('jquery', [],function() {return window.jQuery;})</script>\n"
+[INFO] 
+Not rendering RawBlock (Format "ipynb") "<script id = \"quarto-html-after-body\" type=\"application/javascript\">\n  window.document.addEventListener(\"DOMContentLoaded\", function (event) {\n    
+const tabsets =  window.document.querySelectorAll(\".panel-tabset-tabby\")\n    tabsets.f
+orEach(function(tabset) {\n      const tabby = new Tabby('#' + tabset.id);\n    });\n    const icon = \"
+\59851\";\n    const anchorJS = new window.AnchorJS();\n    anchorJS.options = {\n      placement: 'right',\n      ic
+on: icon\n    };\n    anchorJS.add(
+'
+.anchored');\n    const isCodeAnnotation = (el) => {\n      for (const clz of el.classList) {\n        if (clz.startsWith('code-annotation-')) {                     \n          return true;\n        }\n      }\n      re
+turn false;\n    }\n    const onCopySuccess = function(e) {\n      // button target\n      const button = e.trigger;\n      // don't keep focus\n      button.blur();\n      // flash \"checked\"\n      button.classList.add('code-copy-button-checked');\n      var currentTitle = button.getAttribute(\"title\");\n      button.setAttribute(\"title\", \"Copied!\");\n      let tooltip;\n      if (wind
+ow.bootstrap) {\n        button.setAttribute(\"data-bs-toggle\", \"tooltip\");\n        button.setAttribute(\"data-bs-placement\", \"left
+\");\n        button.setAttribute(\"data-bs-title\", \"Copied!\");\n        tooltip = new bootstrap.Tool
+tip(button, \n          { trigger: \"manual\", \n            customClass: \"code-copy-button-tooltip\",\n
+            offset: [0, -8]});\n        tooltip.show();    \n      }\n      setTimeout(function() {\n        if (tooltip) {\n          tooltip.hide();
+\n          button.removeAttribute(\"data-bs-title\");\n          button.removeAttribute(\"data-bs-toggle\");\n          button.removeAttribute(\"data-bs-placement\");\n        }\n        button.setAttribute(\"title\", currentTitle);\n        button.classList.remove('code-copy-button-checked');\n      }, 1000);\n      // clear code selection\n      e.clearSelection();\n    }\n    const getTextToC
+opy = function(trigger) {\n      const outerScaffold = trigger.parentElement.cloneNode(true);\n      const codeEl = outerScaffold.querySelector('code');\n      for (const childEl of codeEl.children) {\n        if
+ (isCodeAnnotation(childEl)) {\n          childEl.remove();\n        }\n      }\n      return codeEl.innerText;\n    }\n    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {\n      text: getTextToCopy\n    });\n    clipboard.on('success', onCopySuccess);\n    if (window.document.getElementById('quarto-embedded-source-code-modal')) {\n      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', 
+{\n        text: getTextToCopy,\n        container: window.document.getElementById('quarto-embedded-source-code-modal')\n      });\n      clipboardModal.on('success', onCopySuccess);\n    }\n      var localhostRegex = new RegExp(/^(?:http|https):\\/\\/localhost\\:?[0-9]*\\//);\n      var mailtoRegex = new RegExp(/^mailto:/);\n        var filterRegex = new RegExp('/' + window.location.host + '/');\n      var isInternal = (href) => {\n          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);\n      }\n      // Inspect non-navigation links and adorn them if external\n     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):
+not(.about-link)');\n      for (var i=0; i<links.length; i++) {\n        const link = links[i];\n        if (!isInternal(link.href)) {\n          // undo the damage that might have been done by quarto-nav.js in the case of\n          // links that we want to consider external\n          if (link.dataset.originalHref !== undefined) {\n            link.href = link.dataset.originalHref;\n 
+         }\n        }\n      }\n    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {\n      const config = {\n        allowHTML: true,\n        maxWidth: 500,\n        dela
+y: 100,\n        arrow: false,\n        appendTo: function(el) {\n            return el.parentElement;\n        },\n        interactive: true,\n        interactiveBorder: 10,\n        theme: 'light-border',\n        placement: 'bottom-start',\n      };\n      if (contentFn) {\n        config.content = contentFn;\n      }\n      if (onTriggerFn) {
+\n        config.onTrigger = onTriggerFn;\n      }\n      if (onUntriggerFn) {\n        config.onUntrigger = onUntriggerFn;\n      }\n      window.tippy(el, config); \n    }\n    const noterefs = window.document.querySelectorAll('a[role=\"doc-noteref\"]');\n    for (var i=0; i<noterefs.length; i++) {\n      const ref = noterefs[i];\n      tippyHover(ref, function() 
+{\n        // use id or data attribute instead here\n        let href = ref.getAttribute('data
+-footnote-href') || ref.getAttribute('href');\n        try { href = 
+new URL(href).hash; } catch {}\n        const id = href.replace(/^#\\/?/, \"\");\n        const n
+ote = window.document.getElementById(id);\n        if (note) {\n          return note.innerHTML;\n        } else {\n          return \"\";\n        }\n      });\n    }\n    const xrefs = window.document.querySelectorAll('a.quarto-xref');\n    const processXRef 
+= (id, note) => {\n      // Strip column container classes\n      const stripColumnClz = (el) => {\n        el.classList.remove(\"page-full\", \"page-columns\");\n        if (el.children) {\n          for (const child of el.children) {\n            stripColumnClz(child);\n          }\n        }\n      }\n      stripColumnClz(note)\n      if (id === null || id.startsWith('sec-')) {\n        // Special case sections, only their first couple elements\n        const contain
+er = document.createElement(\"div\");\n        if (note.children && note.children.length > 2) {\n          container.appendChild(note.children[0].cloneNode(true));\n          for (let i = 1; i < note.children.length; i++) {\n            const child = note.children[i];\n            if (child.tagName === \"P\" && child.innerText === \"\") {\n              continue;\n            } else {\n              container.appendChild(child.cloneNode(true));\n         
+     break;\n            }\n          }\n          if (window.Quarto?.typesetMath) {\n            window.Quarto.typesetMath(container);\n          }\n          return c
+ontainer.innerHTML\n        } else {\n          if (window.Quarto?.typ
+esetMath) {\n            window.Quarto.typesetMath(n
+ote);\n          }\n          return note.innerH
+TML;\n        }\n      } else {\n        // Remove any anchor links if they are present\n        const anchorLink = note.querySelector('a.anchorjs-link');\n        if (anchorLink) {
+\n          anchorLink.remove();\n        }\n        if (window.Quarto?.typesetMath) {\n          window.Quarto.typesetMat
+h(note);\n        }\n        if (note.classList.contains(\"callout\")) {\n       
+   return note.outerHTML;\n        } else {\n          return note.innerHTML;\
+n        }\n      }\n    }\n    for (var i=0; i<xrefs.length; i++) {\n      const xref = xrefs[i];\n      tippyHover(xref, undefined, function(instance) {\n        instance.disable(
+);\n        let url = xref.getAttribute('href');\n        let hash = undefined; \n        if (url.starts
+With('#')) {\n          hash = url;\n        } else {\n          t
+ry { hash = new URL(url).hash; } catch {}\n       
+ }\n        if (hash) {\n          const id = hash.replace(/^#\\/?/, \"\");\n          const note = window.document.getElementById(id);\n          if (note !== null) {\n            try {\n              const html = processXRef(id, note
+.cloneNode(true));\n              instance.setContent(html);\n            } finally {\n              instance.enable();\n              instance.show();\n            }\n          } else {\n            // See if we can fetch this\n            fetch(url.split('#')[0])\n            .then(res => res.text())\n            .then(html => {\n              const parser = new DOMParser();\n              const htmlDoc = parser.parseFromString(html, \"text/html\");\n              const note = htmlDoc.getElementB
+yId(id);\n              if (note !== null) {\n                const html = processXRef(id, note);\n                instance.setContent(html);\n              } \n            }).finally(() => {\n              instance.enable();\n              instance.show();\n            });\n          }\n        } else {\n          // See if we can fetch a full url (with no hash to target)\n          // This is a special case and we should probably do some content thinning / targeting\n          fetch(url)\n          .then(res => res.text())\n          .then(html => {\n            const parser = new DOMParser();\n            const htmlDoc = parser.parseFromString(html, \"text/html\");\n            const note = htmlDoc.querySelector('main.content');\n            if (note !== null) {\n              // This should only happen for chapter cross references\n              // (since there i
+s no id in the URL)\n              // remove the first header\n              if (note.children.length > 0 && note.children[0].tagName === \"HEADER\") {\n                note.children[0].remove();\n              }\n              const html = processXRef(null, note);\n              instance.setContent(html);\n 
+           } \n          }).finally(() => {\n            instance.enable();\n            instance.show();\n          });\n        }\n      }, function(instance) {\n      });\n    }\n        let selecte
+dAnnoteEl;\n        const selectorForAnnotation = ( cell, annotation) => {\n          let cellAttr = 'data-code-ce
+ll=\"' + cell + '\"';\n          let lineAttr = 'data-code-annotation=\"' +  annotation + '\"';\n          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';\n          return selector;\n        }\n        const selectCodeLines = (annoteEl) => {\n          const doc = window.document;\n          const targetCell = annoteEl.getAttribute(\"data-target-cell\");\n          const targetAnnotation = annoteEl.getAt
+tribute(\"data-target-annotatio
+n\");\n          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));\n          const lines = annoteSpan.getAttribute(\"data-code-lines\").split(\",\");\n          const lineIds = lines.map((line) => {\n            return targetCell + \"-\" + line;\n          })\n          let top = null;\n          let height = null;\n          let parent = null;\n          if (lineIds.length > 0) {\n              //compute the position of the single el (top and bottom and make a div)\n              const el = window.document.getElementById(lineIds[0]);\n              top = el.offsetTop;\n              height = el.offsetHeight;\n              parent = el.parentElement.parentElement;\n            if (lineIds.length > 1) {\n              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);\n              const bottom = lastEl.offsetTop + lastEl.offsetHeight;\n              height = bottom - top;\n            }\n            if (top !== null && height !== null && parent !== null) {\n              // cook up a div (if necessary) and position it \n              let div = window.document.getElementById(\"code-annotation-line-highlight\");\n              if (div === n
+ull) {\n                div = window.document.createElement(\"div\");\n                div.setAttribute(\"id\", \"code-annotation-line-highlight\");\n                div.style.position = 'absolute';\n                parent.appendChild(div);\n              }\n              div.style.top = top - 2 + \"px\";\n              div.sty
+le.height = height + 4 + \"px\";\n              div.style.left = 0;\n              let gutterDiv = window.document.getElementById(\"code-annotation-line-highlight-gutter\");\n              if (gutterDiv === null) {\n                gutterDiv = window.document.createElement(\"div\");\n                gutterDiv.setAttribute(\"id\", \"code-annotation-line-highlight-gutter\");\n                gutterDiv.style.position = 'absolute';\n                const codeCell = window.document.getElementById(targetCell);\n                const gutter = codeCell.querySelector('.code-annotation-gutter');\n                gutter.appendChild(gutterDiv);\n              }\n         
+     gutterDiv.style.top = top - 2 + \"px\";\n              gutterDiv.style.height = height + 4 + \"px\";\n            }\n            selectedAnnoteEl = annoteEl;\n          }\n        };\n        const unselectCodeLines = () => {\n          const elementsIds = [\"code-annotation-line-highlight\", \"code-annotation-line-highlight-gutter\"];\n          elementsIds.forEach((elId) => {\n            const div = window.document.getElementById(elId);\n            if (div) {\n              div.remove();\n            }\n     
+     });\n          selectedAnnoteEl = undefined;\n        };\n          // Handle positioning
+ of the toggle\n      window.addEventLi
+stener(\n        \"resize\"
+,\n        throttle(() => {\n          elRect = undefined;\n          if (selectedAnnoteEl) {\n            selectCodeLines(selectedAnnoteEl);\n          }\n        }, 10)\n      );\n      fu
+nction throttle(fn, ms) {\n     
+ let throttle = fa
+lse;\n      let time
+r;\n        return
+ (...args) => {\n          if(!throttle) { 
+// first call gets through\n              fn.apply(this
+, args);\n             
+ throttle = true;\n     
+     } else {
+ // all the others ge
+t throttled\
+n              if(timer) clearTimeou
+t(timer); // cancel #2\n              tim
+er = setTimeout(() => {\n 
+               fn.apply(this,
+ args);\n
+                timer = throttle = false;\n              }, ms);\n     
+     }\n        };\n      }\n        // Att
+ach click handler to the DT\n  
+      const annoteDls = window.d
+ocument.querySelectorAll('dt[
+data-target-cell]');\
+n        for (const annoteDlNode of annot
+eDls) {\n          annoteDlNode.ad
+dEventListener('click',
+ (event) => {\n        
+    const clickedEl = event.target;\n   
+         if (clickedEl !== selectedAn
+noteEl) {\n              unselectCodeLines
+();\n              const a
+ctiveEl = window.doc
+ument.querySelector('d
+t[data-target-cell].code
+-annotation-active');\n
+              if (activeEl)
+ {\n                activeEl
+.classList.remove('code-annot
+ation-active');\n              }\n              selectCodeLi
+nes(clickedEl);\n              clickedEl.classList.add('code-annotation-active');\n            } else {\n              /
+/ Unselect the line\n       
+       unselectCodeLines();\n              clickedEl.classList.remov
+e('code-annotation-active');\n   
+         }\n          });\n        }\n    const findCite
+s = (el) => {\n      const parentEl = el.parentElement;\n    
+  if (parentEl) {\n        const cites = par
+entEl.dataset.cites;\n       
+ if (cites) {\n          return {\n 
+           el,\n     
+       cites: cites.split(' ')\n          };\n   
+     } else {\n          return findCites(el.parentElement)\n        }\n      } else {\n        ret
+urn undefined;\n      }\n    };\n    var bibliorefs = 
+window.document.querySelectorAll('a[role=\"doc-biblioref\"]');
+\n    for (var i=0; i<b
+ibliorefs.length; i++) 
+{\n      const ref = bibliorefs[i];\n      con
+st citeInfo = findCites(re
+f);\n      if (citeInfo) {\n        tippyHover(cit
+eInfo.el, function() {\n          var popup = window.document.
+createElement('div');\n          citeInfo.cites.forEach(function(cit
+e) {\n            var citeDiv = window.document.createElement('di
+v');\n            citeDiv.classList.add('hanging-indent');\
+n            citeD
+iv.
+classList.add('csl-entry');\n            var biblioDiv = window.document.getElementById('ref-' + cite);\n            if (biblioDiv) {\n              citeDiv.innerHTML = biblioDiv.innerHTML;\n           
+ }\n            popup.appendChild(citeDiv);\n          });\n          return popup.innerHTML;\n        });\n      }\n    }\n  });\n  </script>\n"
+[INFO] Not rendering RawInline (Format "tex") "\\Users"
+[INFO] Not rendering RawInline (Format "tex") "\\worthingtons"
+[INFO] Not rendering RawInline (Format "tex") "\\AppData"
+[INFO] Not rendering RawInline (Format "tex") "\\Local"
+[INFO] Not rendering RawInline (Format "tex") "\\Programs"
+[INFO] Not rendering RawInline (Format "tex") "\\QuartoPortable"
+[INFO] Not rendering RawInline (Format "tex") "\\share"
+[INFO] Not rendering RawInline (Format "t
+ex") "\\formats"
+[INFO] Not rendering RawInline (Format "tex") "\\ipynb"
+
+[INFO] Not rendering RawInline (Format "tex") "\\templates"
+
+[INFO] Not rendering RawInline (Format "tex") "\\
+git"
+[INFO] Not renderin
+g RawInline (Format "tex") "\\loe"
+[INFO] N
+ot rendering RawInline (Format "tex") "\\
+notebooks"
+[INFO] Not rende
+ring RawInline (Format "tex") "\
+\git"
+[INFO] Not render
+ing RawInline (Format "tex") "\\loe"
+[
+INFO] Completed filter C:/Users/worthingtons/AppData/Local/Programs/QuartoPortable/1.10.19/share/filters/main.lua in 453 ms
+[INFO] Running filter citeproc
+
+[
+INFO] Loaded ../references.bib from ../references.bib
+
+[
+INFO] Completed filter citeproc in 140 ms
+
+[
+INFO] Not rendering Table ("",["dataframe"],[("quarto-postprocess","true"),("border","1")]) (Caption Nothing []) [(AlignDefau
+lt,ColWidthDefault),(AlignDefault,ColWidthDefault),(AlignDefault,ColWidthDefault)] (TableHead ("",[],[]) [Row ("",[],[("style
+","text-align: right;")]) [Cell ("",[],[("quarto-table-cell-role","th")]) AlignDefault (RowSpan 1) (ColSpan 1) [],Cell ("",[],[("q
+uarto-table-cell-role","th")]) AlignDefault (RowSpan 1) (ColSpan 1) [Plain [Str "x"]],Cell ("",[],[("quarto-table-cell-role","th")]) AlignDefault (RowSpan 1) (ColSpan 1) [Plain [Str "y"]]]]) [TableBody ("",[],[]) (RowHe
+adColumns 0) [] [Row ("",[],[]) [Cell ("",[],[("quarto-table-cell-role","th")]) AlignDefault (RowSpan 1) (ColSpan 1) [Plain [Str "0"]],Cell ("",[],[]) AlignDefault (RowSpan 1) (ColSpan 1) [Plain [Str "0.304717"]],Cell (
+"",[],[]) AlignDefault (RowSpan 1) (ColSpan 1) [Plain [Str "0.879398"]]],Row ("",[],[]) [Cell ("",
+[],[("quarto-table-cell-role","th")]) AlignDefault (RowSpan 1) (ColSpan 1) [Plain [Str "1"]],Cell
+ ("",[],[]) AlignDefault (RowSpan 1) (ColSpan 1) [Plain [Str "-1.039984"]],Cell ("",[],[]) AlignDefault (Row
+Span 1) (ColSpan 1) [Plain [Str "0.777792"]]],Row ("",[],[]) [Cell ("",[],[("quarto-table-
+cell-role","th")]) AlignDefault (RowSpan 1) (ColSpan 1) [Plain [Str "2"]],Cell ("",[],[]) AlignDe
+fault (RowSpan 1) (ColSpan 1) [Plain [Str "0.750451"]],Cell ("",[],[]) AlignDefault (R
+owSpan 1) (ColSpan 1) [Plain [Str "0.066031"]]],Row ("",[],[]) [Cell ("",[],[("quarto-table-cell-role","th
+")]) AlignDefault (RowSpan 1) (ColSpan 1) [Plain [Str "3"]],Cell ("",[],[]) AlignDefault (RowSpan 1) (ColSp
+an 1) [Plain [Str "0.940565"]],Cell ("",[],[]) AlignDefault (RowSpan 1) (ColSpan 1
+) [Plain [Str "1.127241"]]],Row ("",[],[]) [Cell ("",[],[("quarto-table-cell-role","th
+")]) AlignDefault (RowSpan 1) (ColSpan 1) [Plain [Str "4"]],Cell ("",[],[]) AlignDefault
+ (RowSpan 1) (ColSpan 1) [Plain [Str "-1.951035"]],Cell ("",[],[]) AlignDefault (RowSpan 1
+) (ColSpan 1) [Plain [Str "0.467509"]]]]] (TableFoot ("",[],[]) [])
+
+[execProcess] Success: true, code: 0
+
+[NotebookContext]: Resolving ExecutedFile (html-preview):C:\git\loe-posit\notebooks\01-data-preview.ipynb
+
+[NotebookContext]: Add Notebook Metadata:C:\git\loe-posit\notebooks\01-data-preview.ipynb
+
+Creating SassCache at C:\git\loe-posit\.quarto\quarto-session-temp302bd6fe04b5710d\sass
+
+Returning SassCache at C:\git\loe-posit\.quarto\quarto-session-temp302bd6fe04b5710d\sass
+
+SassCache.getOrSet(...)
+
+SassCache.getFromHash(hash=d2bebfdcf72ae706958976ced6db22e5, inputHash=3c6e504540615423b8b9dca789f55e2b, force=undefined)
+
+  cache miss
+
+  cache miss, setting
+
+SassCache.setFromHash(d2bebfdcf72ae706958976ced6db22e5, 3c6e504540615423b8b9dca789f55e2b), ...
+
+[execProcess] C:\Users\worthingtons\AppData\Local\Programs\QuartoPortable\1.10.19\bin\tools\x86_64\dart-sass\src\dart.exe C:\Users\worthingtons\AppData\Local\Programs\QuartoPortable\1.10.19\bin\tools\x86_64\dart-sass\src\sass.snapshot C:\git\loe-posit\.quarto\quarto-session-temp302bd6fe04b5710d\b012fba8b47b3868.scss C:\git\loe-posit\.quarto\quarto-session-temp302bd6fe04b5710d\sass\d2bebfdcf72ae706958976ced6db22e5.css --style compressed --quiet --load-path=C:\Users\worthingtons\AppData\Local\Programs\QuartoPortable\1.10.19\share\formats\html\bootstrap\dist\scss --load-path=C:\Users\worthingtons\AppData\Local\Programs\QuartoPortable\1.10.19\share\formats\html\bslib\bslib-scss
+
+[execProcess] Success: true, code: 0
+
+Creating SassCache at C:\Users\worthingtons\AppData\Local\quarto\sass
+
+Returning SassCache at C:\Users\worthingtons\AppData\Local\quarto\sass
+
+SassCache.getOrSet(...)
+
+SassCache.getFromHash(hash=8be38f48d34c45af72792cbd699585e7, inputHash=fc4108bd9493b2bf04a7905c7f25d4b6, force=undefined)
+
+  cache hit
+
+  cache hit
+
+Windows: Using code page 1252
+
+[execProcess] CMD /C where git
+
+[execProcess] Success: true, code: 0
+
+[execProcess] git rev-parse
+
+[execProcess] Success: true, code: 0
+
+[execProcess] git config --get remote.origin.url
+
+[execProcess] Success: true, code: 0
+
+[execProcess] git ls-remote --quiet --exit-code origin gh-pages
+
+[execProcess] Success: false, code: 2
+
+[execProcess] CMD /C where git
+
+[execProcess] Success: true, code: 0
+
+[execProcess] git show-ref --verify --quiet refs/heads/gh-pages
+
+[execProcess] Success: false, code: 1
+
+[execProcess] C:\Users\worthingtons\AppData\Local\Programs\QuartoPortable\1.10.19\bin\tools\pandoc +RTS -K512m -RTS --defaults C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\quarto-defaults6c1688f4196b0c43.yml C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\quarto-inputdeced904d9af3be0.md --metadata-file C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\quarto-metadatada5e1afbe7653b24.yml --verbose --trace --data-dir C:\Users\worthingtons\AppData\Local\Programs\QuartoPortable\1.10.19\share\pandoc\datadir
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6678f1f090d0ef7\templa
+te.patched from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\
+1c8f05ff7f013b6f\c6678f1f090d0ef7\template.patched
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6678f1f
+090d0ef7\metadata.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013
+b6f\c6678f1f090d0ef7\metadata.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6678f1f090d0ef7\styles.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6678f1f090d0ef7\styles.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6678f1f090d0ef7\title-block.html from 
+C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6678f1f090d0e
+f7\title-block.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6678f1f090d0ef7\title-metadata.html from C:\Users\WORTHI
+~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6678f1f090d0ef7\title-metadata.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6678f1f090d0ef7\_title-meta
+-author.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\
+c6678f1f090d0ef7\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6678f1f090d0ef7\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6678f1f090d0ef7\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6678f1f090d0ef7\toc.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6678f1f090d0ef7\toc.html
+
+[
+trace] Parsed [Plain [Str "none"]] at line 1
+[trace] Parsed [Plain [Str "../references.bib"]] at line 1
+[trace] Parsed [Plain [Str "all"]] at line 1
+[trace] Parsed [Plain [Str "long"]] at line 1
+[trace] Parsed [Plain [Str "en"]] at line 1
+[trace] Parsed [Plain [Str "auto"]] at line 1
+[trace] Parsed [Plain [Str "../index.qmd"]] at line 1
+[trace] Parsed [Plain [Str "index-meca.zip"]] at line 1
+[trace] Parsed [Plain [Str "../notebooks/01-data-preview.ipynb"]] at line 1
+[trace] Parsed [Plain [Str "../notebooks/02-summary-stats.ipynb"]] at line 1
+[trace] Parsed [Plain [Str "..",RawInline (Format "tex") "\\index",Str ".ht at line 1
+[trace] Parsed [Plain [Str "Back",Space,Str "to",Space,Str "Article"]] at line 1
+[trace] Parsed [Plain [Str "01-data-preview.ipynb"]] at line 1
+[trace] Parsed [Plain [Str "01-data-preview.ipynb"]] at line 1
+[trace] Parsed [Plain [Str "Download",Space,Str "Notebook"]] at line 1
+[trace] Parsed [Plain [Str "01-data-preview.ipynb"]] at line 1
+[trace] Parsed [Plain [Str "Data",Space,Str "Preview"]] at line 1
+n [Str "Data",Space,Str "Preview"]] at line 1
+[trace] Parsed [Plain [Str "manuscript"]] at line 1
+[trace] Parsed [Plain [Str "left"]] at line 1
+[trace] Parsed [Plain [Str "Table",Space,Str "of",Space,Str "contents"]] at line 1
+
+[
+trace] Parsed [] at line 4
+[trace] Parsed [] at line 6
+[trace] Parsed [Para [Str "Starter",Space,Str "notebook",Space,Str "for",Sp at line 8
+[trace] Parsed [Div ("77b33bd2",["cell","markdown"],[]) [Para [Str "Starter at line 10
+[trace] Parsed [CodeBlock ("",["python","cell-code","hidden"],[]) "import n at line 20
+[trace] Parsed [RawBlock (Format "html") "<div>\n<style scoped>\n    .dataf at line 74
+[trace] Parsed [Div ("",["cell-output","cell-o
+utput-display"],[("execution_ at line 75
+[trace] Parsed [Div ("f90e7616",["cell"],[("execution_count","2")]) [CodeBl at line 79
+
+[
+INFO] Running filter C:/Users/worthingtons/AppData/Local/Programs/QuartoPortable/1.10.19/share/filters/main.lua
+
+[
+trace] Parsed [Plain [Str "x"]] at line 5
+[trace] Parsed [Plain [Str "y"]] at line 6
+[trace] Parsed [Plain [Str "0"]] at line 11
+[trace] Parsed [Plain [Str "0.304717"]] at line 12
+[trace] Parsed [Plain [Str "0.879398"]] at line 13
+[trace] Parsed [Plain [Str "1"]] at line 16
+[trace] Parsed [Plain [Str "-1.039984"]] at line 17
+[trace] Parsed [Plain [Str "0.777792"]] at line 18
+[trace] Parsed [Plain [Str "2"]] at line 21
+[trace] Parsed [Plain [Str "0.750451"]] at line 22
+[trace] Parsed [Plain [Str "0.066031"]] at line 23
+[trace] Parsed [Plain [Str "3"]] at line 26
+[trace] Parsed [Plain [Str "0.940565"]] at line 27
+[trace] Parsed [Plain [Str "1.127241"]] at line 28
+[trace] Parsed [Plain [Str "4"]] at line 31
+[trace
+] Parsed [Plain [Str "-1.951035"]] at line 32
+[trace] Parsed [Plain [Str "0.467509"]] at line 33
+[trace] Parsed [Table ("",["dataframe"],[("quarto-postprocess","true"),("bo at line 36
+
+[
+INFO] Completed filter C:/Users/worthingtons/AppData/Local/Programs/QuartoPortable/1.10.19/share/filters/main.lua in 328 ms
+[INFO] Running filter citeproc
+
+[
+INFO] Loaded ../references.bib from ../references.bib
+
+[
+INFO] Completed filter citeproc in 140 ms
+[INFO] Not rendering RawInline (Format "tex") "\\index"
+
+[INFO] Not rendering RawInline (Format "tex") "\\git\\loe"
+[INFO] Not rendering RawInline 
+(Format "tex") ""
+[INFO] Not rendering RawInline (Format "tex") "\\notebooks"
+[INF
+O] Not rendering RawInline (Format "tex") "\\git\\loe"
+[INFO] Not rendering RawInline (Format "tex")
+ ""
+[INFO] Not rendering RawInline (Format "tex") "\\notebooks"
+
+[execProcess] Success: true, code: 0
+
+[NotebookContext]: Add Rendering (rendered-ipynb):C:\git\loe-posit\notebooks\01-data-preview.ipynb
+
+[NotebookContext]: Add Rendering (html-preview):C:\git\loe-posit\notebooks\01-data-preview.ipynb
+
+[NotebookContext]: Get Notebook:C:\git\loe-posit\notebooks\02-summary-stats.ipynb
+
+[NotebookContext]: Attempting to Revive Rendering (html-preview):C:\git\loe-posit\notebooks\02-summary-stats.ipynb
+
+[NotebookContext]: Attempting to Revive Rendering (jats-subarticle):C:\git\loe-posit\notebooks\02-summary-stats.ipynb
+
+[NotebookContext]: Attempting to Revive Rendering (rendered-ipynb):C:\git\loe-posit\notebooks\02-summary-stats.ipynb
+
+[NotebookContext]: Attempting to Revive Rendering (qmd-ipynb):C:\git\loe-posit\notebooks\02-summary-stats.ipynb
+
+[NotebookContext]: Resolving ExecutedFile (rendered-ipynb):C:\git\loe-posit\notebooks\02-summary-stats.ipynb
+
+Windows: Using code page 1252
+
+[execProcess] CMD /C where git
+
+[execProcess] Success: true, code: 0
+
+[execProcess] git rev-parse
+
+[execProcess] Success: true, code: 0
+
+[execProcess] git config --get remote.origin.url
+
+[execProcess] Success: true, code: 0
+
+[execProcess] git ls-remote --quiet --exit-code origin gh-pages
+
+[execProcess] Success: false, code: 2
+
+[execProcess] CMD /C where git
+
+[execProcess] Success: true, code: 0
+
+[execProcess] git show-ref --verify --quiet refs/heads/gh-pages
+
+[execProcess] Success: false, code: 1
+
+[NotebookContext]: Writing all notebooks to C:\git\loe-posit\.quarto\quarto-session-temp302bd6fe04b5710d\a0314b135c25e191.json
+
+[execProcess] C:\Users\worthingtons\AppData\Local\Programs\QuartoPortable\1.10.19\bin\tools\pandoc +RTS -K512m -RTS --defaults C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\quarto-defaults66cced6bb23bd43d.yml C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\quarto-input156ba55df14d3d6c.md --metadata-file C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\quarto-metadata54ec70c77a0a2633.yml --verbose --trace --data-dir C:\Users\worthingtons\AppData\Local\Programs\QuartoPortable\1.10.19\share\pandoc\datadir
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\template.patch
+ed from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c8
+6928a1e\template.patched
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\me
+tadata.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7
+f013b6f\c9e7240c86928a1e\metadata.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\styles.html from C:\Users\
+WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f
+\c9e7240c86928a1e\styles.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9
+e7240c86928a1e\title-block.html from C:\Users\WORTHI~1\AppData\Loca
+l\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\title-block.html
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\tit
+le-metadata.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc98
+0d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\title-metadata.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c
+86928a1e\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Local\Te
+mp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c8
+6928a1e\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\_title-meta-author.ht
+ml from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\_title-meta-autho
+r.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb24
+09ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\title-block.html from 
+C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409
+ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\title-block.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\title-metadata.html from C:\User
+s\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\title-metadata.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a
+1e\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb24
+09ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Loc
+al\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\_title-meta-author.html
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\title-block.html from C:\Users\WORTHI~1\AppData\Local\Temp\qu
+arto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\title-block.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86
+928a1e\title-metadata.html from C:\Users\WORTHI~1\AppData\Local\Temp
+\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\title-metadata.htm
+l
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\_title-meta-author.html from C:
+\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\_ti
+tle-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05f
+f7f013b6f\c9e7240c86928a1e\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\title-block.html from C:\Users\WORTHI~1\AppData\Loca
+l\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\title-block.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\title-metadata.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\title-metadata.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\_title-meta-auth
+or.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f
+013b6f\c9e7240c86928a1e\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\tit
+le-block.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c
+8f05ff7f013b6f\c9e7240c86928a1e\title-block.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\tit
+le-metadata.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-ses
+sionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\title-metad
+ata.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05
+ff7f013b6f\c9e7240c8692
+8
+a1e\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\_title-meta-author.html
+
+[INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\title-block.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\title-block.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\title-metadata.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\title-metadata.html
+[INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\_title-meta-author.html from C:\Users\WORT
+HI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\title-block.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\title-block.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\title-metadata.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\title-metadata.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c869
+28a1e\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\
+Temp\quarto-sessionc980d56cb2409ba2
+\1c8f05ff7f013b6f\c9e7240c86928a1e\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Lo
+cal\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\_title-meta-author.h
+tml
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\title-block.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\title-block.html
+
+[INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\title-metadata.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\title-metadata.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\title-block.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\title-block.html
+[INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\title-metadata.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\title-metadata.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05
+ff7f013b6f\c9e7240c86928a1e\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\toc.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c9e7240c86928a1e\toc.html
+
+[
+trace] Parsed [Plain [Str "../references.bib"]] at line 1
+[trace] Parsed [Plain [Str "all"]] at line 1
+
+[trace] Parsed [Plain [Str "long"]] at line 1
+
+[
+trace] Parsed [Plain [Str "C:",RawInline (Format "tex") "\\Users",RawInlin at line 1
+[trace] Par
+sed [Plain [Str "en"]] at line 1
+[trace] Parsed [Plain 
+[Str "auto"]] at line 1
+[trace] Parsed [Plain [Str "../index.qmd"]] at 
+line 1
+[trace] Parsed [Plai
+n [Str "index-meca.zip"]] at line 1
+
+[trace] Parsed [Plain [Str "../notebooks/01-data-preview.ipynb"]] at line 1
+[trace] Parsed [Plain [Str "../not
+ebooks/02-summary-stats.ipynb"]] at line 1
+
+[
+trace] Parsed [Plain [Str "C:",RawInline (Format "tex") "\\git",RawInline  at line 1
+
+[trace] Parsed [Plain [Str "nb-1"]] at line 1
+
+[
+trace] Parsed [Plain [Str "C:",RawInline (Format "tex") "\\git",RawInline  at line 1
+
+[
+trace] Parsed [Plain [Str "nb-2"]] at line 1
+
+[trace] Parsed [Plain [Str "true"]] at line 1
+
+[trace] Parsed [Plain [Str "1.10.19"]] at line 1
+
+[trace] Parsed [Plain [Str "none"]] at line 1
+
+[trace] Parsed [Plain [Str "cosmo"]] at line 1
+
+[trace] Parsed [Plain [Str "Summary",Space,Str "Statistics"]] at line 1
+
+[trace] Parsed [Plain [Str "manuscript"]] at line 1
+
+[trace] Parsed [Plain [Str "Table",Space,Str "of",Space,Str "contents"]] at line 1
+
+[
+trace] Parsed [] at line 4
+[trace] Parsed [] at line 6
+
+[trace] Parsed [Para [Str "Basic",Space,Str "summary",Space,Str "statistics at line 
+8
+[trace] Parsed [Div ("3d1b762b",["cell","markdown"],[]) [Para [Str "Basic", at line 
+10
+[trace] Parsed [CodeBlock ("",["python",
+"cell-code","hidden"],[]) "import p at line 18
+
+[trace] Parsed [CodeBlock ("",[],[]) "count     6.000000\nmean      5.33333 at l
+ine 30
+[trace] Parsed [Div ("",["cell-output","cell-output-display"],[("execution_ 
+at line 31
+[trace] Parsed [Div ("99e5643f",["cell"],[("execution_count","2")]) [CodeBl at li
+ne 35
+
+[
+INFO] Running filter C:/Users/worthingtons/AppData/Local/Programs/QuartoPortable/1.10.19/share/filters/main.lua
+
+[
+INFO] Not rendering RawBlock (Format "ipynb") "<script id = \"quarto-html-after-body\" type=\"application/javascript\">\n  window.document.addEventListener(\"DOMContentLoaded\", function (event) {\n    const tabsets =  window.document.querySelectorAll(\".panel-tabset-tabby\")\n    tabsets.forEach(function(tabset)
+ {\n      const tabby = new Tabby('#' + tabset.id);\n    });\n    const icon = \"\59851\";\n    const anchorJS =
+ new window.AnchorJS();\n    anchorJS.options = {\n      placement: 'right',\n      icon: icon
+\n    };\n    anchorJS.add('.anchored');\n    const isCode
+Annotation = (el) => {\n      for (const clz of el.classList) {\n        if (clz.starts
+With('code-annotation-')) {                     \n      
+    return true;\n        }\n      }\n      return false;\n    }\n    const onCopySuccess = function(e) {\n      // button target\n      const button = e.trigger;\n      // don't 
+keep focus\n      button.blur();\n      // flash \"checked\"\n      button.classList.add('code-copy-button-checked');\n      var curre
+ntTitle = button.getAttribute(\"title\");\n      button.setAttribute(\"title\",
+ \"Copied!\");\n      let tooltip;\n      if (window.bootstrap) {\n        b
+utton.setAttribute(\"data-bs-toggle\", \"tooltip\")
+;\n        button.setAttribute(\"data-bs-placement\",
+ \"left\");\n        button.setAttribute(\"data-bs-title
+\", \"Copied!\");\n        tooltip = new
+ bootstrap.Tooltip(button, \n          { trigger: \"manual\", \n            cus
+tomClass: \"code-copy-button-tooltip\",\n            offset: [0, -8]});\n        tooltip.show();    \n      }\n      setTimeout(function() {\n        if (tooltip) {\n          tooltip.hide();\n          button.removeAttribute(\"data-bs-title\");\n          button.removeAttribute(\"data-bs-toggle\");\n          butto
+n
+.removeAttribute(\"data-bs-placement\");\n        }\n        button.setAttribute(\"title\", currentTitle);
+\n        button.classList.remove('code-copy-button-checked');\n   
+   }, 1000);\n      // clear code selection\n      e.clearSelection()
+;\n    }\n    const getTextToCopy = function
+(trigger) {\n      const outerScaffold = trigger.parentE
+lement.cloneNode(true);\n      const codeEl = outerScaffold.queryS
+elector('code');\n      for (const childEl of codeEl.children) {\n        if (isCodeAn
+notation(childEl)) {\n          childEl.remove();\n     
+   }\n      }\n      return codeEl.innerText;\n    }\n    const clipboard = new window.ClipboardJS('.code-copy-button:not
+([data-in-quarto-modal])', {\n      text: getTextToCopy\n    });\n    clipboard.on('success', onCop
+ySuccess);\n    if (window.document.getElementById('quarto-embedde
+d-source-code-modal')) {\n      const clipboardModal = new window.ClipboardJ
+S('.code-copy-button[data-i
+n-quarto-modal]', {\n        text: getTextToCopy,\n        container: window.document.getElem
+entById('quarto-embedded-source-code-m
+odal')\n      });\n      clipboardModal.on('success', onCopySuccess);\n  
+  }\n      var localhostRegex = new RegExp(/^(?:http|htt
+ps):\\/\\/localhost\\:?[0-9]*\\//);\n      var mailtoRegex = new RegE
+xp(/^mailto:/);\n        var filterRegex = new RegExp('/' + 
+window.location.host + '/');\n      var isI
+nternal = (href) => {\n          return filterRegex.test(href) || localhostRegex.test(hr
+ef) || mailtoRegex.test(href);\n      }\n      // Inspect non-navigation 
+links and adorn them if external\n     var
+ links = window.document.querySelectorAll('a[href]:not(.nav
+-link):not(.navbar-brand):not(.toc-action):not(.sideb
+ar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hid
+den]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');\n      for (var i=0; i<links.length; i++) {\n        const link = links[i];\n        if (!isInternal(link.href)) {\n          // undo the damage that might have been done by quarto-nav.js in the case of\n          // links that we want to consider external\n          if (link.dataset.originalHref !== 
+undefined) {\n            link.href = link.dataset.originalHref;\n          }\n        }\n      }\n    function tippyHove
+r(el, contentFn, onTriggerFn, onUntriggerFn) {\n      const config = {\n        allowHTML: true,\n
+        maxWidth: 500,\n        delay: 100,\n        arrow: false,\n        appendTo: function(
+el) {\n            return el.parentElement;\n        },\n        interactive: true,\n        interactiveBorder: 10,\n        theme: 'light-border',\n        placement: 'bottom-start',\n      };\n      if (contentFn) {\n        config.content = contentFn;\n      }
+\n      if (onTriggerFn) {\n        config.onTrigger = onTriggerFn;\n      }\n      if (onUntriggerFn
+) {\n        config.onUntrigger = onUntriggerFn;\n      }\n      window.tippy(el, config); \n    }\n    const not
+erefs = window.document.querySelectorAll('a[role=\"doc-noteref\
+"]');\n    for (var i=0; i<noterefs.length; i++) {\n      const ref = noterefs[
+i];\n      tippyHover(ref, function() {\n        // use id or data attribute instead here\n      
+  let href = ref.getAttribute('data-footnote-href') || ref.getAttribut
+e('href');\n        try { href = new URL(href).hash; } catch {}\n        
+const id = href.replace(/^#\\/?/, \"\");\n        const note = window.document.getElementById(id);\n        if (note) 
+{\n          return note.innerHTML;\n        } else {\n          return \"\";\n        }\n      });\n    }\n    const xrefs = window.document.querySelectorAll('a.quarto-xref');\n    const processXRef = (id, note) => {\n      // Strip column container classes\n      const stripColumnClz = (el) => {\n        el.classList.remove(\"page-full\", \"page-columns\");\n        if (el.children) {\n          for (const child of el.children) {\n            stripColumnClz(child);\n          }\n        }\n  
+    }\n      stripColumnClz(note)\n      if (id === null || id.startsWith('sec-')) {\n        // Special case sections, only their first couple elements\n        const container
+ = document.createElement(\"div\"
+);\n        if (note.children && note.children.len
+gth > 2) {\n          container.appendChild(no
+te.children[0].clo
+neNode(true));\n          for (let i =
+ 1; i < note.children.length; i++) {\n          
+  const child = n
+ote.children[i];\n            if (child.tagName === \"P\" && chil
+d.innerText === \"\") {\n              continue;\n 
+           } else {\n              
+container.appendChild(child.cloneNode(true));\n      
+        break;\n            }\n          }\n 
+  
+       if (window.Quarto?
+.typesetMath) {\n            window.Q
+uarto.typesetMath(container);\n 
+         }\n          return container.innerHTML\n        } else {\n       
+   if (window.Quarto?.typesetMath) {\n            window.Quarto.typesetMath(not
+e);\n          }\n          return note.innerHTML;\n        }\n      } else {\n        // Remove any a
+nchor links if they are present\n        const anchorLink = note.querySelector('a.ancho
+rjs-link');\n        if (anchorLink) {\n          anchorLink.remove();\n        }\n        if (windo
+w.Quarto?.typesetMath) {\n          window.Quarto.typesetMath(note);\n        }\n
+        if (note.classList.contains(\"callout\")) {\n          return note.outerHTML;\n        } else {\n      
+    return note.innerHTML;\n        }\n      
+}\n    }\n    for (var i=0; i<xrefs.leng
+th; i++) {\n      const xref = xrefs[i];\n      tippyHov
+er(xref, undefined, function(instance) {\n        instance.disable();\
+n        let url = xref.getAttribute('href');\n    
+    let hash = undefined; \n        if (url.startsWith('#')) {\n          hash
+ = url;\n        } else {\n          try { hash = new URL
+(url).hash; } catch {}\n        }\n        if (has
+h) {\n          const id = hash.replace(/^#\\/?/, \"\");\n          co
+nst note = window.document.getElementById(id);\n          if (note !== null) {\n            try {\n              const html = processXRef(id, note.cloneNode(true));\n              instance.setContent(html);\n            } finally {\n           
+   instance.enable();\n              instance.show();\n            }\n          } else {\n            // See if we can fetch this\n            fetch(url.split('#')[0])\n            .then(res => res.text())\n            .then(html => {\n              const parser = new DOMParser();\n              const htmlDoc = parser.parseFromString(html, \"text/html\");\n              const note = htmlDoc.getElementById(id);\n              if (note !== null) {\n                const html = processXRef(id, note);\n                instance.setContent(html);\n              } \n            }).finally(() => {\n              instance.enable();\n              instance.show();\n            
+});\n          }\n        } else {\n          // See if we can fetch a full url (with no hash to target)\n          // This is a special case and we should probably do some content thinning / targeting\n          fetch(url)\n          .then(res => res.text
+())\n          .then(html => {\n            co
+nst parser = new DOMParser();\n            const htmlDoc = 
+parser.parseFromString(html, \"text/html\");\n            const note =
+ htmlDoc.querySelector('main.content');\n            if (note !== null) {\n 
+             // This should only happen for chapter cross references\n         
+     // (since there is no id in the URL)\n              // 
+remove the first header\n              if (note.children.length > 0 && note.children[0].tagName === \"HEADER\") {\n        
+        note.children[0].remove();\n              }\n              const html = processXRef(null, note);\n 
+             instance.setContent(html);\n            } \n          }).
+finally(() => {\n            instance.enable();\n        
+    instance.show();\n          })
+;\n        }\n      }, function(instance) {
+\n      });\n    }\n        let selectedAnnoteEl;\n        const selectorForAnnotatio
+n = ( cell, annotation) => {\n          let cellAttr = 'data-code-cell=\"' +
+ cell + '\"';\n          let lineAttr = 'data-code
+-annotation=\"' +  annotation + '\"';\n          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';\n          return selector;\n        }\n        const selectCodeLines = (annoteEl) => {\n          const doc = window.document;\n          const targetCell = annoteEl.getAttribute(\"data-target-cell\");\n          const targetAnnotation = annoteEl.get
+Attribute(\"data-target-annotation\");\n          const annoteSpan 
+= window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));\n          const lines = annoteSpan.getAttribute(\"data-code-lines\").split(\",\");\n          const lineIds = lines.map((line) => {\n            return targetCell + \"-\" + line;\n          })\n          let top = null;\n          let height = null;\n          let parent = null;\n          if (lineIds.length > 0) {\n              //compute the position of the single el (top and bottom and make a div)\n              const el = window.document.getElementById(lineIds[0]);\n    
+          top = el.offsetTop;\n              height = el.offsetHeight;\n              parent = el.parentElement.parentElement;\n            if (lineIds.length > 1) {\n              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);\n              const bottom = lastEl.offsetTop + lastEl.offsetHeight;\n              height = bottom - top;\n            }\n            if (top !== null && height !== null && parent !== null) {\n              // cook up a div (if necessary) and position it \n              let div = window.document.getElementById(\"code-annotation-line-highlight\");\n              if (div === null) {\n                div = window.document.createElement(\"div\");\n                div.setAttribute(\"id\", \"code-annota
+tion-line-highlight\");\n                div.style.position = 'absolute';\n                parent.appendChild(div);\n              }\n              div.style.top = top - 2 + \"px\";\n              div.sty
+le.height = height + 4 + \"px\";\n              div.style.left = 0;\n              let gutterDiv = window.document.getEle
+mentById(\"code-annotation-line-highlight-gutter\");\n              if (gutterDi
+v === null) {\n                gutterDiv = window.document.createElement(\"div\");\n                gutterDiv.setAttr
+ibute(\"id\", \"code-annotation-line-highlight-gutter\");\n                gutterDiv.style.position = 'absolute';
+\n                cons
+t codeCell = window.document.getElementById(targetCell);\n                const gutter =
+ codeCell.querySelector('.code-annotation-gutter');\n                gutter.appendChild(gutt
+erDiv);\n              }\n              gutterDiv.style.top = top - 2 + \"px\";\n              gutterDiv.style.height = height + 4 + \"px\";\n            }\n            selectedAnnoteEl = annot
+eEl;\n          }\n        };\n        const unselec
+tCodeLines = () => {\n         
+ const elementsIds = [\"code-annotation-line-highlight
+\", \"code-annotation-line-highlight-gutter\"
+];\n          elementsIds.forEach((elId) => {\n  
+          const div = window.document.getElementById(elId);
+\n            if (div) {\n              div.remove();\n            }\n   
+       });\n          selectedAnnoteEl = undefined;\n        };\n          // Handle positioning of the toggle\n
+      window.addEventListener(\n        \"resize\",\n 
+       throttle(() =
+> {\n          elRect = undefined;\n          if (selectedAnno
+teEl) {\n            selectCodeLi
+nes(selectedAnnoteEl);\n          }\n 
+       }, 10)\n      );\n      function throttle(fn, ms) {
+\n      let throttle = false;\n      let timer;\n        return (...args) 
+=> {\n          if(!throttle) { // first call gets through\n              fn.apply(this, args);\
+n              throttle = true;\n          } else { // all the others get throttl
+ed\n              if(timer) clearTimeout(timer); // cancel 
+#2\n              timer = setTimeout(() => {\n                fn.apply(this
+, args);\n                timer = throttle = false;\n            
+  }, ms);\n          }\n        };\n      }\n        // Attac
+h click handler to the DT\n        const annoteDls = window.document.querySel
+ectorAll('dt[data-target-cell]');\n        for (const annoteDlNode of annoteDls) {\n          annoteDlNode.addEventListener('click', (event) => {\n            const clickedEl = even
+t.target;\n            if (clickedEl !== selectedAnnoteEl) {\n              unselectCodeLines();\n              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');\n              if (activeEl) {\n                activ
+eEl.classList.remove('code-annotation-active');\n              }\n              selectCodeLines(clickedEl);\n              clickedEl.classList.a
+dd('code-annotation-active');\n            } else {\n  
+            // Unselect the line\n              unselectCodeLines();\n              clickedEl.classList.remove('code-annotation-active');\n            }\n          });\n        }\n    const findCites = (el) => {\n      const parentEl = el.parentElement;\n      if (parentEl) {\n        const cites = parentEl.dataset.cites;\n        if (cites) {\n          return {\n            el,\n            cit
+es: cites.split(' ')\n          };\n        } else {\n          return findCites(el.parentElement)\n        }\n      } else {\n        return undefined;\n      }\n    };\n    var bibliorefs = window.document.querySelectorAll('a[role=\"doc-biblioref\"]');\n    for (var i=0; i<bibliorefs.length; i++) {\n      const ref = bibliorefs[i];\n      const citeInfo = findCites(ref);\n      if (citeInfo) {\n        tippyHover(citeInfo.el, function() {\n
+          var popup = window.document.createElement('div');\n          citeInfo.cites.forEach(f
+unction(cite) {\n            var citeDiv = window.document.createElement('div');\n            citeDiv.classList.add('hanging-indent');\n   
+         citeDiv.classList.add('csl-entry');\n            var biblioDiv = window.document.getElementById('ref-' +
+ cite);\n            if (biblioDiv) {\n              citeDiv.innerHTML = biblioDiv.innerHTML;\n            }\n            popup.appendChild(citeDiv);\n          });\n          return popup.innerHTML;\n        });\n      }\n    }\n  });\n  </script>\n"
+
+[INFO] Not rendering RawInline (Format "tex") "\\Users"
+[INFO] Not rendering RawInline (F
+ormat "tex") "\\worthingtons"
+[INFO] Not rendering RawInline (Format 
+"tex") "\\AppData"
+[INFO] Not rendering RawInline (Format "tex") "\\Lo
+cal"
+[INFO] Not rendering RawInline (Format "tex") "\\Programs"
+
+[INFO] Not rendering RawInline (Format "tex") "\\QuartoPortable"
+
+[INFO] Not rendering RawInline (Format "tex") "\\share"
+[INFO] Not rendering
+ RawInline (Format "tex") "\\formats"
+[INFO] Not rendering RawInline (Format "tex") "\\ipynb"
+[INFO] Not rendering RawInline (Format "tex") "\\templates"
+
+[INFO] Not rendering RawInline (Format "tex") "\\git"
+[IN
+FO] Not rendering RawInline (Format
+ "tex") "\\loe"
+[INFO] Not rendering RawInline (Format "tex") "\\noteboo
+ks"
+[INFO] Not rendering RawInline (Format "tex") "\\git"
+[INFO] Not ren
+dering RawInline (Format "t
+ex") "\\loe"
+[INFO] Not rendering RawInline (Format "tex") "\\notebooks"
+
+[
+INFO] Completed filter C:/Users/worthingtons/AppData/Local/Progra
+m
+s/QuartoPortable/1.10.19/share/filters/main.lua in 406 ms
+[INFO] Running filter citeproc
+
+[
+INFO] Loaded ../references.bib from ../references.bib
+
+[
+INFO] Completed filter citeproc in 125 ms
+
+[execProcess] Success: true, code: 0
+
+[NotebookContext]: Resolving ExecutedFile (html-preview):C:\git\loe-posit\notebooks\02-summary-stats.ipynb
+
+[NotebookContext]: Add Notebook Metadata:C:\git\loe-posit\notebooks\02-summary-stats.ipynb
+
+Returning SassCache at C:\git\loe-posit\.quarto\quarto-session-temp302bd6fe04b5710d\sass
+
+SassCache.getOrSet(...)
+
+SassCache.getFromHash(hash=d2bebfdcf72ae706958976ced6db22e5, inputHash=3c6e504540615423b8b9dca789f55e2b, force=undefined)
+
+  cache hit
+
+  cache hit
+
+Returning SassCache at C:\Users\worthingtons\AppData\Local\quarto\sass
+
+SassCache.getOrSet(...)
+
+SassCache.getFromHash(hash=8be38f48d34c45af72792cbd699585e7, inputHash=fc4108bd9493b2bf04a7905c7f25d4b6, force=undefined)
+
+  cache hit
+
+  cache hit
+
+Windows: Using code page 1252
+
+[execProcess] CMD /C where git
+
+[execProcess] Success: true, code: 0
+
+[execProcess] git rev-parse
+
+[execProcess] Success: true, code: 0
+
+[execProcess] git config --get remote.origin.url
+
+[execProcess] Success: true, code: 0
+
+[execProcess] git ls-remote --quiet --exit-code origin gh-pages
+
+[execProcess] Success: false, code: 2
+
+[execProcess] CMD /C where git
+
+[execProcess] Success: true, code: 0
+
+[execProcess] git show-ref --verify --quiet refs/heads/gh-pages
+
+[execProcess] Success: false, code: 1
+
+[execProcess] C:\Users\worthingtons\AppData\Local\Programs\QuartoPortable\1.10.19\bin\tools\pandoc +RTS -K512m -RTS --defaults C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\quarto-defaults263d97c4585b142b.yml C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\quarto-inpute3f95e9d8d79ba22.md --metadata-file C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\quarto-metadata7ea18acd3344aaf2.yml --verbose --trace --data-dir C:\Users\worthingtons\AppData\Local\Programs\QuartoPortable\1.10.19\share\pandoc\datadir
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\35428cacdea8e312\template.patched from C:\Users
+\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\354
+28cacdea8e312\template.patched
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\35428cacdea8e312\metadata.html f
+rom C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\35428cacdea8e31
+2\metadata.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\35428cacdea8e312\styles.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\35428
+cacdea8e312\styles.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\35428cacdea8e312\title-block.html from C:\Users\WORTHI~1\AppData\Loca
+l\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\35428cacdea8e312\ti
+tle-block.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\35428cacdea8e312\title-metadata.h
+tml from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\35428cacdea8e312\title-metadata.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\3542
+8cacdea8e312\_title-meta-author.html from C
+:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\35428cacdea8e
+312\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\35428cacdea8e312
+\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\35428cacde
+a8e312\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\35428cacdea8e312\toc.html from C:\Users
+\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2
+409ba2\1c8f05ff7f013b6f\35428cacdea8e3
+12\toc.html
+
+[
+trace] Parsed [Plain [Str "none"]] at line 1
+[trace] Parsed [Plain [Str "../references.bib"]] at line 1
+[trace] Parsed [Plain [Str "all"]] at line 1
+[trace] Pa
+rsed [Plain [Str "long"]] at line 1
+[trace] Parsed [Plain [Str "en"]] at line 1
+
+[trace] Parsed [Plain [Str "auto"]] at line 1
+
+[trace] Parsed [Plain [Str "../index.qmd"]] at line 1
+
+[trace] Parsed [Plain [Str "index-meca.zip"]] at line 1
+
+[trace] Parsed [Plain [Str "../notebooks/01-data-preview.ipynb"]] at line 1
+
+[trace] Parsed [Plain [Str "../n
+otebooks/02-summary-stats.ipynb"]] at line 1
+
+[
+trace] Parsed [Plain [Str "..",RawInline (Format "tex") "\\index",Str ".ht at line 1
+[t
+race] Parsed [Plain [Str "Back",Space,Str "to",Space,Str "Article"]] at line 1
+
+[trace] Parsed [Plain [Str "02-summary-stats.ipynb"]] at line 1
+
+[trace] Parsed [Plain [Str "02-summary-stats.ipynb"]] at line 1
+
+[trace] Parsed [Plain [Str "Download",Space,Str "Notebook"]] at line 1
+
+[trace] Parsed [Plain [Str "02-summary-stats.ipynb"]] at line 1
+[trace] Parse
+d [Plain [Str "Summary",Space,Str "Statistics"]] at line 1
+
+[
+trace] Parsed [Plain [Str "C:",RawInline (Format "tex") "\\git",RawInline  at line 1
+
+[trace] Parsed [Plain [Str "nb-1"]] at line 1
+
+[
+trace] Parsed [Plain [Str "C:",RawInline (Format "tex") "\\git",R
+awInline  at line 1
+[trace] Parsed [Plain [Str
+ "nb-2"]] at line 1
+[trace] Parsed [Plain
+ [Str "toc-left"]] at line 1
+[trace] Parsed [Plain [Str "true"]] at line 1
+
+[trace] Parsed [Plain [Str "1.10.19"]] at line 1
+[trace] Parsed [P
+lain [Str "none"]] at line 1
+[trace] Parsed [Plain [S
+tr "cosmo"]] at line 1
+[trace] Par
+sed [Plain [Str "Summary",Space,Str "Statistics"]] at line 1
+[trace] Parsed [Pla
+in [Str "manuscript"]] at line 1
+[trace] Parsed [Plain [Str "left"]] at line 1
+
+[trace] Parsed [Plain [Str "Table",Space,Str "of",Space,Str "contents"]] at line 1
+
+[
+trace] Parsed [] at line 4
+[trace] Parsed [] at line 6
+
+[trace] Parsed [Para [Str "Basic",Space,Str "summary",Space,Str "statistics at line 8
+[trace] Pa
+rsed [Div ("3d1b762b",["cell","markdown"],[]) [Para [Str "Basic", at line 10
+
+[trace] Parsed [CodeBlock ("",["python","cell-code","hidden"],[]) "import p at line
+ 18
+[trace] Parsed [CodeBlock ("",[],[]) "count     6.
+000000\nmean      5.33333 at line 30
+[trace] Parsed [Div ("",["cell-output","cell-output-display"]
+,[("execution_ at line 31
+[trace] Parsed [Div ("99e5643f",["cel
+l"],[("execution_count","2")]) [CodeBl at line 35
+
+[
+INFO] Running filter C:/Users/worthingtons/AppData/Local/Programs/QuartoPortable/1.10.19/share/filters/main.lua
+
+[
+INFO] Completed filter C:/Users/worthingtons/AppData/Local/Programs/QuartoPortable/1.10.19/share/filters/main.lua in 234 ms
+[INFO] Running 
+filter citeproc
+
+[
+INFO] Loaded ../references.bib from ../references.bib
+
+[
+INFO] Completed filter citeproc in 78 ms
+[INFO] Not rendering RawInline (Format "tex") "\\index"
+[INFO] Not rendering RawI
+nline (Format "tex") "\\git\\loe"
+[INFO] Not rendering RawInline (Format "tex") ""
+[IN
+FO] Not rendering RawInline (Format "tex") "\\notebooks"
+
+[INFO] Not rendering RawInline (Format "tex") "\\git\\loe"
+
+[INFO] Not rendering RawInline (Format "tex") ""
+[INFO] Not rendering RawInline (Forma
+t "tex") "\\notebooks"
+
+[execProcess] Success: true, code: 0
+
+[NotebookContext]: Add Rendering (rendered-ipynb):C:\git\loe-posit\notebooks\02-summary-stats.ipynb
+
+[NotebookContext]: Add Rendering (html-preview):C:\git\loe-posit\notebooks\02-summary-stats.ipynb
+
+Returning SassCache at C:\git\loe-posit\.quarto\quarto-session-temp302bd6fe04b5710d\sass
+
+SassCache.getOrSet(...)
+
+SassCache.getFromHash(hash=d2bebfdcf72ae706958976ced6db22e5, inputHash=3c6e504540615423b8b9dca789f55e2b, force=undefined)
+
+  cache hit
+
+  cache hit
+
+Returning SassCache at C:\Users\worthingtons\AppData\Local\quarto\sass
+
+SassCache.getOrSet(...)
+
+SassCache.getFromHash(hash=8be38f48d34c45af72792cbd699585e7, inputHash=fc4108bd9493b2bf04a7905c7f25d4b6, force=undefined)
+
+  cache hit
+
+  cache hit
+
+Windows: Using code page 1252
+
+[execProcess] CMD /C where git
+
+[execProcess] Success: true, code: 0
+
+[execProcess] git rev-parse
+
+[execProcess] Success: true, code: 0
+
+[execProcess] git config --get remote.origin.url
+
+[execProcess] Success: true, code: 0
+
+[execProcess] git ls-remote --quiet --exit-code origin gh-pages
+
+[execProcess] Success: false, code: 2
+
+[execProcess] CMD /C where git
+
+[execProcess] Success: true, code: 0
+
+[execProcess] git show-ref --verify --quiet refs/heads/gh-pages
+
+[execProcess] Success: false, code: 1
+
+[NotebookContext]: Writing all notebooks to C:\git\loe-posit\.quarto\quarto-session-temp302bd6fe04b5710d\a0314b135c25e191.json
+
+[execProcess] C:\Users\worthingtons\AppData\Local\Programs\QuartoPortable\1.10.19\bin\tools\pandoc +RTS -K512m -RTS --defaults C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\quarto-defaultsa8e382c414406f17.yml C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\quarto-inputa398dbb98e3da8e4.md --metadata-file C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\quarto-metadataf689f75157f094fb.yml --verbose --trace --data-dir C:\Users\worthingtons\AppData\Local\Programs\QuartoPortable\1.10.19\share\pandoc\datadir
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\template.patched from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba
+2\1c8f05ff7f013b6f\c6de9232186f61db\template.patched
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\metadata.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-
+sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\metadata.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\styles.html from C:\U
+sers\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\styles.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de923218
+6f61db\title-block.html from C:\Users\WORTHI~1\AppData\Loca
+l\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\ti
+tle-block.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de92321
+86f61db\title-metadata.html from C:\Users\WORTHI~1\App
+Data\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\titl
+e-metadata.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f0
+13b6f\c6de9232186f61db\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Lo
+cal\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232
+186f61db\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de923
+2186f61db\_title-meta-author.html from C:\User
+s\WORTHI~1\AppData\Local\Temp
+\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de92
+32186f61db\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff
+7f013b6f\c6de9232186f61db\title-block.html from C:\Users\WORTHI~1\AppData\Local\
+Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\title-block.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\title-metad
+ata.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409
+ba2\1c8f05ff7f013b6f\c6de9232186f61db\title-metadata.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\
+_title-meta-author.html from C:\Users\WORTHI~1\AppData\Local
+\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\_title-meta-a
+uthor.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61d
+b\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Local\Temp\
+quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61
+db\_title-meta-aut
+hor.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05f
+f7f013b6f\c6de9232186f61db\title-block.html from C:\Users\WORTHI~1\AppData\Loca
+l\Temp\quarto-sessionc980
+d56cb2409ba2\1c8f05ff
+7f013b6f\c6de9232186f61db\title-block.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d5
+6cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61d
+b\title-metadata.html from C:\U
+sers\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56
+cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\
+title-metadata.html
+
+[
+INFO] 
+L
+oaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6d
+e9232186f61db\_title-meta-author.html from C:\Users\WORTHI~1\AppData
+\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6
+de9232186f61db\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-ses
+sionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\titl
+e-block.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\title-block.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\title-metadata.html f
+rom C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff
+7f013b6f\c6de9232186f61db\title-metadata.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f
+013b6f\c6de9232186f61db\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Local\Temp\qua
+rto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\_title-
+meta-author.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f0
+5ff7f013b6f\c6de9232186f61db\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\title-block.html from C:\User
+s\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61
+db\title-block.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\tit
+le-metadata.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d5
+6cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\title-metadata.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\_title-meta-author.html from C:\Us
+ers\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\_t
+itle-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f6
+1db\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb240
+9ba2\1c8f05ff7f013b6f\c6de9232186f61db\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\title-block.h
+tml from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186
+f61db\title-block.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de92
+32186f61db\title-metadata.html from C:\Users\WORTHI~1\AppData\Local
+\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\title-
+metadata.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\_title-meta-a
+uthor.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56c
+b2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2
+\1c8f05ff7f013b6f\c6de9232186f61db\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de923218
+6f61db\title-block.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05f
+f7f013b6f\c6de9232186f61db\title-block.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\title-metadata.ht
+ml from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\
+title-metadata.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\_title-meta-a
+uthor.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2
+\1c8f05ff7f013b6f\c6de9232186f61db\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\_title-me
+ta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c
+6de9232186f61db\title-block.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-
+sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\title-block.ht
+ml
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\title-metadata.html from C:\Users\WORTHI~1\App
+Data\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\title-metadata.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\_title-meta-au
+thor.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f6
+1db\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc
+980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\tit
+le-block.html from C:\Users\WORTHI~1\AppData\Local\Temp
+\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\title-block.h
+tml
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186
+f61db\title-metadata.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-
+sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\title-metadata.html
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\_title-meta-author.html from C:\Users\WORTHI~1\AppData\Local\Temp\qu
+arto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\_title-meta-author.
+html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\_title-meta-author.html from C:\Users\W
+ORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f
+\c6de9232186f61db\_title-meta-author.html
+
+[
+INFO] Loaded C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\toc.html from C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\c6de9232186f61db\toc.html
+
+[
+trace] Parsed [Para [Str "This",Space,Str "starter",Space,Str "manuscript" at line 5
+[trace] Parsed [Plain [Str "Abstract"]] at line 1
+[trace] Parsed [Plain [Str "Your",Space,Str "Name"]] at line 1
+[trace] Parsed [Plain [Str "Your",Space,Str "Name"]] at line 1
+[trace] Parsed [Plain [Str "references.bib"]] at line 1
+[trace] Parsed [Plain [Str "none"]] at line 1
+[trace] Parsed [Plain [Str "October",Space,Str "15,",Space,Str "2026"]] at line 1
+[
+trace] Parsed [Plain [Str "long"]] at line 1
+[trace] Parsed [Plain [Str "quar
+to"]] at line 1
+[trace] Parsed [Plain [Str "manuscript"]] at line 
+1
+[trace] Parsed [Plain [Str "jupyter"]] at line 1
+
+[trace] Parsed [Plain [Str "reproducibility"]] at line 1
+
+[trace] Parsed [Plain [Str "en"]] at line 1
+
+[trace] Parsed [Plain [Str "auto"]] at line 1
+
+[trace] Parsed [Plain [Str "index.qmd"]] at line 1
+
+[trace] Parsed [Plain [Str "index-meca.zip"]] at line 1
+
+[trace] Parsed [Plain [Str "notebooks/01-data-preview.ipynb"]] at line 1
+
+[trace] Parsed [Plain [Str "notebooks/02-summary-stats.ipynb"]] at line 1
+
+[
+trace] Parsed [Plain [Str "C:",RawInline (Format "tex") "\\git",RawInline  at line 1
+[trace] Parsed [Plain [Str "nb-1"]] at line 
+1
+
+[
+trace] Parsed [Plain [Str "C:",RawInline (Format "tex") "\\git",RawInline  at line 1
+[tra
+ce] Parsed [Plain [Str "nb-2"]] at line 1
+
+[trace] Parsed [Plain [Str "toc-left"]] at line 1
+
+[trace] Parsed [Plain [Str "true"]] at line 1
+[trace] Parsed [Plain [Str "1.10.19"]] at line 1
+
+[trace] Parsed [Plain [Str "all"]] at line 1
+
+[trace] Parsed [Plain [Str "cosmo"]] at line 1
+
+[trace] Parsed [Plain [Str "Sample",Space,Str "Quarto",Space,Str "
+Manuscrip at line 1
+[trace] Parsed [Plain [Str "manuscript"
+]] at line 1
+[trace] Parsed [Plain [Str "left"]] at li
+ne 1
+[trace] Parsed [Plain [Str "Table",
+Space,Str "of",Space,Str "contents"]] at line 1
+
+[
+trace] Parsed [] at line 3
+[trace] Parsed [Header 1 ("introduction",[],[]) [Str "Intr
+oduction"]] at line 5
+
+[trace] Parsed [Para [Str "This",Space,Str "project",Space,Str "is",Space,S at line 7
+
+[trace]
+ Parsed [Plain [Str "Quarto",Space,Str "manuscript",Space,Str "autho at line 2
+
+[
+trace] Parsed [Plain [Str "Jupyter",Space,Str "notebooks",Space,Str "inclu at line 2
+
+[trace] Parsed [Plain [Str "Publishin
+g",Space,Str "from",Space,Str "GitHub" at line 2
+
+[trace] Parsed [Para [Str "Reproducible",Space,Str "notebook",Space,Str "ex at line 3
+
+[trace] Parsed [BulletList [[Plain [Str "Quarto",Space,St
+r "manuscript",Spa at line 12
+
+[trace] Parsed [Header 1 ("example-figure",[],[]) [Str "Example",Space,Str  at line 14
+[trace] Parsed [Para [Str "The",Space,Str "computational",Space,Str "workfl at line 16
+
+[
+trace] Parsed [Plain [Link ("",[],[]) [Str "Data",Space,Str "Preview"] ("n at line 2
+
+[
+trace] Parsed [Para [Link ("",[],[]) [Str "Summary",Space,Str "Statistics" at line 3
+[trace] P
+arsed [BulletList [[Plain [Link ("",[],[]) [Str "Data",Space,Str " at line 19
+
+[trace] Parsed [Para [Str "These",Space,Str "
+notebooks",Space,Str "are",Spa at line 22
+[
+trace] Parsed [Header 1 ("data-stewardship",[],[]) [Str "Data",Space,Str " at line 24
+
+[
+trace] Parsed [Para [Str "This",Space,Str "starter",Space,Str "project",Sp at line 27
+
+[trace] Parsed [Header 1 ("reproducibility-notes",[],[]) [Str "Reproducibil at line 29
+
+[trace] Parsed [Para [Str "Package",Space,Str "dependencies",Space,Str "are at line 31
+[trace] Parsed [Header 1 ("references",[],[]) [Str "References"]] at line 34
+
+[
+INFO] Running filter C:/Users/worthingtons/AppData/Local/Programs/QuartoPortable/1.10.19/share/filters/main.lua
+
+[
+INFO] Completed filter C:/Users/worthingtons/AppData/Local/Programs/QuartoPortable/1.10.19/share/filters/main.lua in 250 ms
+[INFO] Running filter citepr
+oc
+
+[
+INFO] Loaded references.bib from references.bib
+
+[
+INFO] Completed filter citeproc in 78 ms
+
+[INFO] Not rendering RawInline (Format "tex") "\\git\\loe"
+[INFO] Not rendering RawInline (Format "tex")
+ ""
+[INFO] Not rendering RawInline (Format "tex") "\\notebooks"
+[INFO] Not ren
+dering RawInline (Format "tex") "\\git\\loe"
+[INFO] Not render
+ing RawInline (Format "tex") ""
+[INFO] Not rendering RawInline (Format "tex") "\\noteb
+ooks"
+
+[execProcess] Success: true, code: 0
+
+Windows: Using code page 1252
+
+[execProcess] CMD /C where git
+
+[execProcess] Success: true, code: 0
+
+[execProcess] git rev-parse
+
+[execProcess] Success: true, code: 0
+
+[execProcess] git config --get remote.origin.url
+
+[execProcess] Success: true, code: 0
+
+[execProcess] git ls-remote --quiet --exit-code origin gh-pages
+
+[execProcess] Success: false, code: 2
+
+[execProcess] CMD /C where git
+
+[execProcess] Success: true, code: 0
+
+[execProcess] git show-ref --verify --quiet refs/heads/gh-pages
+
+[execProcess] Success: false, code: 1
+
+[execProcess] C:\Users\worthingtons\AppData\Local\Programs\QuartoPortable\1.10.19\bin\tools\pandoc +RTS -K512m -RTS --defaults C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\quarto-defaultsa949dee06900fd2a.yml C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\quarto-input1d7a28da950d270f.md --metadata-file C:\Users\WORTHI~1\AppData\Local\Temp\quarto-sessionc980d56cb2409ba2\1c8f05ff7f013b6f\quarto-metadata94c673da34dec61d.yml --verbose --trace --data-dir C:\Users\worthingtons\AppData\Local\Programs\QuartoPortable\1.10.19\share\pandoc\datadir
+
+[
+trace] Parsed [Para [Str "This",Space,Str "starter",Space,Str "manuscript" at line 5
+[trace] Parse
+d [Plain [Str "Your",Space,Str "Name"]] at line 1
+[trace] Par
+sed [Plain [Str "Your",Space,Str "Name"]] at line 1
+
+[trace] Parsed [Plain [Str "references.bib"]] at line 1
+
+[trace] Parsed [Plain [Str "none"]] at line 1
+
+[trace] Parsed [Plain [Str "2026-10-15"]] at line 1
+
+[trace] Parsed [Plain [Str "quarto"]] at line 1
+
+[trace] Parsed [Plain [Str "manus
+cript"]] at line 1
+[trace] Parse
+d [Plain [Str "jupyter"]] at line 1
+[trace] Parsed [Plain [
+Str "reproducibility"]] at line 1
+[trace] Parsed [Plain [Str "auto"]] at line 1
+[trace] Parsed [Plain [Str "index
+.qmd"]] at line 1
+[trace] Parsed [Plain 
+[Str "index-meca.zip"]] at line 1
+
+[trace] Parsed [Plain [Str "notebooks/0
+1-data-preview.ipynb"]] at line 1
+
+[trace] Parsed [Plain [Str "notebo
+oks/02-summary-stats.ipynb"]] at line 1
+
+[
+trace] Parsed [Plain [Str "C:",RawInline (Format "tex") "\\git",RawInline  at line 1
+
+[trace] Parsed [Plain [Str "nb-1"]] at line 1
+
+[
+trace] Parsed [Plain [Str "C:",RawInline (Format "tex") "\\git",RawInline  at line 1
+[trace] 
+Parsed [Plain [Str "nb-2"]] at line 1
+[
+trace] Parsed [Plain [Str "all"]] at line 1
+[trace] Parsed [Plain [Str "cos
+mo"]] at line 1
+[trace] Parsed [Plain [Str "Sample",Space,Str "Quarto",Spa
+ce,Str "Manuscrip at line 1
+[
+trace] Parsed [Plain [Str "manuscript"]] at line 1
+
+[trace] Parsed [Plain [Str "Table",Space,Str "of",Space,Str "contents"]] at line 1
+
+[
+trace] Parsed [] at line 3
+[trace] Parsed [Header 1 ("introduction",[],[]) [Str "Introdu
+ction"]] at line 5
+[trace] Parsed [Par
+a [Str "This",Space,Str "project",Space,Str "is",Space,S at line 7
+
+[
+trace] Parsed [Plain [Str "Quarto",Space,Str "manuscript",Space,Str "autho at line 2
+[trace] Parsed [Plain [Str "Jupyter",Space,Str "notebooks",Space,Str
+ "inclu at line 2
+
+[trace] Parsed [Plain [Str "Publishing",Space,Str "from",Space,Str "GitH
+ub" at line 2
+
+[trace] Parsed [Para [Str "Reproducible",Space,Str "notebook",Space,
+Str "ex at line 3
+[trace] Parsed [BulletList 
+[[Plain [Str "Quarto",Space,Str "manuscript",Spa at line 12
+
+[trace] Parsed [Header 1 ("example-figure",[],[]) [Str 
+"Example",Space,Str  at line 14
+
+[trace] Parsed [Para [Str "The",Space,Str "computational",Space,Str "workfl at line 16
+
+[
+trace] Parsed [Plain [Link ("",[],[]) [Str "Data",Space,Str "Preview"] ("n at line 2
+
+[
+trace] Parsed [Para [Link ("",[],[]) [Str "Summary",Space,Str "Statistics" at line 3
+[trace] Parsed [BulletList [[Plain [Link ("",[],[]) [Str "Dat
+a",Space,Str " at line 19
+
+[trace] Parsed [Para [Str "These",Space,Str "notebooks",Space,Str "ar
+e",Spa at line 22
+[trace] Parsed [Hea
+der 1 ("data-stewardship",[],[]) [Str "Data",Space,Str " at line 24
+
+[
+trace] Parsed [Para [Str "This",Space,Str "starter",Space,Str "project",Sp at line 27
+
+[trace] Parsed [Header 1 ("reproducibility-notes",[],[]) [Str "Reproducibil at line 29
+
+[trace] Parsed [Para [Str "Package",Space,Str "dependencies",Space,Str "are at line 31
+[trace] Parsed [Header 1 ("references",[],[]) [Str "References"]] at line 34
+[
+INFO] Running filter C:/Users/worthingtons/AppData/Local/Programs/QuartoPortable/1.10.19/share/filters/main.lua
+
+[
+INFO] Completed filter C:/Users/worthingtons/AppData/Local/Programs/QuartoPortable/1.10.19/share/filters/main.lua in 281 ms
+[INFO] Running
+ filter citeproc
+
+[
+INFO] Loaded references.bib from references.bib
+
+[
+INFO] Completed filter citeproc in 78 ms
+
+[
+INFO] Not rendering RawInline (Format "tex") "\\git\\loe"
+[INFO] Not rendering RawInline (Format "tex") ""
+[INFO] Not re
+ndering RawInline (Format "tex") "\\notebooks"
+[INF
+O] Not rendering RawInline (Format "tex") "\\git\\loe"
+[INFO] 
+Not rendering RawInline (Format "tex") ""
+[INFO] Not rendering RawInline (For
+mat "tex") "\\notebooks"
+
+[execProcess] Success: true, code: 0
+
+[execProcess] C:\Users\worthingtons\AppData\Local\Programs\QuartoPortable\1.10.19\bin\tools\pandoc C:\git\loe-posit\references.bib -t csljson --citeproc
+
+[execProcess] Success: true, code: 0
+
+[NotebookContext]: Get Notebook:C:\git\loe-posit\notebooks\01-data-preview.ipynb
+
+[NotebookContext]: Attempting to Revive Rendering (jats-subarticle):C:\git\loe-posit\notebooks\01-data-preview.ipynb
+
+[NotebookContext]: Get Notebook:C:\git\loe-posit\notebooks\02-summary-stats.ipynb
+
+[NotebookContext]: Attempting to Revive Rendering (jats-subarticle):C:\git\loe-posit\notebooks\02-summary-stats.ipynb
+
+[NotebookContext]: Get Notebook:C:\git\loe-posit\notebooks\01-data-preview.ipynb
+
+[NotebookContext]: Attempting to Revive Rendering (jats-subarticle):C:\git\loe-posit\notebooks\01-data-preview.ipynb
+
+[NotebookContext]: Get Notebook:C:\git\loe-posit\notebooks\01-data-preview.ipynb
+
+[NotebookContext]: Attempting to Revive Rendering (jats-subarticle):C:\git\loe-posit\notebooks\01-data-preview.ipynb
+
+[NotebookContext]: Get Notebook:C:\git\loe-posit\notebooks\02-summary-stats.ipynb
+
+[NotebookContext]: Attempting to Revive Rendering (jats-subarticle):C:\git\loe-posit\notebooks\02-summary-stats.ipynb
+
+[NotebookContext]: Get Notebook:C:\git\loe-posit\notebooks\02-summary-stats.ipynb
+
+[NotebookContext]: Attempting to Revive Rendering (jats-subarticle):C:\git\loe-posit\notebooks\02-summary-stats.ipynb
+
+
+
+SassCache cleanup executing for C:\git\loe-posit\.quarto\quarto-session-temp302bd6fe04b5710d\sass
+
+[NotebookContext]: Starting Cleanup
+
+[NotebookContext]: Cleanup (html-preview):C:\git\loe-posit\notebooks\01-data-preview.ipynb
+
+[NotebookContext]: Deleting (C:\git\loe-posit\notebooks\01-data-preview-preview.html
+
+[NotebookContext]: Cleanup (html-preview):C:\git\loe-posit\notebooks\02-summary-stats.ipynb
+
+[NotebookContext]: Deleting (C:\git\loe-posit\notebooks\02-summary-stats-preview.html
+
+[NotebookContext]: Cleanup (rendered-ipynb):C:\git\loe-posit\notebooks\01-data-preview.ipynb
+
+[NotebookContext]: Deleting (C:\git\loe-posit\notebooks\01-data-preview.out.ipynb
+
+[NotebookContext]: Cleanup (rendered-ipynb):C:\git\loe-posit\notebooks\02-summary-stats.ipynb
+
+[NotebookContext]: Deleting (C:\git\loe-posit\notebooks\02-summary-stats.out.ipynb
+
+[publish][posit-connect-cloud] Bundle: 21 files, 331935 bytes compressed
+
+[publish][posit-connect-cloud] Uploading bundle (331935 bytes)
+
+[publish][posit-connect-cloud] Bundle uploaded successfully
+
+[publish][posit-connect-cloud] POST /contents/01a13ee2-8b05-7437-9d7a-db07deda2ed6/publish
+
+[publish][posit-connect-cloud] Revision status: publish_started
+
+[publish][posit-connect-cloud] Revision status: fetching
+
+[publish][posit-connect-cloud] Revision status: publishing
+
+[publish][posit-connect-cloud] Revision status: published
+
+SassCache cleanup executing for C:\Users\worthingtons\AppData\Local\quarto\sass
+
