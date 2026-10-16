@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite it using the metadata below."
+title: "John Baldessari - Exhibition Catalogue"
+type: software
+abstract: >-
+  Catalogue of works by John Baldessari shown at the Sprengel Museum Hannover,
+  sourced from an OCR-processed exhibition catalogue and published as part of
+  the Linked Open Exhibition workflow.
+authors:
+  - family-names: "Worthington"
+    given-names: "Simon"
+    email: "simon.worthington@tib.eu"
+    orcid: "https://orcid.org/0000-0002-8579-9717"
+    affiliation: "Hochschule Hannover - University of Applied Sciences and Arts (HsH); TIB"
+  - family-names: "Farr"
+    given-names: "Chloe"
+    orcid: "https://orcid.org/0009-0007-1146-6745"
+    affiliation: "TIB; University of Victoria"
+keywords:
+  - art
+  - exhibition
+  - catalogue
+license: "GPL-3.0-only"
+repository-code: "https://github.com/NFDI4Culture/John-Baldessari-Exhibition-Catalogue"
+url: "https://nfdi4culture.github.io/John-Baldessari-Exhibition-Catalogue/"
