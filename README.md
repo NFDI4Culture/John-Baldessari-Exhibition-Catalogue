@@ -62,3 +62,5 @@ This project includes GitHub Actions workflows to:
 
 - Execute notebooks and render-check Quarto content on pushes and PRs.
 - Publish the rendered manuscript to GitHub Pages on pushes to `main` or via manual workflow dispatch.
+
+
