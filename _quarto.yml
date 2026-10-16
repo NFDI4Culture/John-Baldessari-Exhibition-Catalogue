@@ -1,5 +1,13 @@
 project:
   type: manuscript
+  render:
+    - index.qmd
+    - artist-datamodel.qmd
+    - dnb-catalogue-datamodel.qmd
+    - exhibition-datamodel.qmd
+    - item-in-exhibition-datamodel.qmd
+    - the-guide.qmd
+    - catalogue-baldessari.qmd
 
 manuscript:
   article: index.qmd

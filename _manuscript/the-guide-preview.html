@@ -5,8 +5,10 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+    <meta name="dcterms.date" content="2026-10-16">
+    <meta name="description" content="A step by step guide for curators to create open catalogues for art exhibitions">
 
-    <title>Notebook: Artwork</title>
+    <title>A Curator’s Guide to Making Open Catalogues</title>
     <style>
       /* Default styles provided by pandoc.
       ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -24,41 +26,6 @@
         width: 0.8em;
         margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
         vertical-align: middle;
-      }
-      /* CSS for syntax highlighting */
-      html { -webkit-text-size-adjust: 100%; }
-      pre > code.sourceCode { white-space: pre; position: relative; }
-      pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-      pre > code.sourceCode > span:empty { height: 1.2em; }
-      .sourceCode { overflow: visible; }
-      code.sourceCode > span { color: inherit; text-decoration: inherit; }
-      div.sourceCode { margin: 1em 0; }
-      pre.sourceCode { margin: 0; }
-      @media screen {
-      div.sourceCode { overflow: auto; }
-      }
-      @media print {
-      pre > code.sourceCode { white-space: pre-wrap; }
-      pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-      }
-      pre.numberSource code
-        { counter-reset: source-line 0; }
-      pre.numberSource code > span
-        { position: relative; left: -4em; counter-increment: source-line; }
-      pre.numberSource code > span > a:first-child::before
-        { content: counter(source-line);
-          position: relative; left: -1em; text-align: right; vertical-align: baseline;
-          border: none; display: inline-block;
-          -webkit-touch-callout: none; -webkit-user-select: none;
-          -khtml-user-select: none; -moz-user-select: none;
-          -ms-user-select: none; user-select: none;
-          padding: 0 4px; width: 4em;
-        }
-      pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-      div.sourceCode
-        {   }
-      @media screen {
-      pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
       }
     </style>
 
@@ -135,7 +102,7 @@
             // if location was not changed in 100 ms, then there is no history back
             if(currentUrl === window.location.href){              
                 // redirect to site root
-                window.location.href = "...html";
+                window.location.href = "index.html";
             }
         }, 100);
       }
@@ -152,18 +119,18 @@
     </script>
 
     
-<script src="../site_libs/manuscript-notebook/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-62e2d20df198e8a01bb734742f2e28cf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/manuscript-notebook/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-62e2d20df198e8a01bb734742f2e28cf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
      
       </head>
 
@@ -171,15 +138,16 @@
     <div id="quarto-embed-header" class="headroom fixed-top bg-primary">
       
       <a onclick="window.quartoBackToArticle(); return false;" class="btn btn-primary quarto-back-link" href=""><i class="bi bi-caret-left"></i> Back to Article</a>
-      <h6><i class="bi bi-journal-code"></i> Notebook: Artwork</h6>
+      <h6><i class="bi bi-journal-code"></i> A Curator’s Guide to Making Open Catalogues</h6>
 
-            <a href="../notebooks/02-artworks.ipynb" class="btn btn-primary quarto-download-embed" download="02-artworks.ipynb">Download Notebook</a>
+            <a href="./the-guide.qmd" class="btn btn-primary quarto-download-embed" download="the-guide.qmd">Download Source</a>
           </div>
 
      <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Notebook: Artwork</h1>
+      <h1 class="title">A Curator’s Guide to Making Open Catalogues</h1>
+            <p class="subtitle lead">Linked Open Exhibition</p>
           </div>
 
     
@@ -189,6 +157,12 @@
         <div class="quarto-title-meta">
 
                 
+                <div>
+            <div class="quarto-title-meta-heading">Published</div>
+            <div class="quarto-title-meta-contents">
+              <p class="date">October 16, 2026</p>
+            </div>
+          </div>
           
                 
               </div>
@@ -203,132 +177,187 @@
     </div>  </div>
 </header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
 <div id="quarto-sidebar-toc-left" class="sidebar toc-left">
-  
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#making-linked-open-data-entries-in-wikidata-and-wikibase" id="toc-making-linked-open-data-entries-in-wikidata-and-wikibase" class="nav-link active" data-scroll-target="#making-linked-open-data-entries-in-wikidata-and-wikibase">1. Making Linked Open Data entries in Wikidata and Wikibase</a>
+  <ul class="collapse">
+  <li><a href="#wikidata" id="toc-wikidata" class="nav-link" data-scroll-target="#wikidata">Wikidata</a></li>
+  <li><a href="#how-to-add-an-item-to-wikidata" id="toc-how-to-add-an-item-to-wikidata" class="nav-link" data-scroll-target="#how-to-add-an-item-to-wikidata">How to add an item to Wikidata</a>
+  <ul class="collapse">
+  <li><a href="#notes-when-entering-statements" id="toc-notes-when-entering-statements" class="nav-link" data-scroll-target="#notes-when-entering-statements">Notes when entering statements</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#using-jupyter-notebooks-and-mybinder" id="toc-using-jupyter-notebooks-and-mybinder" class="nav-link" data-scroll-target="#using-jupyter-notebooks-and-mybinder">2. Using Jupyter Notebooks and MyBinder</a></li>
+  <li><a href="#entity-relationship-models-for-art-exhibitions" id="toc-entity-relationship-models-for-art-exhibitions" class="nav-link" data-scroll-target="#entity-relationship-models-for-art-exhibitions">3. Entity-relationship models for art exhibitions</a></li>
+  <li><a href="#quarto-publishing-for-exhibition-catalogues" id="toc-quarto-publishing-for-exhibition-catalogues" class="nav-link" data-scroll-target="#quarto-publishing-for-exhibition-catalogues">4. Quarto publishing for exhibition catalogues</a></li>
+  </ul>
+</nav>
 </div>
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
 </div>
 <main class="content quarto-banner-title-block" id="quarto-document-content">      
 
-     <div id="21c2c579" class="cell markdown">
-<p><a href="https://mybinder.org/v2/gh/NFDI4Culture/John-Baldessari-Exhibition-Catalogue/main?urlpath=lab/tree/notebooks">Launch on MyBinder</a></p>
-<p><a href="https://github.com/NFDI4Culture/John-Baldessari-Exhibition-Catalogue/blob/main/notebooks/02-artworks.ipynb">Notebook on GitHub</a></p>
-</div>
-<div id="96c5635c" class="cell markdown">
-<p>A Juypter Notebook for retreiving artwork information from Wikidata item <a href="https://www.wikidata.org/wiki/Q141747732">https://www.wikidata.org/wiki/Q141747732</a> | Exhibition title: while something is happening here, something else is happening there : works 1988 - 1999 (Exhibition)</p>
-</div>
-<div class="cell-container code-fold"><div class="cell-decorator"><pre>In [26]:</pre></div><div id="2acd4222" class="cell" data-execution_count="26">
-<details class="code-fold">
-<summary>Show code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> urllib.parse <span class="im">import</span> urlencode</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> urllib.request <span class="im">import</span> Request, urlopen</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>exhibition_id <span class="op">=</span> <span class="st">"Q141747732"</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>query <span class="op">=</span> <span class="ss">f"""</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ss">SELECT ?item ?itemLabel WHERE </span><span class="ch">{{</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ss">  wd:</span><span class="sc">{</span>exhibition_id<span class="sc">}</span><span class="ss"> wdt:P527 ?item .</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ss">  SERVICE wikibase:label </span><span class="ch">{{</span><span class="ss"> bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". </span><span class="ch">}}</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ch">}}</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ss">ORDER BY ?itemLabel</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="ss">LIMIT 100</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="ss">"""</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>endpoint <span class="op">=</span> <span class="st">"https://query.wikidata.org/sparql"</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>params <span class="op">=</span> urlencode({<span class="st">"query"</span>: query, <span class="st">"format"</span>: <span class="st">"json"</span>})</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>url <span class="op">=</span> <span class="ss">f"</span><span class="sc">{</span>endpoint<span class="sc">}</span><span class="ss">?</span><span class="sc">{</span>params<span class="sc">}</span><span class="ss">"</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>request <span class="op">=</span> Request(</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    url,</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    headers<span class="op">=</span>{</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Accept"</span>: <span class="st">"application/sparql-results+json"</span>,</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>        <span class="st">"User-Agent"</span>: <span class="st">"loe-posit-notebook/1.0 (contact: simon.worthington@tib.eu)"</span>,</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    },</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> urlopen(request, timeout<span class="op">=</span><span class="dv">60</span>) <span class="im">as</span> response:</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> json.loads(response.read().decode(<span class="st">"utf-8"</span>))</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>rows <span class="op">=</span> []</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> b <span class="kw">in</span> data[<span class="st">"results"</span>][<span class="st">"bindings"</span>]:</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    item_id <span class="op">=</span> b[<span class="st">"item"</span>][<span class="st">"value"</span>].rsplit(<span class="st">"/"</span>, <span class="dv">1</span>)[<span class="op">-</span><span class="dv">1</span>]</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    label <span class="op">=</span> b.get(<span class="st">"itemLabel"</span>, {}).get(<span class="st">"value"</span>, item_id)</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    rows.append({<span class="st">"item_id"</span>: item_id, <span class="st">"item"</span>: label})</span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>rows.sort(key<span class="op">=</span><span class="kw">lambda</span> r: r[<span class="st">"item"</span>].lower())</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Items listed as parts of exhibition </span><span class="sc">{</span>exhibition_id<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> rows:</span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> r <span class="kw">in</span> rows:</span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>r[<span class="st">'item_id'</span>]<span class="sc">}</span><span class="ss"> | </span><span class="sc">{</span>r[<span class="st">'item'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"No items were found as part of this exhibition."</span>)</span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">Total items: </span><span class="sc">{</span><span class="bu">len</span>(rows)<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output cell-output-stdout">
-<pre><code>Items listed as parts of exhibition Q141747732
-Q141749370 | Duck Pond Bar, National City, California
-
-Total items: 1</code></pre>
-</div>
-</div></div>
-<div class="cell-container code-fold"><div class="cell-decorator"><pre>In [27]:</pre></div><div id="409cf485" class="cell" data-execution_count="27">
-<details class="code-fold">
-<summary>Show code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> urllib.parse <span class="im">import</span> urlencode</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> urllib.request <span class="im">import</span> Request, urlopen</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>exhibition_id <span class="op">=</span> <span class="st">"Q141747732"</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>query <span class="op">=</span> <span class="ss">f"""</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="ss">SELECT ?artwork ?artworkLabel WHERE </span><span class="ch">{{</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="ss">  ?artwork wdt:P31 wd:Q3305213 ;</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="ss">           wdt:P608 wd:</span><span class="sc">{</span>exhibition_id<span class="sc">}</span><span class="ss"> .</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="ss">  SERVICE wikibase:label </span><span class="ch">{{</span><span class="ss"> bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". </span><span class="ch">}}</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="ch">}}</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="ss">ORDER BY ?artworkLabel</span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="ss">LIMIT 100</span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="ss">"""</span></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>endpoint <span class="op">=</span> <span class="st">"https://query.wikidata.org/sparql"</span></span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>params <span class="op">=</span> urlencode({<span class="st">"query"</span>: query, <span class="st">"format"</span>: <span class="st">"json"</span>})</span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>url <span class="op">=</span> <span class="ss">f"</span><span class="sc">{</span>endpoint<span class="sc">}</span><span class="ss">?</span><span class="sc">{</span>params<span class="sc">}</span><span class="ss">"</span></span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>request <span class="op">=</span> Request(</span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>    url,</span>
-<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>    headers<span class="op">=</span>{</span>
-<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Accept"</span>: <span class="st">"application/sparql-results+json"</span>,</span>
-<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>        <span class="st">"User-Agent"</span>: <span class="st">"loe-posit-notebook/1.0 (contact: simon.worthington@tib.eu)"</span>,</span>
-<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>    },</span>
-<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> urlopen(request, timeout<span class="op">=</span><span class="dv">60</span>) <span class="im">as</span> response:</span>
-<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> json.loads(response.read().decode(<span class="st">"utf-8"</span>))</span>
-<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>rows <span class="op">=</span> []</span>
-<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> b <span class="kw">in</span> data[<span class="st">"results"</span>][<span class="st">"bindings"</span>]:</span>
-<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>    artwork_id <span class="op">=</span> b[<span class="st">"artwork"</span>][<span class="st">"value"</span>].rsplit(<span class="st">"/"</span>, <span class="dv">1</span>)[<span class="op">-</span><span class="dv">1</span>]</span>
-<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>    label <span class="op">=</span> b.get(<span class="st">"artworkLabel"</span>, {}).get(<span class="st">"value"</span>, artwork_id)</span>
-<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>    rows.append({<span class="st">"artwork_id"</span>: artwork_id, <span class="st">"artwork"</span>: label})</span>
-<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a>rows.sort(key<span class="op">=</span><span class="kw">lambda</span> r: r[<span class="st">"artwork"</span>].lower())</span>
-<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Artworks associated with exhibition </span><span class="sc">{</span>exhibition_id<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> rows:</span>
-<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> r <span class="kw">in</span> rows:</span>
-<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>r[<span class="st">'artwork_id'</span>]<span class="sc">}</span><span class="ss"> | </span><span class="sc">{</span>r[<span class="st">'artwork'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"No artworks were found for this exhibition."</span>)</span>
-<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">Total artworks: </span><span class="sc">{</span><span class="bu">len</span>(rows)<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output cell-output-stdout">
-<pre><code>Artworks associated with exhibition Q141747732
-Q141749370 | Duck Pond Bar, National City, California
-
-Total artworks: 1</code></pre>
-</div>
-</div></div>
+       <p>The guide has four units:</p>
+<ol type="1">
+<li>Making Linked Open Data entries in Wikidata and Wikibase</li>
+<li>Using Jupyter Notebooks and MyBinder</li>
+<li>Entity-relationship models for art exhibitions</li>
+<li>Quarto publishing for exhibition catalogues</li>
+</ol>
+<section id="making-linked-open-data-entries-in-wikidata-and-wikibase" class="level1">
+<h1>1. Making Linked Open Data entries in Wikidata and Wikibase</h1>
+<section id="wikidata" class="level2">
+<h2 class="anchored" data-anchor-id="wikidata">Wikidata</h2>
+<p>The exercise is to make an artwork entry in Wikidata from the list generated by the OCR scan. The full artwork list from the exhibition catalogue OCR scan can be found in <a href="./catalogue-baldessari-preview.html">catalogue-baldessari.qmd</a>.</p>
+<p>Use the entity-relationship structure defined in <a href="./item-in-exhibition-datamodel-preview.html">item-in-exhibition-datamodel.qmd</a> as the reference model for describing artworks and their exhibition context in Wikidata and Wikibase.</p>
+<p>Here is an example artwork https://www.wikidata.org/wiki/Q141749370 (John Baldessari, “Duck Pond Bar, National City, California”, 1967)</p>
+</section>
+<section id="how-to-add-an-item-to-wikidata" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-add-an-item-to-wikidata">How to add an item to Wikidata</h2>
+<p>https://www.wikidata.org/ (Wikidata main page)</p>
+<ol type="1">
+<li>Sign in to Wikidata and choose the “Create a new item” option.</li>
+<li>Give the artwork a clear label and, if needed, a short description.</li>
+<li>Add the key statements for the work: title, type, date, materials, dimensions, and exhibition context.</li>
+<li>Use the relevant Wikidata properties, such as P1476 for title, P31 for instance of, and P571 for inception date.</li>
+<li>Save the item and check that the new record is consistent with the existing data model.</li>
+</ol>
+<p>There are the Statements to add about an item:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 7%">
+<col style="width: 11%">
+<col style="width: 17%">
+<col style="width: 15%">
+<col style="width: 17%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>No.</th>
+<th>Field</th>
+<th>Data type</th>
+<th>Wikidata</th>
+<th>CIDOC CRM</th>
+<th>Wikibase4Research</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td><strong>Instance of</strong></td>
+<td>Item</td>
+<td>P31:Q3305213 (artwork)</td>
+<td>E22_Man-Made_Object</td>
+<td>instance_of</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><strong>Title</strong></td>
+<td>Monolingual text</td>
+<td>P1476</td>
+<td>P102_has_title (E35_Title)</td>
+<td>title</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td><strong>Creator</strong></td>
+<td>Item</td>
+<td>P170</td>
+<td>P14_carried_out_by (E39_Actor)</td>
+<td>author</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><strong>Inception</strong></td>
+<td>Point in time</td>
+<td>P571</td>
+<td>P108_has_produced (E65_Creation)</td>
+<td>creation_date</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td><strong>Materials</strong></td>
+<td>Item</td>
+<td>P186</td>
+<td>P45_consists_of (E57_Material)</td>
+<td>material</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td><strong>Width</strong></td>
+<td>Quantity</td>
+<td>P2049</td>
+<td>P43_has_dimension (E54_Dimension)</td>
+<td>width</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td><strong>Height</strong></td>
+<td>Quantity</td>
+<td>P2048</td>
+<td>P43_has_dimension (E54_Dimension)</td>
+<td>height</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td><strong>Exhibition history</strong></td>
+<td>Item</td>
+<td>P608</td>
+<td>E7_Activity (exhibition event)</td>
+<td>exhibition_history</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td><strong>Commons category</strong></td>
+<td>String</td>
+<td>P373</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<section id="notes-when-entering-statements" class="level3">
+<h3 class="anchored" data-anchor-id="notes-when-entering-statements">Notes when entering statements</h3>
+<ul>
+<li><ol type="1">
+<li><strong>P31 (instance of)</strong>: usually a single main value is enough; add only the most specific artwork type and avoid conflicting classes.</li>
+</ol></li>
+<li><ol start="2" type="1">
+<li><strong>P1476 (title)</strong>: use the preferred title in its original language, and if needed add language qualifiers or a translated title as a second statement.</li>
+</ol></li>
+<li><ol start="3" type="1">
+<li><strong>P170 (creator)</strong>: if there are multiple contributors, add separate creator statements and consider a role qualifier such as P3831 to say whether the person was artist, photographer, or designer.</li>
+</ol></li>
+<li><ol start="4" type="1">
+<li><strong>P571 (inception)</strong>: record the date as precisely as possible; if only a period is known, use a time range or a general date instead of a guessed exact day.</li>
+</ol></li>
+<li><ol start="5" type="1">
+<li><strong>P186 (materials)</strong>: each material is usually added as its own statement and should point to a Wikidata item such as oil, canvas, bronze, or marble.</li>
+</ol></li>
+<li>6-7. <strong>P2048/P2049 (height/width)</strong>: these are quantity statements and must include a unit (for example cm or m) and a value; the unit should be consistent across related works.</li>
+<li><ol start="8" type="1">
+<li><strong>P608 (exhibition history)</strong>: this is an exhibition-item relationship, so the statement value should be an exhibition item; if dates are known, add them as qualifiers or separate event context.</li>
+</ol></li>
+<li><ol start="9" type="1">
+<li><strong>P373 (Commons category)</strong>: enter only the category name without the <code>Category:</code> prefix.</li>
+</ol></li>
+<li>General rule: for all 1-9, add a reference for the source of the statement, such as the catalogue entry, the OCR transcription, or a museum record, since these values are derived from catalogue evidence.</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="using-jupyter-notebooks-and-mybinder" class="level1">
+<h1>2. Using Jupyter Notebooks and MyBinder</h1>
+</section>
+<section id="entity-relationship-models-for-art-exhibitions" class="level1">
+<h1>3. Entity-relationship models for art exhibitions</h1>
+</section>
+<section id="quarto-publishing-for-exhibition-catalogues" class="level1">
+<h1>4. Quarto publishing for exhibition catalogues</h1>
+</section>
      </main>
 <!-- /main column -->  <script>
 
