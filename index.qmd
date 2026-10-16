@@ -32,7 +32,7 @@ abstract: |
 keywords: [art, exhibition, catalogue]
 ---
 
-# The orinial exhibition
+# The original exhibition
 
 Exhibition information (DNB publication record) is included for reference. https://d-nb.info/957409494
 
