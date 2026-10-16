@@ -10,6 +10,8 @@ format:
   html:
     toc: true
     number-sections: true
+    code-fold: true
+    code-summary: "Show code"
     include-after-body: dedupe-affiliations.html
   docx: default
 
@@ -20,4 +22,4 @@ execute:
   freeze: auto
 
 
-  
+

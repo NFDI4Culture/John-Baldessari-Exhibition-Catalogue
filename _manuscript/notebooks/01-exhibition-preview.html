@@ -215,7 +215,9 @@
 <div id="c2cc8b3f" class="cell markdown">
 <p><a href="https://mybinder.org/v2/gh/NFDI4Culture/John-Baldessari-Exhibition-Catalogue/main?urlpath=lab/tree/notebooks">Launch on MyBinder</a></p>
 </div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [1]:</pre></div><div id="1d3a2c79" class="cell" data-execution_count="1">
+<div class="cell-container code-fold"><div class="cell-decorator"><pre>In [3]:</pre></div><div id="1d3a2c79" class="cell" data-execution_count="3">
+<details class="code-fold">
+<summary>Show code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> urllib.parse <span class="im">import</span> urlencode</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> urllib.request <span class="im">import</span> Request, urlopen</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
@@ -307,6 +309,7 @@
 <span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">" | "</span>.join(<span class="bu">str</span>(r[h]).ljust(widths[h]) <span class="cf">for</span> h <span class="kw">in</span> headers))</span>
 <span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">Total rows: </span><span class="sc">{</span><span class="bu">len</span>(rows)<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>Wikidata item: Q141747732
 property_id | property         | value                                                                                   
