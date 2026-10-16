@@ -1,5 +1,5 @@
 ---
-title: "Item in Exhibition Data Model"
+title: "ER Model: Artwork in an Exhibition"
 subtitle: "Linked Open Exhibition"
 description: "A unified data model for artworks and items in exhibitions aligned with CIDOC CRM, Wikibase4Research, and Wikidata standards"
 date: today

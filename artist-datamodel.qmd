@@ -1,5 +1,5 @@
 ---
-title: "Artist Data Model"
+title: "ER Model: Artist"
 subtitle: "Linked Open Exhibition"
 description: "A unified data model for artists aligned with CIDOC CRM, Wikibase4Research, and Wikidata standards"
 date: today
