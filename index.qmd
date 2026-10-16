@@ -1,5 +1,5 @@
 ---
-title: "John Baldessari — Exhibition Catalogue X"
+title: "John Baldessari — Exhibition Catalogue"
 affiliations:
   - id: "inst1"
     name: "Hochschule Hannover - University of Applied Sciences and Arts (HsH)"
