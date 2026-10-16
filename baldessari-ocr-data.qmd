@@ -1,0 +1,33 @@
+---
+title: "Baldessari OCR Data"
+format:
+  html:
+    toc: false
+execute:
+  echo: false
+---
+
+From: https://nfdi4culture.github.io/linked-open-exhibition/catalogue-baldessari.html 
+
+This table is generated directly from the CSV file in the project.
+
+```{python}
+import pandas as pd
+from IPython.display import HTML
+
+csv_path = "data/output-plan-b-readable.csv"
+df = pd.read_csv(csv_path)
+
+# Keep the table compact and readable for the page.
+preview = df.head(25).copy()
+preview.index = range(1, len(preview) + 1)
+
+HTML(
+    preview.to_html(
+        classes="table table-sm table-striped table-hover",
+        border=0,
+        index=True,
+        escape=False,
+    )
+)
+```

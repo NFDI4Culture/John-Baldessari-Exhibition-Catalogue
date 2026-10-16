@@ -7,7 +7,7 @@ project:
     - exhibition-datamodel.qmd
     - item-in-exhibition-datamodel.qmd
     - the-guide.qmd
-    - catalogue-baldessari.qmd
+    - baldessari-ocr-data.qmd
 
 manuscript:
   article: index.qmd

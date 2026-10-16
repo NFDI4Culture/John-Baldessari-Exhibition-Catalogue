@@ -34,7 +34,7 @@ https://www.wikidata.org/  (Wikidata main page)
 
 There are the minimum Statements to add about an item:
 
-NB Exhibition history should be added as an item linking to the specific exhibition event, rather than just a text description. 
+NB Exhibition history should be added as an item linking to the specific exhibition event, rather than just a text description. 'while something is happening here, something else is happening there : works 1988 - 1999' https://www.wikidata.org/wiki/Q141747732
 
 | No. | Field | Data type | Wikidata | CIDOC CRM | Wikibase4Research |
 |-----|-------|-----------|----------|-----------|-------------------|
