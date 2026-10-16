@@ -33,7 +33,7 @@ jobs:
       - name: Execute notebooks
         run: |
           jupyter nbconvert --to notebook --execute notebooks/01-exhibition.ipynb --output 01-exhibition.executed.ipynb
-          jupyter nbconvert --to notebook --execute notebooks/02-summary-stats.ipynb --output 02-summary-stats.executed.ipynb
+          jupyter nbconvert --to notebook --execute notebooks/02-artworks.ipynb --output 02-artworks.executed.ipynb
 
       - name: Render manuscript project
         run: quarto render

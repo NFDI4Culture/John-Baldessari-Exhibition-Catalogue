@@ -47,8 +47,8 @@ This project is configured for:
 
 The computational workflow is documented in the notebook set:
 
-- [Data Preview](notebooks/01-exhibition.ipynb)
-- [Summary Statistics](notebooks/02-summary-stats.ipynb)
+- [Exhibition Data](notebooks/01-exhibition.ipynb)
+- [Artworks](notebooks/02-artworks.ipynb)
 
 These notebooks are discoverable from the manuscript website and can be
 downloaded by readers.
