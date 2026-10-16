@@ -5,11 +5,6 @@ Quarto manuscript project with Python Jupyter notebooks, ready for:
 - Publishing from GitHub to Posit Connect Cloud.
 - Interactive notebook execution on MyBinder.
 
-## Build Status
-
-[![Quarto Render Check](https://github.com/mrchristian/loe-posit/actions/workflows/quarto-check.yml/badge.svg?branch=main)](https://github.com/mrchristian/loe-posit/actions/workflows/quarto-check.yml)
-[![Connect Cloud Publish](https://github.com/mrchristian/loe-posit/actions/workflows/connect-cloud-publish.yml/badge.svg?branch=main)](https://github.com/mrchristian/loe-posit/actions/workflows/connect-cloud-publish.yml)
-
 ## Quick Start
 
 1. Install Quarto (1.8+ recommended).
