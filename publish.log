@@ -15,17 +15,17 @@ Rendering for publish:
 
 Loaded deno-dom-native
 
-[NotebookContext]: Get Notebook:C:\git\loe-posit\notebooks\01-data-preview.ipynb
+[NotebookContext]: Get Notebook:C:\git\loe-posit\notebooks\01-exhibition.ipynb
 
-[NotebookContext]: Attempting to Revive Rendering (html-preview):C:\git\loe-posit\notebooks\01-data-preview.ipynb
+[NotebookContext]: Attempting to Revive Rendering (html-preview):C:\git\loe-posit\notebooks\01-exhibition.ipynb
 
-[NotebookContext]: Attempting to Revive Rendering (jats-subarticle):C:\git\loe-posit\notebooks\01-data-preview.ipynb
+[NotebookContext]: Attempting to Revive Rendering (jats-subarticle):C:\git\loe-posit\notebooks\01-exhibition.ipynb
 
-[NotebookContext]: Attempting to Revive Rendering (rendered-ipynb):C:\git\loe-posit\notebooks\01-data-preview.ipynb
+[NotebookContext]: Attempting to Revive Rendering (rendered-ipynb):C:\git\loe-posit\notebooks\01-exhibition.ipynb
 
-[NotebookContext]: Attempting to Revive Rendering (qmd-ipynb):C:\git\loe-posit\notebooks\01-data-preview.ipynb
+[NotebookContext]: Attempting to Revive Rendering (qmd-ipynb):C:\git\loe-posit\notebooks\01-exhibition.ipynb
 
-[NotebookContext]: Resolving ExecutedFile (rendered-ipynb):C:\git\loe-posit\notebooks\01-data-preview.ipynb
+[NotebookContext]: Resolving ExecutedFile (rendered-ipynb):C:\git\loe-posit\notebooks\01-exhibition.ipynb
 
 Windows: Using code page 1252
 
@@ -255,7 +255,7 @@ trace] Parsed [Plain [Str "C:",RawInline (Format "tex") "\\Users",RawInlin at li
 [trace] Parsed [Plain [Str "auto"]] at line 1
 [trace] Parsed [Plain [Str "../index.qmd"]] at line 1
 [trace] Parsed [Plain [Str "index-meca.zip"]] at line 1
-[trace] Parsed [Plain [Str "../notebooks/01-data-preview.ipynb"]] at line 1
+[trace] Parsed [Plain [Str "../notebooks/01-exhibition.ipynb"]] at line 1
 [trace] Parsed [Plain [Str "../notebooks/02-summary-stats.ipynb
 "]] at line 1
 [trace] Parsed [Plain [Str "C:",RawInline (Format "tex") "\\git",RawInline  at line 1
@@ -498,9 +498,9 @@ an 1) [Plain [Str "0.940565"]],Cell ("",[],[]) AlignDefault (RowSpan 1) (ColSpan
 
 [execProcess] Success: true, code: 0
 
-[NotebookContext]: Resolving ExecutedFile (html-preview):C:\git\loe-posit\notebooks\01-data-preview.ipynb
+[NotebookContext]: Resolving ExecutedFile (html-preview):C:\git\loe-posit\notebooks\01-exhibition.ipynb
 
-[NotebookContext]: Add Notebook Metadata:C:\git\loe-posit\notebooks\01-data-preview.ipynb
+[NotebookContext]: Add Notebook Metadata:C:\git\loe-posit\notebooks\01-exhibition.ipynb
 
 Creating SassCache at C:\git\loe-posit\.quarto\quarto-session-temp302bd6fe04b5710d\sass
 
@@ -602,14 +602,14 @@ trace] Parsed [Plain [Str "none"]] at line 1
 [trace] Parsed [Plain [Str "auto"]] at line 1
 [trace] Parsed [Plain [Str "../index.qmd"]] at line 1
 [trace] Parsed [Plain [Str "index-meca.zip"]] at line 1
-[trace] Parsed [Plain [Str "../notebooks/01-data-preview.ipynb"]] at line 1
+[trace] Parsed [Plain [Str "../notebooks/01-exhibition.ipynb"]] at line 1
 [trace] Parsed [Plain [Str "../notebooks/02-summary-stats.ipynb"]] at line 1
 [trace] Parsed [Plain [Str "..",RawInline (Format "tex") "\\index",Str ".ht at line 1
 [trace] Parsed [Plain [Str "Back",Space,Str "to",Space,Str "Article"]] at line 1
-[trace] Parsed [Plain [Str "01-data-preview.ipynb"]] at line 1
-[trace] Parsed [Plain [Str "01-data-preview.ipynb"]] at line 1
+[trace] Parsed [Plain [Str "01-exhibition.ipynb"]] at line 1
+[trace] Parsed [Plain [Str "01-exhibition.ipynb"]] at line 1
 [trace] Parsed [Plain [Str "Download",Space,Str "Notebook"]] at line 1
-[trace] Parsed [Plain [Str "01-data-preview.ipynb"]] at line 1
+[trace] Parsed [Plain [Str "01-exhibition.ipynb"]] at line 1
 [trace] Parsed [Plain [Str "Data",Space,Str "Preview"]] at line 1
 n [Str "Data",Space,Str "Preview"]] at line 1
 [trace] Parsed [Plain [Str "manuscript"]] at line 1
@@ -674,9 +674,9 @@ O] Not rendering RawInline (Format "tex") "\\git\\loe"
 
 [execProcess] Success: true, code: 0
 
-[NotebookContext]: Add Rendering (rendered-ipynb):C:\git\loe-posit\notebooks\01-data-preview.ipynb
+[NotebookContext]: Add Rendering (rendered-ipynb):C:\git\loe-posit\notebooks\01-exhibition.ipynb
 
-[NotebookContext]: Add Rendering (html-preview):C:\git\loe-posit\notebooks\01-data-preview.ipynb
+[NotebookContext]: Add Rendering (html-preview):C:\git\loe-posit\notebooks\01-exhibition.ipynb
 
 [NotebookContext]: Get Notebook:C:\git\loe-posit\notebooks\02-summary-stats.ipynb
 
@@ -896,7 +896,7 @@ line 1
 [trace] Parsed [Plai
 n [Str "index-meca.zip"]] at line 1
 
-[trace] Parsed [Plain [Str "../notebooks/01-data-preview.ipynb"]] at line 1
+[trace] Parsed [Plain [Str "../notebooks/01-exhibition.ipynb"]] at line 1
 [trace] Parsed [Plain [Str "../not
 ebooks/02-summary-stats.ipynb"]] at line 1
 
@@ -1250,7 +1250,7 @@ rsed [Plain [Str "long"]] at line 1
 
 [trace] Parsed [Plain [Str "index-meca.zip"]] at line 1
 
-[trace] Parsed [Plain [Str "../notebooks/01-data-preview.ipynb"]] at line 1
+[trace] Parsed [Plain [Str "../notebooks/01-exhibition.ipynb"]] at line 1
 
 [trace] Parsed [Plain [Str "../n
 otebooks/02-summary-stats.ipynb"]] at line 1
@@ -1629,7 +1629,7 @@ to"]] at line 1
 
 [trace] Parsed [Plain [Str "index-meca.zip"]] at line 1
 
-[trace] Parsed [Plain [Str "notebooks/01-data-preview.ipynb"]] at line 1
+[trace] Parsed [Plain [Str "notebooks/01-exhibition.ipynb"]] at line 1
 
 [trace] Parsed [Plain [Str "notebooks/02-summary-stats.ipynb"]] at line 1
 
@@ -1891,21 +1891,21 @@ mat "tex") "\\notebooks"
 
 [execProcess] Success: true, code: 0
 
-[NotebookContext]: Get Notebook:C:\git\loe-posit\notebooks\01-data-preview.ipynb
+[NotebookContext]: Get Notebook:C:\git\loe-posit\notebooks\01-exhibition.ipynb
 
-[NotebookContext]: Attempting to Revive Rendering (jats-subarticle):C:\git\loe-posit\notebooks\01-data-preview.ipynb
+[NotebookContext]: Attempting to Revive Rendering (jats-subarticle):C:\git\loe-posit\notebooks\01-exhibition.ipynb
 
 [NotebookContext]: Get Notebook:C:\git\loe-posit\notebooks\02-summary-stats.ipynb
 
 [NotebookContext]: Attempting to Revive Rendering (jats-subarticle):C:\git\loe-posit\notebooks\02-summary-stats.ipynb
 
-[NotebookContext]: Get Notebook:C:\git\loe-posit\notebooks\01-data-preview.ipynb
+[NotebookContext]: Get Notebook:C:\git\loe-posit\notebooks\01-exhibition.ipynb
 
-[NotebookContext]: Attempting to Revive Rendering (jats-subarticle):C:\git\loe-posit\notebooks\01-data-preview.ipynb
+[NotebookContext]: Attempting to Revive Rendering (jats-subarticle):C:\git\loe-posit\notebooks\01-exhibition.ipynb
 
-[NotebookContext]: Get Notebook:C:\git\loe-posit\notebooks\01-data-preview.ipynb
+[NotebookContext]: Get Notebook:C:\git\loe-posit\notebooks\01-exhibition.ipynb
 
-[NotebookContext]: Attempting to Revive Rendering (jats-subarticle):C:\git\loe-posit\notebooks\01-data-preview.ipynb
+[NotebookContext]: Attempting to Revive Rendering (jats-subarticle):C:\git\loe-posit\notebooks\01-exhibition.ipynb
 
 [NotebookContext]: Get Notebook:C:\git\loe-posit\notebooks\02-summary-stats.ipynb
 
@@ -1921,17 +1921,17 @@ SassCache cleanup executing for C:\git\loe-posit\.quarto\quarto-session-temp302b
 
 [NotebookContext]: Starting Cleanup
 
-[NotebookContext]: Cleanup (html-preview):C:\git\loe-posit\notebooks\01-data-preview.ipynb
+[NotebookContext]: Cleanup (html-preview):C:\git\loe-posit\notebooks\01-exhibition.ipynb
 
-[NotebookContext]: Deleting (C:\git\loe-posit\notebooks\01-data-preview-preview.html
+[NotebookContext]: Deleting (C:\git\loe-posit\notebooks\01-exhibition-preview.html
 
 [NotebookContext]: Cleanup (html-preview):C:\git\loe-posit\notebooks\02-summary-stats.ipynb
 
 [NotebookContext]: Deleting (C:\git\loe-posit\notebooks\02-summary-stats-preview.html
 
-[NotebookContext]: Cleanup (rendered-ipynb):C:\git\loe-posit\notebooks\01-data-preview.ipynb
+[NotebookContext]: Cleanup (rendered-ipynb):C:\git\loe-posit\notebooks\01-exhibition.ipynb
 
-[NotebookContext]: Deleting (C:\git\loe-posit\notebooks\01-data-preview.out.ipynb
+[NotebookContext]: Deleting (C:\git\loe-posit\notebooks\01-exhibition.out.ipynb
 
 [NotebookContext]: Cleanup (rendered-ipynb):C:\git\loe-posit\notebooks\02-summary-stats.ipynb
 
@@ -1954,4 +1954,5 @@ SassCache cleanup executing for C:\git\loe-posit\.quarto\quarto-session-temp302b
 [publish][posit-connect-cloud] Revision status: published
 
 SassCache cleanup executing for C:\Users\worthingtons\AppData\Local\quarto\sass
+
 
