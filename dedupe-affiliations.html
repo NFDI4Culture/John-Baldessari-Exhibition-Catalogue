@@ -1,0 +1,28 @@
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const seen = new Set();
+  const nodes = document.querySelectorAll(
+    ".quarto-title-meta-author p.affiliation"
+  );
+
+  nodes.forEach((node) => {
+    const label = node.textContent.trim();
+    if (!label) return;
+
+    if (seen.has(label)) {
+      node.remove();
+      return;
+    }
+
+    seen.add(label);
+  });
+
+  document
+    .querySelectorAll(".quarto-title-meta-author .quarto-title-meta-contents")
+    .forEach((container) => {
+      if (!container.querySelector("p.author") && !container.querySelector("p.affiliation")) {
+        container.remove();
+      }
+    });
+});
+</script>

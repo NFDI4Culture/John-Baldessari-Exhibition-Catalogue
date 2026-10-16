@@ -1,8 +1,8 @@
-# loe-posit
+# John Baldessari — Exhibition Catalogue
 
 Quarto manuscript project with Python Jupyter notebooks, ready for:
 
-- Publishing from GitHub to Posit Connect Cloud.
+- Publishing from GitHub Pages.
 - Interactive notebook execution on MyBinder.
 
 ## Quick Start
@@ -28,24 +28,25 @@ quarto render
 - `notebooks/`: supporting Jupyter notebooks.
 - `requirements.txt` and `runtime.txt`: reproducible Python environment for Binder.
 
-## Publish to Posit Connect Cloud (GitHub Source)
+## Publish to GitHub Pages
 
 1. Push this repository to GitHub.
-1. In Posit Connect Cloud, create new content from GitHub.
-1. Select repository `mrchristian/loe-posit`, branch `main`, and configure as Quarto content.
-1. Trigger initial deployment.
+1. In repository Settings, open Pages and set Source to GitHub Actions.
+1. Run the `github-pages-publish.yml` workflow (or push to `main`).
 1. Future pushes to `main` auto-redeploy.
 
 Notes:
 
-- `_publish.yml` is generated when using `quarto publish` CLI flow. If used later, commit `_publish.yml` so destination metadata is shared across collaborators.
+- The publish workflow renders with Quarto and deploys the `_manuscript/` output to GitHub Pages.
 - Never commit account tokens or credentials.
 
 ## MyBinder
 
 Launch Binder (after pushing to GitHub):
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mrchristian/loe-posit/main?urlpath=lab/tree/notebooks)
+https://mybinder.org/v2/gh/NFDI4Culture/John-Baldessari-Exhibition-Catalogue/main?urlpath=lab/tree/notebooks
+
+If you fork this repository, update the Binder URL above to use your own GitHub owner/repository path.
 
 Binder uses:
 
@@ -60,4 +61,4 @@ validated by CI and local development setup.
 This project includes GitHub Actions workflows to:
 
 - Execute notebooks and render-check Quarto content on pushes and PRs.
-- Optionally publish to Posit Connect Cloud via a manual workflow dispatch.
+- Publish the rendered manuscript to GitHub Pages on pushes to `main` or via manual workflow dispatch.

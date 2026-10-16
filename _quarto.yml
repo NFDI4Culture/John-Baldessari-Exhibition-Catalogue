@@ -10,6 +10,7 @@ format:
   html:
     toc: true
     number-sections: true
+    include-after-body: dedupe-affiliations.html
   docx: default
 
 execute:
