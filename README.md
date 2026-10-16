@@ -30,18 +30,16 @@ quarto render
 
 ## Publish to GitHub Pages
 
-1. Push this repository to GitHub.
-1. In repository Settings, open Pages and set Source to GitHub Actions.
-1. Run the `github-pages-publish.yml` workflow (or push to `main`).
-1. Future pushes to `main` auto-redeploy.
-
-Manual CLI publish (optional):
+1. Render locally:
 
 ```bash
-quarto publish gh-pages --no-prompt --no-browser
+quarto render
 ```
 
-Run the manual publish command from the `main` branch.
+1. Commit your changes.
+1. In repository Settings, open Pages and set Source to GitHub Actions.
+1. Push to `main`.
+1. Future pushes to `main` auto-redeploy.
 
 Notes:
 
@@ -69,6 +67,6 @@ validated by CI and local development setup.
 This project includes GitHub Actions workflows to:
 
 - Execute notebooks and render-check Quarto content on pushes and PRs.
-- Publish the rendered manuscript to GitHub Pages on pushes to `main` or via manual workflow dispatch.
+- Publish the rendered manuscript to GitHub Pages on pushes to `main`.
 
 
