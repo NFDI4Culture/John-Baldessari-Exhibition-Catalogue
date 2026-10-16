@@ -35,6 +35,14 @@ quarto render
 1. Run the `github-pages-publish.yml` workflow (or push to `main`).
 1. Future pushes to `main` auto-redeploy.
 
+Manual CLI publish (optional):
+
+```bash
+quarto publish gh-pages --no-prompt --no-browser
+```
+
+Run the manual publish command from the `main` branch.
+
 Notes:
 
 - The publish workflow renders with Quarto and deploys the `_manuscript/` output to GitHub Pages.
