@@ -1,0 +1,13 @@
+---
+title: "Generated Catalogue"
+subtitle: "while something is happening here, something else is happening there"
+format:
+  html:
+    toc: false
+    code-fold: true
+    code-summary: "Show code"
+execute:
+  echo: false
+---
+
+TBC
