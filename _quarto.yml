@@ -2,13 +2,13 @@ project:
   type: manuscript
   render:
     - index.qmd
+    - item-in-exhibition-datamodel.qmd
+    - exhibition-datamodel.qmd
     - artist-datamodel.qmd
     - dnb-catalogue-datamodel.qmd
-    - exhibition-datamodel.qmd
-    - item-in-exhibition-datamodel.qmd
     - 00-the-guide.qmd
+    - 01-baldessari-ocr-data.qmd
     - 02-catalogue.qmd
-    - "Catalogue Out.qmd"
     - references.qmd
 
 manuscript:

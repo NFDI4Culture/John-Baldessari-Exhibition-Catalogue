@@ -1,5 +1,5 @@
 ---
-title: "Generated Catalogue"
+title: "Data Out: Catalogue Publication"
 subtitle: "while something is happening here, something else is happening there"
 format:
   html:
@@ -11,3 +11,5 @@ execute:
 ---
 
 TBC
+
+

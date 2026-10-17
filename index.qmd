@@ -56,9 +56,9 @@ Exhibition information (DNB publication record) is included for reference. [http
 
 Workflows can be from active curating project or retrospective documentation of past exhibitions.
 
-### Active projects woorkflow
+### Active projects workflow
 
-TBC 
+Enter data manually into Wikidata, see: Curators' Guide 
 
 ### Retrospective workflow
 
