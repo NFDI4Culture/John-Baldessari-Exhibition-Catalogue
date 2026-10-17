@@ -8,6 +8,7 @@ project:
     - item-in-exhibition-datamodel.qmd
     - the-guide.qmd
     - baldessari-ocr-data.qmd
+    - references.qmd
 
 manuscript:
   article: index.qmd

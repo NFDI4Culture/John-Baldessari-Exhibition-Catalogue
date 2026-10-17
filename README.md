@@ -72,6 +72,14 @@ Binder uses:
 Binder is intended for interactive notebook execution. Quarto rendering is
 validated by CI and local development setup.
 
+## GitHub Codespaces
+
+Open the project in GitHub Codespaces:
+
+[Launch in GitHub Codespaces](https://codespaces.new/NFDI4Culture/John-Baldessari-Exhibition-Catalogue)
+
+This provides a ready-to-use cloud development environment for the Quarto and notebook workflow without requiring local installation.
+
 ## CI
 
 This project includes GitHub Actions workflows to:

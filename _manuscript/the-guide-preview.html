@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
     <meta name="dcterms.date" content="2026-10-17">
-    <meta name="description" content="A step by step guide for curators to create open catalogues for art exhibitions">
+    <meta name="description" content="A step by step guide for curators to create open accesscatalogues for art exhibitions">
 
-    <title>A Curator’s Guide to Making Open Catalogues</title>
+    <title>Curators’ Guide</title>
     <style>
       /* Default styles provided by pandoc.
       ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -138,7 +138,7 @@
     <div id="quarto-embed-header" class="headroom fixed-top bg-primary">
       
       <a onclick="window.quartoBackToArticle(); return false;" class="btn btn-primary quarto-back-link" href=""><i class="bi bi-caret-left"></i> Back to Article</a>
-      <h6><i class="bi bi-journal-code"></i> A Curator’s Guide to Making Open Catalogues</h6>
+      <h6><i class="bi bi-journal-code"></i> Curators’ Guide</h6>
 
             <a href="./the-guide.qmd" class="btn btn-primary quarto-download-embed" download="the-guide.qmd">Download Source</a>
           </div>
@@ -146,8 +146,8 @@
      <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">A Curator’s Guide to Making Open Catalogues</h1>
-            <p class="subtitle lead">Linked Open Exhibition</p>
+      <h1 class="title">Curators’ Guide</h1>
+            <p class="subtitle lead">Step-by-step instructions for using the Linked Open Exhibition model to create open access catalogues records for art exhibitions</p>
           </div>
 
     
@@ -181,13 +181,14 @@
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#making-linked-open-data-entries-in-wikidata-and-wikibase" id="toc-making-linked-open-data-entries-in-wikidata-and-wikibase" class="nav-link active" data-scroll-target="#making-linked-open-data-entries-in-wikidata-and-wikibase">1. Making Linked Open Data entries in Wikidata and Wikibase</a>
+  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a>
+  <ul class="collapse">
+  <li><a href="#learning-point" id="toc-learning-point" class="nav-link" data-scroll-target="#learning-point">Learning point</a></li>
+  </ul></li>
+  <li><a href="#making-linked-open-data-entries-in-wikidata-and-wikibase" id="toc-making-linked-open-data-entries-in-wikidata-and-wikibase" class="nav-link" data-scroll-target="#making-linked-open-data-entries-in-wikidata-and-wikibase">1. Making Linked Open Data entries in Wikidata and Wikibase</a>
   <ul class="collapse">
   <li><a href="#wikidata" id="toc-wikidata" class="nav-link" data-scroll-target="#wikidata">Wikidata</a></li>
-  <li><a href="#how-to-add-an-item-to-wikidata" id="toc-how-to-add-an-item-to-wikidata" class="nav-link" data-scroll-target="#how-to-add-an-item-to-wikidata">How to add an item to Wikidata</a>
-  <ul class="collapse">
-  <li><a href="#notes-when-entering-statements" id="toc-notes-when-entering-statements" class="nav-link" data-scroll-target="#notes-when-entering-statements">Notes when entering statements</a></li>
-  </ul></li>
+  <li><a href="#how-to-add-an-item-to-wikidata" id="toc-how-to-add-an-item-to-wikidata" class="nav-link" data-scroll-target="#how-to-add-an-item-to-wikidata">How to add an item to Wikidata</a></li>
   </ul></li>
   <li><a href="#using-jupyter-notebooks-and-mybinder" id="toc-using-jupyter-notebooks-and-mybinder" class="nav-link" data-scroll-target="#using-jupyter-notebooks-and-mybinder">2. Using Jupyter Notebooks and MyBinder</a></li>
   <li><a href="#entity-relationship-models-for-art-exhibitions" id="toc-entity-relationship-models-for-art-exhibitions" class="nav-link" data-scroll-target="#entity-relationship-models-for-art-exhibitions">3. Entity-relationship models for art exhibitions</a></li>
@@ -199,23 +200,37 @@
 </div>
 <main class="content quarto-banner-title-block" id="quarto-document-content">      
 
-       <p>The guide has four units:</p>
+       <p>All materials here are open-licenced unless otherwise stated and follow FAIR Data principles and follow UNESCO Open Science recommendations.</p>
+<section id="purpose" class="level2">
+<h2 class="anchored" data-anchor-id="purpose">Purpose</h2>
+<p>The purpose of this guide is to provide curators with a structured approach to creating open access catalogue records for art exhibitions using the Linked Open Exhibition model. It covers the process from entering data into Wikidata and Wikibase, to using computational tools for managing and publishing exhibition information.</p>
+<p>The cataloguing process is aligned to CIDOC CRM and other relevant cultural heritage data standards.</p>
+<section id="learning-point" class="level3">
+<h3 class="anchored" data-anchor-id="learning-point">Learning point</h3>
+<ul>
+<li>How to make Linked Open Data entries for artworks and exhibitions in Wikidata and Wikibase</li>
+<li>Use computational publishing tools to manage and publish exhibition information, e.g., Jupyter Notebooks, Quarto, and open-weight/source LLMs</li>
+<li>Understand the entity-relationship models for art exhibitions: e.g., CIDOC CRM and Linked Art</li>
+</ul>
+<p>The guide has four parts:</p>
 <ol type="1">
 <li>Making Linked Open Data entries in Wikidata and Wikibase</li>
 <li>Using Jupyter Notebooks and MyBinder</li>
 <li>Entity-relationship models for art exhibitions</li>
 <li>Quarto publishing for exhibition catalogues</li>
 </ol>
-<section id="making-linked-open-data-entries-in-wikidata-and-wikibase" class="level1">
-<h1>1. Making Linked Open Data entries in Wikidata and Wikibase</h1>
-<section id="wikidata" class="level2">
-<h2 class="anchored" data-anchor-id="wikidata">Wikidata</h2>
+</section>
+</section>
+<section id="making-linked-open-data-entries-in-wikidata-and-wikibase" class="level2">
+<h2 class="anchored" data-anchor-id="making-linked-open-data-entries-in-wikidata-and-wikibase">1. Making Linked Open Data entries in Wikidata and Wikibase</h2>
+<section id="wikidata" class="level3">
+<h3 class="anchored" data-anchor-id="wikidata">Wikidata</h3>
 <p>The exercise is to make an artwork entry in Wikidata from the list generated by the OCR scan. The full artwork list from the exhibition catalogue OCR scan can be found in <a href="catalogue-baldessari.qmd">catalogue-baldessari.qmd</a>.</p>
 <p>Use the entity-relationship structure defined in <a href="./item-in-exhibition-datamodel-preview.html">item-in-exhibition-datamodel.qmd</a> as the reference model for describing artworks and their exhibition context in Wikidata and Wikibase.</p>
 <p>Here is an example artwork https://www.wikidata.org/wiki/Q141749370 (John Baldessari, “Duck Pond Bar, National City, California”, 1967)</p>
 </section>
-<section id="how-to-add-an-item-to-wikidata" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-add-an-item-to-wikidata">How to add an item to Wikidata</h2>
+<section id="how-to-add-an-item-to-wikidata" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-add-an-item-to-wikidata">How to add an item to Wikidata</h3>
 <p>https://www.wikidata.org/ (Wikidata main page)</p>
 <ol type="1">
 <li>Sign in to Wikidata and choose the “Create a new item” option.</li>
@@ -320,8 +335,8 @@
 </tr>
 </tbody>
 </table>
-<section id="notes-when-entering-statements" class="level3">
-<h3 class="anchored" data-anchor-id="notes-when-entering-statements">Notes when entering statements</h3>
+<section id="notes-when-entering-statements" class="level4">
+<h4 class="anchored" data-anchor-id="notes-when-entering-statements">Notes when entering statements</h4>
 <ul>
 <li><ol type="1">
 <li><strong>P31 (instance of)</strong>: usually a single main value is enough; add only the most specific artwork type and avoid conflicting classes.</li>
@@ -350,14 +365,22 @@
 </section>
 </section>
 </section>
-<section id="using-jupyter-notebooks-and-mybinder" class="level1">
-<h1>2. Using Jupyter Notebooks and MyBinder</h1>
+<section id="using-jupyter-notebooks-and-mybinder" class="level2">
+<h2 class="anchored" data-anchor-id="using-jupyter-notebooks-and-mybinder">2. Using Jupyter Notebooks and MyBinder</h2>
+<p>A Jupyter Notebook is an interactive document that combines narrative text, executable code, and output in a single file. It is especially useful for cleaning and transforming catalogue data, checking OCR results, and making the workflow transparent and reproducible. In this project, the artworks example is <a href="https://github.com/NFDI4Culture/John-Baldessari-Exhibition-Catalogue/blob/main/notebooks/02-artworks.ipynb">notebooks/02-artworks.ipynb</a>, which shows artworks related to an exhibition as entered on Wikidata.</p>
 </section>
-<section id="entity-relationship-models-for-art-exhibitions" class="level1">
-<h1>3. Entity-relationship models for art exhibitions</h1>
+<section id="entity-relationship-models-for-art-exhibitions" class="level2">
+<h2 class="anchored" data-anchor-id="entity-relationship-models-for-art-exhibitions">3. Entity-relationship models for art exhibitions</h2>
+<p>The project currently includes the following entity-relationship models:</p>
+<ul>
+<li><a href="./artist-datamodel-preview.html">artist-datamodel.qmd</a>: describes the artist as an agent with identity, role, and provenance information.</li>
+<li><a href="./item-in-exhibition-datamodel-preview.html">item-in-exhibition-datamodel.qmd</a>: models the relationship between an artwork and the exhibition event in which it appears.</li>
+<li><a href="./exhibition-datamodel-preview.html">exhibition-datamodel.qmd</a>: defines the exhibition as an event with title, dates, venue, and institutional context.</li>
+<li><a href="./dnb-catalogue-datamodel-preview.html">dnb-catalogue-datamodel.qmd</a>: represents the catalogue record and its bibliographic metadata as a source for exhibition information.</li>
+</ul>
 </section>
-<section id="quarto-publishing-for-exhibition-catalogues" class="level1">
-<h1>4. Quarto publishing for exhibition catalogues</h1>
+<section id="quarto-publishing-for-exhibition-catalogues" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-publishing-for-exhibition-catalogues">4. Quarto publishing for exhibition catalogues</h2>
 </section>
      </main>
 <!-- /main column -->  <script>
