@@ -178,19 +178,19 @@
 
      <p>From: https://nfdi4culture.github.io/linked-open-exhibition/catalogue-baldessari.html</p>
 <p>This table is generated directly from the CSV file in the project.</p>
-<div class="cell-container"><div class="cell-decorator"><pre>In [1]:</pre></div><div id="5cf95d9e" class="cell" data-execution_count="1">
+<div class="cell-container"><div class="cell-decorator"><pre>In [1]:</pre></div><div id="c292207d" class="cell" data-execution_count="1">
 <pre><code>import pandas as pd
 from IPython.display import HTML
 
 csv_path = "data/output-plan-b-readable.csv"
 df = pd.read_csv(csv_path)
 
-# Keep the table compact and readable for the page.
-preview = df.head(25).copy()
-preview.index = range(1, len(preview) + 1)
+# Render the complete CSV table without truncation.
+df = df.copy()
+df.index = range(1, len(df) + 1)
 
 HTML(
-    preview.to_html(
+    df.to_html(
         classes="table table-sm table-striped table-hover",
         border=0,
         index=True,
@@ -692,6 +692,918 @@ HTML(
 <td>NaN</td>
 <td>NaN</td>
 <td>77</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">26</th>
+<td>NaN</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1992</td>
+<td>photographs</td>
+<td>Q125191</td>
+<td>Color photograph, black and white photograph, photocopy on Gandhi Ashram paper, acrylic wash, paper stickers, crayon, oil enamel on rubber, oil enamel on formica, mounted on Masonite</td>
+<td>Q207849</td>
+<td>210.00</td>
+<td>249.00</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>78</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">27</th>
+<td>Potatoes, Face (Smiling), Garbage Can, Landscape, Four Shapes * Red And Green Lines</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1994</td>
+<td>photographs</td>
+<td>Q125191</td>
+<td>Color photograph, black and white photograph, acrylic, oil pastel and pencil on paper</td>
+<td>Q207849</td>
+<td>166.00</td>
+<td>215.00</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>81</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">28</th>
+<td>Pointing Hand, Desk, Lights, And Observers (Courtroom)</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1995</td>
+<td>photographs</td>
+<td>Q125191</td>
+<td>Black and white photographs, color photographs, acrylic, oil stick, pencil on paper</td>
+<td>Q207849</td>
+<td>255.00</td>
+<td>229.00</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>83</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">29</th>
+<td>Sunny Donuts, Former Site Of Duck Pond Bar</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1996</td>
+<td>painting</td>
+<td>Q3305213</td>
+<td>Acrylic and ink-jet on canvas</td>
+<td>Q207849</td>
+<td>150.00</td>
+<td>114.00</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>85</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">30</th>
+<td>Earle Scheib Auto Painting</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1996</td>
+<td>painting</td>
+<td>Q3305213</td>
+<td>Acrylic and photoemulsion on canvas</td>
+<td>Q207849</td>
+<td>150.00</td>
+<td>114.00</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>86</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">31</th>
+<td>3003 National City Blvd.</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1996</td>
+<td>painting</td>
+<td>Q3305213</td>
+<td>Acrylic and photoemulsion on canvas</td>
+<td>Q207849</td>
+<td>150.00</td>
+<td>114.00</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>87</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">32</th>
+<td>Lourdes Restaurant, Pink Pig, Sunny Donuts</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1996</td>
+<td>Acrylic and photoemulsion on canvas</td>
+<td>NaN</td>
+<td>Acrylfarbe; Fotoemulsion</td>
+<td>NaN</td>
+<td>150.00</td>
+<td>114.00</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">33</th>
+<td>Arrive (With Motives And Reasons)</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1996</td>
+<td>Color photographs, acrylic paint and crayon</td>
+<td>NaN</td>
+<td>Farbfotografien; Acrylfarbe; Zeichenkreide</td>
+<td>NaN</td>
+<td>235.00</td>
+<td>327.00</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">34</th>
+<td>Goya Series: There Isn'T Time</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1997</td>
+<td>Inkjet Print and hand lettering on canvas</td>
+<td>NaN</td>
+<td>Inkjet Print; handgeschriebener Text</td>
+<td>Q127418</td>
+<td>190.00</td>
+<td>152.00</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">35</th>
+<td>Goya Series: As Is</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1997</td>
+<td>Ink-jet print and hand lettering on canvas</td>
+<td>NaN</td>
+<td>Inkjet Print; handgeschriebener Text</td>
+<td>Q127418</td>
+<td>190.00</td>
+<td>152.00</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">36</th>
+<td>Goya Series: So Much And More</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1997</td>
+<td>Inkjet Print and hand lettering on canvas</td>
+<td>NaN</td>
+<td>Inkjet Print; handgeschriebener Text</td>
+<td>Q127418</td>
+<td>190.00</td>
+<td>152.00</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">37</th>
+<td>Goya Series: And</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1997</td>
+<td>Ink jet and synthetic polymer paint on canvas</td>
+<td>NaN</td>
+<td>Inkjet; synthetische Polymerfarbe</td>
+<td>Q127418</td>
+<td>190.00</td>
+<td>152.00</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">38</th>
+<td>Goya Series: These 700 And 100</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1997</td>
+<td>Ink-jet print and hand lettering on canvas</td>
+<td>NaN</td>
+<td>Inkjet Print; handgeschriebener Text</td>
+<td>Q127418</td>
+<td>190.00</td>
+<td>152.00</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">39</th>
+<td>Plant (Rotterdam #3)</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1997-98</td>
+<td>Black and white photograph</td>
+<td>NaN</td>
+<td>Schwarzweißfotografie</td>
+<td>NaN</td>
+<td>183.00</td>
+<td>183.00</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">40</th>
+<td>Lamp (Rotterdam #3)</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1997-98</td>
+<td>Black and white photograph</td>
+<td>NaN</td>
+<td>Schwarzweißfotografie</td>
+<td>NaN</td>
+<td>183.00</td>
+<td>183.00</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">41</th>
+<td>Elbow Series: Emu</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1999</td>
+<td>Ink-jet on canvas, Folio D process on vinyl, hand lettering and acrylic paint</td>
+<td>NaN</td>
+<td>Inkjet; handgeschriebener Text; Acrylfarbe</td>
+<td>Q127418</td>
+<td>213.50</td>
+<td>213.50</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">42</th>
+<td>Elbow Series: Yak</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1999</td>
+<td>Painting</td>
+<td>Q3305213</td>
+<td>Ink-jet on canvas; Folio D process on vinyl; hand lettering and acrylic paint</td>
+<td>Q4259259; Q207849</td>
+<td>213.50</td>
+<td>213.50</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>57</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">43</th>
+<td>Elbow Series: Auk</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1999</td>
+<td>Painting</td>
+<td>Q3305213</td>
+<td>Ink-jet on canvas; Folio D process on vinyl; hand lettering and acrylic paint</td>
+<td>Q4259259; Q207849</td>
+<td>213.50</td>
+<td>213.50</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>58</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">44</th>
+<td>Elbow Series: Gnu</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1999</td>
+<td>Painting</td>
+<td>Q3305213</td>
+<td>Ink-jet on canvas; Folio D process on vinyl; hand lettering and acrylic paint</td>
+<td>Q4259259; Q207849</td>
+<td>213.50</td>
+<td>213.50</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>59</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">45</th>
+<td>Tetrad Series: Real Shadows</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1989</td>
+<td>Painting</td>
+<td>Q3305213</td>
+<td>Digital printing; hand lettering; acrylic paint on canvas</td>
+<td>Q207849</td>
+<td>239.00</td>
+<td>239.00</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>60</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">46</th>
+<td>Tetrad Series. All Getting On Together</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1999</td>
+<td>Painting</td>
+<td>Q3305213</td>
+<td>Digital printing; hand lettering; acrylic paint on canvas</td>
+<td>Q207849</td>
+<td>239.00</td>
+<td>239.00</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>61</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">47</th>
+<td>Teaching A Plant The Alphabet</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1972</td>
+<td>Super-8 film loop (originally 16 mm)</td>
+<td>NaN</td>
+<td>color; sound</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">48</th>
+<td>Taking A Slate: Ilene And David (#2)</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1974</td>
+<td>Super-8 film loop (originally 16 mm)</td>
+<td>NaN</td>
+<td>black-and-white; sound</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">49</th>
+<td>Isocephaly</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1968</td>
+<td>Super-8 film</td>
+<td>NaN</td>
+<td>color</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">50</th>
+<td>Taking A Slate: David</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1974</td>
+<td>Super-8 film loop (originally 16 mm)</td>
+<td>NaN</td>
+<td>black-and-white; sound</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">51</th>
+<td>How We Do Art Now</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1973</td>
+<td>video loop</td>
+<td>NaN</td>
+<td>black-and-white; sound</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">52</th>
+<td>What To Leave Out</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1968</td>
+<td>Super-8 film</td>
+<td>NaN</td>
+<td>color</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">53</th>
+<td>Cremation</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1970</td>
+<td>16 mm film</td>
+<td>NaN</td>
+<td>black-and-white; sound</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">54</th>
+<td>New York City Art History</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1971</td>
+<td>Super-8 film</td>
+<td>NaN</td>
+<td>color</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">55</th>
+<td>The Eye Does Not Naturally Pan</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1972-73</td>
+<td>Super-8 film loop (originally 16 mm)</td>
+<td>NaN</td>
+<td>black-and-white; sound</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">56</th>
+<td>Folding Hat: Version 1</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1970</td>
+<td>Super-8 film loop (originally 16 mm)</td>
+<td>NaN</td>
+<td>black-and-white; sound</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">57</th>
+<td>Folding Hat</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1970</td>
+<td>Super-8 film loop (originally 16 mm)</td>
+<td>NaN</td>
+<td>black-and-white; sound</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">58</th>
+<td>Black-Out</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1971</td>
+<td>Super-8 film loop (originally 16 mm)</td>
+<td>NaN</td>
+<td>black-and-white; sound</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">59</th>
+<td>Black Painting</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1970</td>
+<td>Super-8 film loop (originally 16 mm)</td>
+<td>NaN</td>
+<td>black-and-white; sound</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">60</th>
+<td>Easel Painting</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1972-73</td>
+<td>Super-8 film loop (originally 16 mm)</td>
+<td>NaN</td>
+<td>color</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">61</th>
+<td>Black Curtain</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1970</td>
+<td>Super-8 film loop (originally 16 mm)</td>
+<td>NaN</td>
+<td>black-and-white; sound</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">62</th>
+<td>Life Drawing</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1970</td>
+<td>Super-8 film loop (originally 16 mm)</td>
+<td>NaN</td>
+<td>black-and-white; sound</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">63</th>
+<td>Time-Temperature</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1972-73</td>
+<td>Super-8 film loop (originally 16 mm)</td>
+<td>NaN</td>
+<td>color</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">64</th>
+<td>Walking Forward Running Past</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1972</td>
+<td>Super-8 film loop (originally 16 mm)</td>
+<td>NaN</td>
+<td>color</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">65</th>
+<td>Proust</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1970s</td>
+<td>film loop</td>
+<td>NaN</td>
+<td>16 mm; color</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">66</th>
+<td>Water To Wine To Water</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1972-73</td>
+<td>Super-8 film loop</td>
+<td>NaN</td>
+<td>color</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">67</th>
+<td>The Hollywood Film</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1972-73</td>
+<td>Super-8 film loop</td>
+<td>NaN</td>
+<td>color; sound</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">68</th>
+<td>Police Drawing</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1971</td>
+<td>black-and-white</td>
+<td>NaN</td>
+<td>color; sound</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">69</th>
+<td>Throwing Leaves Back At Tree</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1973</td>
+<td>Super-8 film loop</td>
+<td>NaN</td>
+<td>color; sound</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">70</th>
+<td>The Italian Tape</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1974</td>
+<td>black-and-white film loop</td>
+<td>NaN</td>
+<td>color</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">71</th>
+<td>Ice Cubes Sliding</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1974</td>
+<td>Super-8 film loop</td>
+<td>NaN</td>
+<td>color</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">72</th>
+<td>Inventory</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1972</td>
+<td>black-and-white film loop</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Sprengel Museum Hannover</td>
+<td>Q673907</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">73</th>
+<td>Two Colorful Melodies</td>
+<td>John Baldessari</td>
+<td>Q312793</td>
+<td>1977</td>
+<td>color film loop</td>
+<td>NaN</td>
+<td>sound</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
 <td>Sprengel Museum Hannover</td>
 <td>Q673907</td>
 <td>NaN</td>
