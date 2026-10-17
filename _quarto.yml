@@ -11,6 +11,7 @@ project:
     - 02-catalogue.qmd
     - notebooks/01-exhibition.ipynb
     - notebooks/02-artworks.ipynb
+    - notebooks/03-catalogue-ocr.ipynb
     - references.qmd
 
 manuscript:
