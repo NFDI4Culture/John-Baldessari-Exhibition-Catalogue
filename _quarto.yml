@@ -6,8 +6,8 @@ project:
     - dnb-catalogue-datamodel.qmd
     - exhibition-datamodel.qmd
     - item-in-exhibition-datamodel.qmd
-    - the-guide.qmd
-    - baldessari-ocr-data.qmd
+    - 00-the-guide.qmd
+    - 01-baldessari-ocr-data.qmd
     - references.qmd
 
 manuscript:

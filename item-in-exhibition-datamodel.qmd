@@ -17,7 +17,7 @@ This data model provides a standardized schema for describing artworks, objects,
 
 | Field | Wikidata | CIDOC CRM | Wikibase4Research |
 |-------|----------|-----------|-------------------|
-| **Instance of** | P31:Q3305213 (artwork) | E22_Man-Made_Object | instance_of |
+| **Instance of** | P31:Q838948 (work of art) | E22_Man-Made_Object | instance_of |
 | **Title** | P1476 | P102_has_title (E35_Title) | title |
 | **Creator** | P170 | P14_carried_out_by (E39_Actor) | author |
 | **Inception** | P571 | P108_has_produced (E65_Creation) | creation_date |
@@ -40,6 +40,8 @@ This data model provides a standardized schema for describing artworks, objects,
 | **Previous Owner** | P127 | P24_transferred_title_of (E8_Acquisition) | previous_owner |
 | **Condition** | — | E3_Condition_State | condition |
 | **Date Entered Collection** | — | E8_Acquisition + P4_has_time_span | date_acquired |
+| **Exhibition history** | P608 | E7_Activity (exhibition event) | exhibition_history |
+| **Commons category** | P373 | - | - |
 
 ---
 

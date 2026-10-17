@@ -52,7 +52,7 @@ NB Exhibition history should be added as an item linking to the specific exhibit
 
 | No. | Field | Data type | Wikidata | CIDOC CRM | Wikibase4Research |
 |-----|-------|-----------|----------|-----------|-------------------|
-| 1 | **Instance of** | Item | P31:Q3305213 (artwork) | E22_Man-Made_Object | instance_of |
+| 1 | **Instance of** | Item | P31:Q838948 (work of art) | E22_Man-Made_Object | instance_of |
 | 2 | **Title** | Monolingual text | P1476 | P102_has_title (E35_Title) | title |
 | 3 | **Creator** | Item | P170 | P14_carried_out_by (E39_Actor) | author |
 | 4 | **Inception** | Point in time | P571 | P108_has_produced (E65_Creation) | creation_date |
