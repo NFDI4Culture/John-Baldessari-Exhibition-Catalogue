@@ -80,4 +80,6 @@ The project combines several licensing arrangements.
 - The catalogue and dataset files in the project are released under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) and the repository copy is retained in [LICENSE-data](LICENSE-data), so the underlying OCR-derived data may be reused without restriction for research, teaching, and public scholarship.
 - For research use, this project also recognises that text and data mining (TDM) may be permitted under the UK and German legal frameworks for scientific research, including UK copyright exceptions and the German research exception in § 60d UrhG. These provisions are jurisdiction-specific and do not replace a review of any third-party rights or source-specific conditions.
 
+For the project bibliography, see [References](references.qmd).
+
 # References
