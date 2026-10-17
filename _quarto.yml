@@ -9,6 +9,8 @@ project:
     - 00-the-guide.qmd
     - 01-baldessari-ocr-data.qmd
     - 02-catalogue.qmd
+    - notebooks/01-exhibition.ipynb
+    - notebooks/02-artworks.ipynb
     - references.qmd
 
 manuscript:
