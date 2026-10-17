@@ -1,0 +1,35 @@
+---
+title: "Catalogue Out"
+format:
+  html:
+    toc: false
+    code-fold: true
+    code-summary: "Show code"
+execute:
+  echo: false
+---
+
+From: [https://nfdi4culture.github.io/linked-open-exhibition/catalogue-baldessari.html](https://nfdi4culture.github.io/linked-open-exhibition/catalogue-baldessari.html)
+
+This table is generated directly from the CSV file in the project.
+
+```{python}
+import pandas as pd
+from IPython.display import HTML
+
+csv_path = "data/output-plan-b-readable.csv"
+df = pd.read_csv(csv_path)
+
+# Render the complete CSV table without truncation.
+df = df.copy()
+df.index = range(1, len(df) + 1)
+
+HTML(
+df.to_html(
+classes="table table-sm table-striped table-hover",
+border=0,
+index=True,
+escape=False,
+)
+)
+```

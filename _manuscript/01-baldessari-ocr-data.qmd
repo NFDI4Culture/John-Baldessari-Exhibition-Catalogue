@@ -1,5 +1,5 @@
 ---
-title: "Baldessari OCR Data"
+title: "Data In: Baldessari OCR"
 format:
   html:
     toc: false
@@ -9,7 +9,7 @@ execute:
   echo: false
 ---
 
-From: https://nfdi4culture.github.io/linked-open-exhibition/catalogue-baldessari.html 
+From: [https://nfdi4culture.github.io/linked-open-exhibition/catalogue-baldessari.html](https://nfdi4culture.github.io/linked-open-exhibition/catalogue-baldessari.html)
 
 This table is generated directly from the CSV file in the project.
 
@@ -25,11 +25,11 @@ df = df.copy()
 df.index = range(1, len(df) + 1)
 
 HTML(
-    df.to_html(
-        classes="table table-sm table-striped table-hover",
-        border=0,
-        index=True,
-        escape=False,
-    )
+df.to_html(
+classes="table table-sm table-striped table-hover",
+border=0,
+index=True,
+escape=False,
+)
 )
 ```

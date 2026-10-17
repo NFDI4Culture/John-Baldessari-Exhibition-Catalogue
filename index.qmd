@@ -93,6 +93,8 @@ Package dependencies are pinned in `requirements.txt` and Python runtime is pinn
 
 # Copyright and Licensing
 
+All materials here are open-licenced unless otherwise stated and follow FAIR Data principles and follow UNESCO Open Science recommendations.
+
 The project combines several licensing arrangements.
 
 - The software, notebooks, and Quarto source are covered by the repository's existing [GNU GPL v3](LICENSE) terms.
