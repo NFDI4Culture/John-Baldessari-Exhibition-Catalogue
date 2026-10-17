@@ -6,7 +6,7 @@ format:
     code-fold: true
     code-summary: "Show code"
 execute:
-  echo: false
+  echo: true
 ---
 
 From: [https://nfdi4culture.github.io/linked-open-exhibition/catalogue-baldessari.html](https://nfdi4culture.github.io/linked-open-exhibition/catalogue-baldessari.html)
@@ -14,22 +14,33 @@ From: [https://nfdi4culture.github.io/linked-open-exhibition/catalogue-baldessar
 This table is generated directly from the CSV file in the project.
 
 ```{python}
-import pandas as pd
-from IPython.display import HTML
+import csv
+from html import escape
+from IPython.display import HTML, display
 
 csv_path = "data/output-plan-b-readable.csv"
-df = pd.read_csv(csv_path)
+with open(csv_path, newline="", encoding="utf-8") as f:
+    rows = list(csv.DictReader(f))
 
-# Render the complete CSV table without truncation.
-df = df.copy()
-df.index = range(1, len(df) + 1)
+if rows:
+    headers = list(rows[0].keys())
+    body = []
+    for row in rows:
+        body.append(
+            "<tr>" + "".join(
+                f"<td>{escape(str(row.get(h, '')))}</td>" for h in headers
+            ) + "</tr>"
+        )
 
-HTML(
-df.to_html(
-classes="table table-sm table-striped table-hover",
-border=0,
-index=True,
-escape=False,
-)
-)
+    table_html = (
+        "<table class=\"table table-sm table-striped table-hover\" border=\"0\">"
+        "<thead><tr>"
+        + "".join(f"<th>{escape(h)}</th>" for h in headers)
+        + "</tr></thead><tbody>"
+        + "".join(body)
+        + "</tbody></table>"
+    )
+    display(HTML(table_html))
+else:
+    print("No data rows were found in the CSV.")
 ```

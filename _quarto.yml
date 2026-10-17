@@ -24,7 +24,9 @@ format:
     number-sections: true
     code-fold: true
     code-summary: "Show code"
-    include-after-body: dedupe-affiliations.html
+    include-after-body:
+      - dedupe-affiliations.html
+      - fold-code.html
   docx: default
 
 execute:

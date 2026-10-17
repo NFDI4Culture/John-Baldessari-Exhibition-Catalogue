@@ -77,7 +77,7 @@
       }      
     </style>
 
-    <script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script>
     window.document.addEventListener("DOMContentLoaded", function () {
 
       var header = window.document.querySelector("#quarto-embed-header");
@@ -129,7 +129,12 @@
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-62e2d20df198e8a01bb734742f2e28cf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-     
+     <script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+  
       </head>
 
   <body class="quarto-notebook quarto-light">
@@ -169,13 +174,246 @@
     </div>  </div>
 </header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
 <div id="quarto-sidebar-toc-left" class="sidebar toc-left">
-  
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#exhibition-information" id="toc-exhibition-information" class="nav-link active" data-scroll-target="#exhibition-information">1. Exhibition information</a></li>
+  <li><a href="#artworks-in-the-exhibition" id="toc-artworks-in-the-exhibition" class="nav-link" data-scroll-target="#artworks-in-the-exhibition">2. Artworks in the exhibition</a></li>
+  </ul>
+</nav>
 </div>
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
 </div>
 <main class="content quarto-banner-title-block" id="quarto-document-content">      
 
-     <p>TBC</p>
+       <p>This page brings together the exhibition-level record and the list of artworks associated with the exhibition. It is built from the workflows in <a href="./notebooks/01-exhibition-preview.html">notebooks/01-exhibition.ipynb</a> and <a href="./notebooks/02-artworks-preview.html">notebooks/02-artworks.ipynb</a>.</p>
+<section id="exhibition-information" class="level2">
+<h2 class="anchored" data-anchor-id="exhibition-information">1. Exhibition information</h2>
+<p>The exhibition record is based on Wikidata item Q141747732 and summarises the main statements for the event.</p>
+<div class="cell-container"><div class="cell-decorator"><pre>In [1]:</pre></div><div id="eee8f767" class="cell" data-execution_count="1">
+<pre><code>#| code-fold: true
+#| code-summary: "Click here to see the Python code"
+from urllib.parse import urlencode
+from urllib.request import Request, urlopen
+import json
+from html import escape
+from IPython.display import HTML, display
+
+item_id = "Q141747732"
+property_map = {
+    "P31": "Instance of",
+    "P1476": "Title",
+    "P276": "Location",
+    "P580": "Start time",
+    "P582": "End time",
+    "P1640": "Curator",
+    "P710": "Participant",
+    "P856": "Official website",
+    "P664": "Organizer",
+    "P17": "Country",
+    "P407": "Language",
+    "P921": "Theme",
+    "P859": "Sponsor",
+    "P1174": "Number of visitors",
+    "P373": "Commons category",
+}
+
+value_props = " ".join(f"wd:{pid}" for pid in property_map)
+query = f"""
+SELECT ?prop ?propLabel ?value ?valueLabel WHERE {{
+  BIND(wd:{item_id} AS ?item)
+  VALUES ?prop {{ {value_props} }}
+
+  BIND(IRI(CONCAT("http://www.wikidata.org/prop/direct/", STRAFTER(STR(?prop), "entity/"))) AS ?wdtProp)
+  ?item ?wdtProp ?value .
+
+  SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }}
+}}
+ORDER BY ?prop ?valueLabel
+"""
+
+endpoint = "https://query.wikidata.org/sparql"
+params = urlencode({"query": query, "format": "json"})
+url = f"{endpoint}?{params}"
+
+request = Request(
+    url,
+    headers={
+        "Accept": "application/sparql-results+json",
+        "User-Agent": "loe-posit-notebook/1.0 (contact: simon.worthington@tib.eu)",
+    },
+)
+
+with urlopen(request, timeout=60) as response:
+    data = json.loads(response.read().decode("utf-8"))
+
+rows = []
+for b in data["results"]["bindings"]:
+    prop_uri = b["prop"]["value"]
+    pid = prop_uri.rsplit("/", 1)[-1]
+    prop_name = property_map.get(pid, b.get("propLabel", {}).get("value", pid))
+    value_text = b.get("valueLabel", {}).get("value", b["value"]["value"])
+    rows.append({"property_id": pid, "property": prop_name, "value": value_text})
+
+rows = list({(r["property_id"], r["value"]): r for r in rows}.values())
+rows.sort(key=lambda r: (r["property_id"], str(r["value"]).lower()))
+
+if rows:
+    headers = ["property_id", "property", "value"]
+    table = [
+        "&lt;table class=\"table table-sm table-striped table-hover\" border=\"0\"&gt;&lt;thead&gt;&lt;tr&gt;",
+        *[f"&lt;th&gt;{escape(h)}&lt;/th&gt;" for h in headers],
+        "&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;",
+    ]
+    for row in rows:
+        table.append(
+            "&lt;tr&gt;" + "".join(f"&lt;td&gt;{escape(str(row.get(h, '')))}&lt;/td&gt;" for h in headers) + "&lt;/tr&gt;"
+        )
+    table.append("&lt;/tbody&gt;&lt;/table&gt;")
+    display(HTML("".join(table)))
+else:
+    print("No exhibition data was returned.")</code></pre>
+<div class="cell-output cell-output-display">
+<table class="table table-sm table-striped table-hover caption-top small" data-border="0">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">property_id</th>
+<th data-quarto-table-cell-role="th">property</th>
+<th data-quarto-table-cell-role="th">value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>P1476</td>
+<td>Title</td>
+<td>while something is happening here, something else is happening there : works 1988 - 1999</td>
+</tr>
+<tr class="even">
+<td>P17</td>
+<td>Country</td>
+<td>Germany</td>
+</tr>
+<tr class="odd">
+<td>P276</td>
+<td>Location</td>
+<td>Sprengel Museum</td>
+</tr>
+<tr class="even">
+<td>P31</td>
+<td>Instance of</td>
+<td>exhibition</td>
+</tr>
+<tr class="odd">
+<td>P373</td>
+<td>Commons category</td>
+<td>John Baldessari</td>
+</tr>
+<tr class="even">
+<td>P580</td>
+<td>Start time</td>
+<td>1999-09-26T00:00:00Z</td>
+</tr>
+<tr class="odd">
+<td>P582</td>
+<td>End time</td>
+<td>2000-01-02T00:00:00Z</td>
+</tr>
+<tr class="even">
+<td>P710</td>
+<td>Participant</td>
+<td>John Baldessari</td>
+</tr>
+<tr class="odd">
+<td>P856</td>
+<td>Official website</td>
+<td>https://www.sprengel-museum.de/ausstellungen/archiv</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div></div>
+</section>
+<div id="1ab85559" class="cell markdown">
+<section id="artworks-in-the-exhibition" class="level2">
+<h2 class="anchored" data-anchor-id="artworks-in-the-exhibition">2. Artworks in the exhibition</h2>
+<p>The artwork list is generated from the exhibition relation to the works in the exhibition.</p>
+</section>
+</div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [2]:</pre></div><div id="1d7d6fee" class="cell" data-execution_count="2">
+<pre><code>from urllib.parse import urlencode
+from urllib.request import Request, urlopen
+import json
+from html import escape
+from IPython.display import HTML, display
+
+exhibition_id = "Q141747732"
+query = f"""
+SELECT ?artwork ?artworkLabel WHERE {{
+  ?artwork wdt:P31 wd:Q838948 ;
+           wdt:P608 wd:{exhibition_id} .
+
+  SERVICE wikibase:label {{ bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }}
+}}
+LIMIT 100
+"""
+
+endpoint = "https://query.wikidata.org/sparql"
+params = urlencode({"query": query, "format": "json"})
+url = f"{endpoint}?{params}"
+
+request = Request(
+    url,
+    headers={
+        "Accept": "application/sparql-results+json",
+        "User-Agent": "loe-posit-notebook/1.0 (contact: simon.worthington@tib.eu)",
+    },
+)
+
+with urlopen(request, timeout=60) as response:
+    data = json.loads(response.read().decode("utf-8"))
+
+rows = []
+for b in data["results"]["bindings"]:
+    rows.append(
+        {
+            "artwork_id": b["artwork"]["value"].rsplit("/", 1)[-1],
+            "artwork": b.get("artworkLabel", {}).get("value", b["artwork"]["value"]),
+        }
+    )
+
+if rows:
+    headers = ["artwork_id", "artwork"]
+    table = [
+        "&lt;table class=\"table table-sm table-striped table-hover\" border=\"0\"&gt;&lt;thead&gt;&lt;tr&gt;",
+        *[f"&lt;th&gt;{escape(h)}&lt;/th&gt;" for h in headers],
+        "&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;",
+    ]
+    for row in rows:
+        table.append(
+            "&lt;tr&gt;" + "".join(f"&lt;td&gt;{escape(str(row.get(h, '')))}&lt;/td&gt;" for h in headers) + "&lt;/tr&gt;"
+        )
+    table.append("&lt;/tbody&gt;&lt;/table&gt;")
+    display(HTML("".join(table)))
+else:
+    print("No artworks were found for this exhibition.")</code></pre>
+<div class="cell-output cell-output-display">
+<table class="table table-sm table-striped table-hover caption-top small" data-border="0">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">artwork_id</th>
+<th data-quarto-table-cell-role="th">artwork</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Q141749370</td>
+<td>Duck Pond Bar, National City, California</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div></div>
      </main>
 <!-- /main column -->  <script>
 
@@ -228,6 +466,37 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
     });
+
+});
+
+</script>
+  <script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  document.querySelectorAll(".cell-container > .cell > pre").forEach((pre) => {
+
+    const code = pre.querySelector("code");
+
+    if (code) {
+
+      code.textContent = code.textContent.replace(/^(#\|.*\n)+/, "");
+
+    }
+
+    const details = document.createElement("details");
+
+    const summary = document.createElement("summary");
+
+    summary.textContent = "Show code";
+
+    details.appendChild(summary);
+
+    pre.parentNode.insertBefore(details, pre);
+
+    details.appendChild(pre);
+
+  });
 
 });
 

@@ -3,13 +3,165 @@ title: "Data Out: Catalogue Publication"
 subtitle: "while something is happening here, something else is happening there"
 format:
   html:
-    toc: false
+    toc: true
     code-fold: true
     code-summary: "Show code"
 execute:
-  echo: false
+  echo: true
 ---
 
-TBC
+This page brings together the exhibition-level record and the list of artworks associated with the exhibition. It is built from the workflows in [notebooks/01-exhibition.ipynb](notebooks/01-exhibition.ipynb) and [notebooks/02-artworks.ipynb](notebooks/02-artworks.ipynb).
 
+## 1. Exhibition information
+
+The exhibition record is based on Wikidata item Q141747732 and summarises the main statements for the event.
+
+```{python}
+#| code-fold: true
+#| code-summary: "Click here to see the Python code"
+
+from urllib.parse import urlencode
+from urllib.request import Request, urlopen
+import json
+from html import escape
+from IPython.display import HTML, display
+
+item_id = "Q141747732"
+property_map = {
+    "P31": "Instance of",
+    "P1476": "Title",
+    "P276": "Location",
+    "P580": "Start time",
+    "P582": "End time",
+    "P1640": "Curator",
+    "P710": "Participant",
+    "P856": "Official website",
+    "P664": "Organizer",
+    "P17": "Country",
+    "P407": "Language",
+    "P921": "Theme",
+    "P859": "Sponsor",
+    "P1174": "Number of visitors",
+    "P373": "Commons category",
+}
+
+value_props = " ".join(f"wd:{pid}" for pid in property_map)
+query = f"""
+SELECT ?prop ?propLabel ?value ?valueLabel WHERE {{
+  BIND(wd:{item_id} AS ?item)
+  VALUES ?prop {{ {value_props} }}
+
+  BIND(IRI(CONCAT("http://www.wikidata.org/prop/direct/", STRAFTER(STR(?prop), "entity/"))) AS ?wdtProp)
+  ?item ?wdtProp ?value .
+
+  SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }}
+}}
+ORDER BY ?prop ?valueLabel
+"""
+
+endpoint = "https://query.wikidata.org/sparql"
+params = urlencode({"query": query, "format": "json"})
+url = f"{endpoint}?{params}"
+
+request = Request(
+    url,
+    headers={
+        "Accept": "application/sparql-results+json",
+        "User-Agent": "loe-posit-notebook/1.0 (contact: simon.worthington@tib.eu)",
+    },
+)
+
+with urlopen(request, timeout=60) as response:
+    data = json.loads(response.read().decode("utf-8"))
+
+rows = []
+for b in data["results"]["bindings"]:
+    prop_uri = b["prop"]["value"]
+    pid = prop_uri.rsplit("/", 1)[-1]
+    prop_name = property_map.get(pid, b.get("propLabel", {}).get("value", pid))
+    value_text = b.get("valueLabel", {}).get("value", b["value"]["value"])
+    rows.append({"property_id": pid, "property": prop_name, "value": value_text})
+
+rows = list({(r["property_id"], r["value"]): r for r in rows}.values())
+rows.sort(key=lambda r: (r["property_id"], str(r["value"]).lower()))
+
+if rows:
+    headers = ["property_id", "property", "value"]
+    table = [
+        "<table class=\"table table-sm table-striped table-hover\" border=\"0\"><thead><tr>",
+        *[f"<th>{escape(h)}</th>" for h in headers],
+        "</tr></thead><tbody>",
+    ]
+    for row in rows:
+        table.append(
+            "<tr>" + "".join(f"<td>{escape(str(row.get(h, '')))}</td>" for h in headers) + "</tr>"
+        )
+    table.append("</tbody></table>")
+    display(HTML("".join(table)))
+else:
+    print("No exhibition data was returned.")
+```
+
+## 2. Artworks in the exhibition
+
+The artwork list is generated from the exhibition relation to the works in the exhibition.
+
+```{python}
+from urllib.parse import urlencode
+from urllib.request import Request, urlopen
+import json
+from html import escape
+from IPython.display import HTML, display
+
+exhibition_id = "Q141747732"
+query = f"""
+SELECT ?artwork ?artworkLabel WHERE {{
+  ?artwork wdt:P31 wd:Q838948 ;
+           wdt:P608 wd:{exhibition_id} .
+
+  SERVICE wikibase:label {{ bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }}
+}}
+LIMIT 100
+"""
+
+endpoint = "https://query.wikidata.org/sparql"
+params = urlencode({"query": query, "format": "json"})
+url = f"{endpoint}?{params}"
+
+request = Request(
+    url,
+    headers={
+        "Accept": "application/sparql-results+json",
+        "User-Agent": "loe-posit-notebook/1.0 (contact: simon.worthington@tib.eu)",
+    },
+)
+
+with urlopen(request, timeout=60) as response:
+    data = json.loads(response.read().decode("utf-8"))
+
+rows = []
+for b in data["results"]["bindings"]:
+    rows.append(
+        {
+            "artwork_id": b["artwork"]["value"].rsplit("/", 1)[-1],
+            "artwork": b.get("artworkLabel", {}).get("value", b["artwork"]["value"]),
+        }
+    )
+
+if rows:
+    headers = ["artwork_id", "artwork"]
+    table = [
+        "<table class=\"table table-sm table-striped table-hover\" border=\"0\"><thead><tr>",
+        *[f"<th>{escape(h)}</th>" for h in headers],
+        "</tr></thead><tbody>",
+    ]
+    for row in rows:
+        table.append(
+            "<tr>" + "".join(f"<td>{escape(str(row.get(h, '')))}</td>" for h in headers) + "</tr>"
+        )
+    table.append("</tbody></table>")
+    display(HTML("".join(table)))
+else:
+    print("No artworks were found for this exhibition.")
+```
 

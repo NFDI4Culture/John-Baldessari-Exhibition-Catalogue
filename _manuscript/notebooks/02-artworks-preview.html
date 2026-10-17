@@ -354,6 +354,37 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 </script>
+  <script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  document.querySelectorAll(".cell-container > .cell > pre").forEach((pre) => {
+
+    const code = pre.querySelector("code");
+
+    if (code) {
+
+      code.textContent = code.textContent.replace(/^(#\|.*\n)+/, "");
+
+    }
+
+    const details = document.createElement("details");
+
+    const summary = document.createElement("summary");
+
+    summary.textContent = "Show code";
+
+    details.appendChild(summary);
+
+    pre.parentNode.insertBefore(details, pre);
+
+    details.appendChild(pre);
+
+  });
+
+});
+
+</script>
   <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
