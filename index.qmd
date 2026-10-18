@@ -48,7 +48,7 @@ The sum of what is currently publicly available about the artworks in the exhibi
 
 Sourced from OCR-processed exhibition catalogue held by HsH Library.
 
-Exhibition information (DNB publication record) is included for reference. [https://d-nb.info/957409494](https://d-nb.info/957409494) ISBN [3-88375-396-3](https://www.tib.eu/de/suchen/id/gwlb:302796398?cHash=d9b2700b8cf3934df61d65f43f2e6278).
+Exhibition information (DNB publication record) is included for reference. [https://d-nb.info/957409494](https://d-nb.info/957409494) ISBN [978-3-88375-396-6](https://www.tib.eu/de/suchen/id/gwlb:302796398?cHash=d9b2700b8cf3934df61d65f43f2e6278).
 
 # Introduction
 
@@ -86,7 +86,7 @@ This prototype made by Simon Worthington as part of [Linked Open Exhibition](htt
 # Data Stewardship
 
 This starter project follows reproducibility-oriented practices aligned with FAIR
-principles [@wilkinson2016fair].
+principles [@wilkinson2016fair]. 
 
 # Reproducibility Notes
 
@@ -94,7 +94,9 @@ Package dependencies are pinned in `requirements.txt` and Python runtime is pinn
 
 # Copyright and Licensing
 
-All materials here are open-licenced unless otherwise stated and follow FAIR Data principles and follow UNESCO Open Science recommendations.
+All materials here are open-licenced unless otherwise stated and follow FAIR Data principles and follow UNESCO Open Science recommendations [@unesco2021openscience].
+
+**Source catalogue.** The exhibition data is extracted from the printed catalogue *Baldessari: while something is happening here, something else is happening there: works 1988–1999* (Köln: Verlag der Buchhandlung Walther König, 1999), ISBN [978-3-88375-396-6](https://www.tib.eu/de/suchen/id/gwlb:302796398?cHash=d9b2700b8cf3934df61d65f43f2e6278), DNB record [https://d-nb.info/957409494](https://d-nb.info/957409494). Texts by Meg Cranston, Diedrich Diederichsen and Thomas Weski; published for the exhibition at the Sprengel Museum Hannover (26 September 1999 – 2 January 2000) and the Staatliche Kunstsammlungen Dresden, Gemäldegalerie Neue Meister (16 January – 2 April 2000). The catalogue, including its texts, photographs and reproductions of the artworks, remains protected by copyright held by the publisher, authors, artist and other rights holders. It is not republished here: only factual catalogue data (such as titles, dates, materials, dimensions and catalogue numbers) is extracted and released in the dataset, and no catalogue texts or images are reproduced. The bibliographic record is provided by the Deutsche Nationalbibliothek under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/).
 
 The project combines several licensing arrangements.
 
@@ -108,6 +110,18 @@ This project is configured for:
 - Jupyter notebooks included as project computations.
 - Publishing to GitHub Pages.
 - Reproducible notebook execution on MyBinder.
+
+# AI LLM use
+
+This project may have utilized AI language models (LLMs) for tasks such as text generation, summarization, or data extraction. Any use of AI LLMs is supplementary and does not replace human authorship or verification of the content.
+
+GitHub Copilot in Visual Studio Code, using Anthropic Claude models (Claude Haiku 4.5 and Claude Sonnet 5.5), assisted with the data model documentation, Quarto and Python configuration, notebook set-up and drafting of text. The OCR notebook ([03-catalogue-ocr](notebooks/03-catalogue-ocr.ipynb)) is based on AI LLM use for text extraction. All outputs were reviewed by the authors. See the [TIB AI policy](https://www.tib.eu/en/tib/policies/ai-policy).
+
+The project is aiming to move to open-source and open weight LLM models.  
+
+# Credits
+
+
 
 # References
 

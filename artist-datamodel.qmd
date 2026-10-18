@@ -29,7 +29,7 @@ This data model provides a standardized schema for describing artists and their 
 
 ---
 
-## Example: Max Ernst (Q108968)
+## Example: Max Ernst (Q154842)
 
 **Name:** Max Ernst  
 **Given Name:** Max  
@@ -38,7 +38,7 @@ This data model provides a standardized schema for describing artists and their 
 **Date of Birth:** 1891  
 **Date of Death:** 1976  
 **Nationality:** German (later naturalized French and American)  
-**Reference:** [https://www.wikidata.org/wiki/Q108968](https://www.wikidata.org/wiki/Q108968)
+**Reference:** [https://www.wikidata.org/wiki/Q154842](https://www.wikidata.org/wiki/Q154842)
 
 ---
 
