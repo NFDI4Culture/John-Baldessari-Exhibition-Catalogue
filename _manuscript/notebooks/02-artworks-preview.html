@@ -219,9 +219,10 @@
 <p>A Juypter Notebook for retreiving artwork information from Wikidata item <a href="https://www.wikidata.org/wiki/Q141747732">https://www.wikidata.org/wiki/Q141747732</a> | Exhibition title: while something is happening here, something else is happening there : works 1988 - 1999 (Exhibition).</p>
 <p>Wikidata SPARQL query that looks for all P31 (instance of) that are Q838948 (work of art), and have P608 (exhibited history) Q141747732 (while something is happening here, exhibition)</p>
 <p>SPARQL Query in Wikidata: <a href="https://w.wiki/czh4">https://w.wiki/czh4</a></p>
+<p>BELOW!</p>
+<p>```lSELECT ?artwork ?artworkLabel WHERE { # Artwork is an instance of “work of art” (Q838948) ?artwork wdt:P31 wd:Q838948 ; # Has exhibition history (P608) pointing to the exhibition (Q141747732) wdt:P608 wd:Q141747732 .</p>
+<p># Fetch human-readable labels (defaults to user language, then English) SERVICE wikibase:label { bd:serviceParam wikibase:language “[AUTO_LANGUAGE],en”. } } LIMIT 100```</p>
 </div>
-<p>SELECT ?artwork ?artworkLabel WHERE { # Artwork is an instance of “work of art” (Q838948) ?artwork wdt:P31 wd:Q838948 ; # Has exhibition history (P608) pointing to the exhibition (Q141747732) wdt:P608 wd:Q141747732 .</p>
-<p># Fetch human-readable labels (defaults to user language, then English) SERVICE wikibase:label { bd:serviceParam wikibase:language “[AUTO_LANGUAGE],en”. } } LIMIT 100</p>
 <div class="cell-container code-fold"><div class="cell-decorator"><pre>In [34]:</pre></div><div id="28e39ae6" class="cell" data-execution_count="34">
 <details class="code-fold">
 <summary>Show code</summary>

@@ -361,7 +361,9 @@
 <li><ol start="5" type="1">
 <li><strong>P186 (made from materials)</strong>: each material is usually added as its own statement and should point to a Wikidata item such as oil, canvas, bronze, or marble.</li>
 </ol></li>
-<li>6-7. <strong>P2048/P2049 (height/width)</strong>: these are quantity statements and must include a unit (for example cm or m) and a value; the unit should be consistent across related works.</li>
+<li><ol start="6" type="1">
+<li>/ 7. <strong>P2048/P2049 (height/width)</strong>: these are quantity statements and must include a unit (for example cm or m) and a value; the unit should be consistent across related works.</li>
+</ol></li>
 <li><ol start="8" type="1">
 <li><strong>P608 (exhibition history)</strong>: this is an exhibition-item relationship, so the statement value should be an exhibition item; if dates are known, add them as qualifiers or separate event context. Use: <a href="https://www.wikidata.org/wiki/Q141747732">Q141747732</a></li>
 </ol></li>
@@ -374,7 +376,22 @@
 </section>
 <section id="using-jupyter-notebooks-and-mybinder" class="level2">
 <h2 class="anchored" data-anchor-id="using-jupyter-notebooks-and-mybinder">2. Using Jupyter Notebooks and MyBinder</h2>
+<p><strong>Exercise #2:</strong> Loading and running Notebooks in MyBinder. Running a SPARQL query against Wikidata to retrieve exhibition and artwork data.</p>
 <p>A Jupyter Notebook is an interactive document that combines narrative text, executable code, and output in a single file. It is especially useful for cleaning and transforming catalogue data, checking OCR results, and making the workflow transparent and reproducible. In this project, the artworks example is <a href="https://github.com/NFDI4Culture/John-Baldessari-Exhibition-Catalogue/blob/main/notebooks/02-artworks.ipynb">notebooks/02-artworks.ipynb</a>, which shows artworks related to an exhibition as entered on Wikidata.</p>
+<p>The computational publishing notebook set:</p>
+<p>Notebooks to be run.</p>
+<ul>
+<li><a href="./notebooks/01-exhibition-preview.html">Exhibition data</a></li>
+<li><a href="./notebooks/02-artworks-preview.html">Artwork data</a></li>
+</ul>
+<p>Only for illustration purposes. This cannot run as needs external resources.</p>
+<ul>
+<li><a href="./notebooks/03-catalogue-ocr-preview.html">Catalogue OCR</a></li>
+</ul>
+<p>This is a Notebook embedded in a Markdown page and is not designed for MyBinder use.</p>
+<ul>
+<li><a href="./02-catalogue-preview.html">Catalogue generation</a></li>
+</ul>
 </section>
 <section id="entity-relationship-models-for-art-exhibitions" class="level2">
 <h2 class="anchored" data-anchor-id="entity-relationship-models-for-art-exhibitions">3. Entity-relationship models for art exhibitions</h2>

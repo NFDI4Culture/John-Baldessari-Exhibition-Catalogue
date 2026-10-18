@@ -84,14 +84,31 @@ Add data for these fields.
 - 3. **P170 (creator)**: if there are multiple contributors, add separate creator statements and consider a role qualifier such as P3831 to say whether the person was artist, photographer, or designer. Add: John Baldessari (this will link to artist Wikidata entry)
 - 4. **P571 (inception)**: record the date as precisely as possible; if only a period is known, use a time range or a general date instead of a guessed exact day.
 - 5. **P186 (made from materials)**: each material is usually added as its own statement and should point to a Wikidata item such as oil, canvas, bronze, or marble.
-- 6-7. **P2048/P2049 (height/width)**: these are quantity statements and must include a unit (for example cm or m) and a value; the unit should be consistent across related works.
+- 6. / 7. **P2048/P2049 (height/width)**: these are quantity statements and must include a unit (for example cm or m) and a value; the unit should be consistent across related works.
 - 8. **P608 (exhibition history)**: this is an exhibition-item relationship, so the statement value should be an exhibition item; if dates are known, add them as qualifiers or separate event context. Use: [Q141747732](https://www.wikidata.org/wiki/Q141747732)
 - 9. **P373 (Commons category)**: enter only the category name without the `Category:` prefix. Type it in with spaces (John Baldessari). See: [Category:John_Baldessari](https://commons.wikimedia.org/wiki/Category:John_Baldessari)
 - General rule: Review all statements for accuracy and completeness before finalizing the entry.
 
 ## 2. Using Jupyter Notebooks and MyBinder
 
+**Exercise #2:** Loading and running Notebooks in MyBinder. Running a SPARQL query against Wikidata to retrieve exhibition and artwork data. 
+
 A Jupyter Notebook is an interactive document that combines narrative text, executable code, and output in a single file. It is especially useful for cleaning and transforming catalogue data, checking OCR results, and making the workflow transparent and reproducible. In this project, the artworks example is [notebooks/02-artworks.ipynb](https://github.com/NFDI4Culture/John-Baldessari-Exhibition-Catalogue/blob/main/notebooks/02-artworks.ipynb), which shows artworks related to an exhibition as entered on Wikidata.
+
+The computational publishing notebook set:
+
+Notebooks to be run.
+
+- [Exhibition data](notebooks/01-exhibition.ipynb)
+- [Artwork data](notebooks/02-artworks.ipynb)
+
+Only for illustration purposes. This cannot run as needs external resources.
+
+- [Catalogue OCR](notebooks/03-catalogue-ocr.ipynb)
+
+This is a Notebook embedded in a Markdown page and is not designed for MyBinder use.
+
+- [Catalogue generation](02-catalogue.qmd)
 
 ## 3. Entity-relationship models for art exhibitions
 
