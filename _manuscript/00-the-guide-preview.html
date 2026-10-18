@@ -211,8 +211,8 @@
 </ul>
 <p>The process is aligned with relevant cultural heritage data standards - primarily <a href="https://cidoc-crm.org/">CIDOC CRM</a>, its simplified derivative <a href="https://linked.art/">Linked Art</a>, <a href="https://www.lido-schema.org/">LIDO</a>, <a href="https://www.getty.edu/research/tools/vocabularies/aat/">Art &amp; Architecture Thesaurus® Online - AAT</a>, <a href="https://www.inconclass.org/">InConClass</a>, and the many community-built <a href="https://www.wikidata.org/wiki/Wikidata:WikiProject_Arts">Wikidata schemas</a> and related property guidance for exhibition data.</p>
 <ul>
-<li>WikiProject Visual Arts: https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Visual_arts</li>
-<li>Wikiproject Exhibitions: https://www.wikidata.org/wiki/Wikidata:WikiProject_Exhibitions</li>
+<li>WikiProject Visual Arts: <a href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Visual_arts">https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Visual_arts</a></li>
+<li>Wikiproject Exhibitions: <a href="https://www.wikidata.org/wiki/Wikidata:WikiProject_Exhibitions">https://www.wikidata.org/wiki/Wikidata:WikiProject_Exhibitions</a></li>
 </ul>
 <p>The results of the process are:</p>
 <ul>
@@ -377,6 +377,8 @@
 <section id="using-jupyter-notebooks-and-mybinder" class="level2">
 <h2 class="anchored" data-anchor-id="using-jupyter-notebooks-and-mybinder">2. Using Jupyter Notebooks and MyBinder</h2>
 <p><strong>Exercise #2:</strong> Loading and running Notebooks in MyBinder. Running a SPARQL query against Wikidata to retrieve exhibition and artwork data.</p>
+<p>Running Notebooks in MyBinder is only used here to view processing and data outputs.</p>
+<p>MyBinder actions: 1. Clear all outputs &gt; Edit menu &gt; Output of All Cells. 2. Select cell and run. 3. Browse rest of Repository.</p>
 <p>A Jupyter Notebook is an interactive document that combines narrative text, executable code, and output in a single file. It is especially useful for cleaning and transforming catalogue data, checking OCR results, and making the workflow transparent and reproducible. In this project, the artworks example is <a href="https://github.com/NFDI4Culture/John-Baldessari-Exhibition-Catalogue/blob/main/notebooks/02-artworks.ipynb">notebooks/02-artworks.ipynb</a>, which shows artworks related to an exhibition as entered on Wikidata.</p>
 <p>The computational publishing notebook set:</p>
 <p>Notebooks to be run.</p>
@@ -395,6 +397,8 @@
 </section>
 <section id="entity-relationship-models-for-art-exhibitions" class="level2">
 <h2 class="anchored" data-anchor-id="entity-relationship-models-for-art-exhibitions">3. Entity-relationship models for art exhibitions</h2>
+<p><strong>Exercise 3#:</strong> Discuss data modelling and building Entity-Relationship models. Using LLM chat to simplify use of Linked Open Data and the world of strcutured data, e.g., <a href="https://gemini.google.com/">https://gemini.google.com/</a>. Recommendation is ‘Keep it Simple’, first go bottom up - look at what the thing is, then top down - see how the bottom up process maps to the formal world.</p>
+<p>Schemas and key concepts: <a href="https://en.wikiversity.org/wiki/BIM-126-02-Data-Science-Linked-Open-Exhibition#Schemas_and_key_concepts">https://en.wikiversity.org/wiki/BIM-126-02-Data-Science-Linked-Open-Exhibition#Schemas_and_key_concepts</a></p>
 <p>The project currently includes the following entity-relationship models:</p>
 <ul>
 <li><a href="./artist-datamodel-preview.html">artist-datamodel.qmd</a>: describes the artist as an agent with identity, role, and provenance information.</li>
@@ -402,9 +406,28 @@
 <li><a href="./exhibition-datamodel-preview.html">exhibition-datamodel.qmd</a>: defines the exhibition as an event with title, dates, venue, and institutional context.</li>
 <li><a href="./dnb-catalogue-datamodel-preview.html">dnb-catalogue-datamodel.qmd</a>: represents the catalogue record and its bibliographic metadata as a source for exhibition information.</li>
 </ul>
+<p>Relevant cultural heritage data standards</p>
+<ul>
+<li><a href="https://cidoc-crm.org/">CIDOC CRM</a></li>
+<li><a href="https://linked.art/">Linked Art</a></li>
+<li><a href="https://www.lido-schema.org/">LIDO</a></li>
+<li><a href="https://www.getty.edu/research/tools/vocabularies/aat/">Art &amp; Architecture Thesaurus® Online - AAT</a></li>
+<li><a href="https://www.inconclass.org/">InConClass</a></li>
+<li><a href="https://www.wikidata.org/wiki/Wikidata:WikiProject_Arts/">Wikidata schemas</a> and related property guidance for exhibition data.
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Visual_arts">WikiProject Visual Arts</a></li>
+<li><a href="https://www.wikidata.org/wiki/Wikidata:WikiProject_Exhibitions">Wikiproject Exhibitions</a></li>
+</ul></li>
+</ul>
 </section>
 <section id="quarto-publishing-for-exhibition-catalogues" class="level2">
 <h2 class="anchored" data-anchor-id="quarto-publishing-for-exhibition-catalogues">4. Quarto publishing for exhibition catalogues</h2>
+<p><strong>Exercise 4#:</strong> Discuss Quarto publishing for exhibition catalogues and how to structure the content for both human and machine readability.</p>
+<p>Quarto.org: <a href="https://quarto.org/">https://quarto.org/</a></p>
+<p>The input data is collected from Wikidata and collated in the Quarto project for exhibition catalogues.</p>
+<p>BELOW:</p>
+<p>Data Out: Catalogue Publication: <a href="https://nfdi4culture.github.io/John-Baldessari-Exhibition-Catalogue/02-catalogue-preview.html">https://nfdi4culture.github.io/John-Baldessari-Exhibition-Catalogue/02-catalogue-preview.html</a></p>
+<p>Finallly this can be output as Multi-format, executable, and deposited wth data repositories for long-term preservation and accessibility - while mintin DOIs. This can be done from Zenodo and repository such as <a href="https://service.tib.eu/ldmservice/dataset/example-ldm-api-implementation">Leibniz Data Manager</a> will run executable Notebooks.</p>
 </section>
      </main>
 <!-- /main column -->  <script>

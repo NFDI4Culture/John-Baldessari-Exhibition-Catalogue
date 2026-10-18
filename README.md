@@ -5,6 +5,14 @@ Quarto manuscript project with Python Jupyter notebooks, ready for:
 - Publishing from GitHub Pages.
 - Interactive notebook execution on MyBinder.
 
+## GitHub Codespaces
+
+Open the project in GitHub Codespaces:
+
+[Launch in GitHub Codespaces](https://codespaces.new/NFDI4Culture/John-Baldessari-Exhibition-Catalogue)
+
+This provides a ready-to-use cloud development environment for the Quarto and notebook workflow without requiring local installation.
+
 ## Quick Start
 
 1. Install Quarto (1.8+ recommended).
@@ -72,13 +80,6 @@ Binder uses:
 Binder is intended for interactive notebook execution. Quarto rendering is
 validated by CI and local development setup.
 
-## GitHub Codespaces
-
-Open the project in GitHub Codespaces:
-
-[Launch in GitHub Codespaces](https://codespaces.new/NFDI4Culture/John-Baldessari-Exhibition-Catalogue)
-
-This provides a ready-to-use cloud development environment for the Quarto and notebook workflow without requiring local installation.
 
 ## CI
 

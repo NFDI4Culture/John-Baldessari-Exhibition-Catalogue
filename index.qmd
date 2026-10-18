@@ -74,11 +74,19 @@ This is the minimal Linked Open Exhibition process: a source book is converted t
 
 # Example Notebooks
 
-The computational publishing notebook set:
+The computational publishing notebook set.
 
-- [Catalogue OCR](notebooks/03-catalogue-ocr.ipynb)
+Notebooks to be run:
+
 - [Exhibition data](notebooks/01-exhibition.ipynb)
 - [Artwork data](notebooks/02-artworks.ipynb)
+
+Illustration of OCR process (not for running):
+
+- [Catalogue OCR](notebooks/03-catalogue-ocr.ipynb)
+
+Code cells in a Markdown file.
+
 - [Catalogue generation](02-catalogue.qmd)
 
 ## The prototype
