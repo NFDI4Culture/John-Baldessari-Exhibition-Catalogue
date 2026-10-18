@@ -11,10 +11,13 @@ The purpose of this guide is to provide curators with a practical approach to ma
 
 This can be done from the following sources:
 
- - Retrospective from exhibition book catalogues, or data records, and spreadsheets.
- - Current from ongoing exhibition records, museum databases, and digital catalogues.
+ - Retrospective - from exhibition book catalogues, data records, and spreadsheets.
+ - Current - from ongoing exhibition records, museum databases, and digital catalogues.
 
-The process is aligned with relevant cultural heritage data standards - primarily [CIDOC CRM](https://cidoc-crm.org/) and [Linked Art](https://linked.art/).
+The process is aligned with relevant cultural heritage data standards - primarily [CIDOC CRM](https://cidoc-crm.org/), its simplified derivative [Linked Art](https://linked.art/), [LIDO](https://www.lido-schema.org/), [Art & Architecture Thesaurus® Online - AAT](https://www.getty.edu/research/tools/vocabularies/aat/), [InConClass](https://www.inconclass.org/), and the many community-built [Wikidata schemas](https://www.wikidata.org/wiki/Wikidata:WikiProject_Arts) and related property guidance for exhibition data.
+
+ - WikiProject Visual Arts: https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Visual_arts
+ - Wikiproject Exhibitions: https://www.wikidata.org/wiki/Wikidata:WikiProject_Exhibitions
 
 The results of the process are:
 
@@ -32,31 +35,35 @@ The guide has four parts:
 1. Making Linked Open Data entries in Wikidata 
 2. Using Jupyter Notebooks 
 3. Data standards for art exhibitions
-4. Publishing exhibition catalogues 
+4. Publishing an exhibition catalogue
 
 ## 1. Making Linked Open Data entries in Wikidata  
 
 ### Wikidata  
 
-The exercise is to make an artwork entry in Wikidata. 
+**Exercise #1:** Make an artwork entry in Wikidata. 
 
-Select an artwork from the list. The full artwork list from the exhibition catalogue OCR scan can be found in [catalogue-baldessari.qmd](01-baldessari-ocr-data.qmd).
+Select an artwork from the list. The full artwork list from the exhibition catalogue OCR scan can be found in [catalogue-baldessari.qmd](01-baldessari-ocr-data.qmd). The ones with Q numbers at start have already been added.
 
 Here is an example artwork in Wikidata [https://www.wikidata.org/wiki/Q141749370](https://www.wikidata.org/wiki/Q141749370) (John Baldessari, "Duck Pond Bar, National City, California", 1967)
 
 ### How to add an item to Wikidata
 
-https://www.wikidata.org/  (Wikidata main page)
+Login or create an account at [https://www.wikidata.org/](https://www.wikidata.org/) (Wikidata main page)
 
+**IMPORTANT! Use the Artwork ER model data field list below!**
+    
 1. Sign in to Wikidata and choose the "Create a new item" option.
-2. Give the artwork a clear label `'<Artwork Title>'` and a short description.
+2. Give the artwork a clear label `'Artwork Title'` and a short description.
 3. Add the key statements for the work: title, type, date, materials, dimensions, and exhibition history.
 4. Use the relevant Wikidata properties, such as P1476 for title, P31 for instance of, and P571 for inception date.
 5. Save the item and check that the new record is consistent with the existing data model.
 
-## ER model for an artwork
+## Artwork ER model 
 
 Add data for these fields.
+
+**IMPORTANT! Use _work of art_ Q838948 for the instance of field "Instance of" P31, and use the title: _while something is happening here, something else is happening there : works 1988 - 1999_ Q141747732 for the "Exhibition history" P608**
 
 | No. | Field | Data type | Wikidata | CIDOC CRM |
 |-----|-------|-----------|----------|-----------|
@@ -73,7 +80,7 @@ Add data for these fields.
 #### Notes when entering statements
 
 - 1. **P31 (instance of)**: usually a single main value is enough; add only the most specific artwork type and avoid conflicting classes, e.g., painting, photograph, etc. [Q838948](https://www.wikidata.org/wiki/Q838948) (work of art)
-- 2. **P1476 (title)**: use the preferred title in its original language, add language qualifiers (en) or a translated title as a second statement.
+- 2. **P1476 (title)**: use the preferred title in its original language, add language qualifiers (en) or a translated title as a second statement. The field for setting language appears ontop of the title input box.
 - 3. **P170 (creator)**: if there are multiple contributors, add separate creator statements and consider a role qualifier such as P3831 to say whether the person was artist, photographer, or designer. Add: John Baldessari (this will link to artist Wikidata entry)
 - 4. **P571 (inception)**: record the date as precisely as possible; if only a period is known, use a time range or a general date instead of a guessed exact day.
 - 5. **P186 (made from materials)**: each material is usually added as its own statement and should point to a Wikidata item such as oil, canvas, bronze, or marble.

@@ -190,7 +190,7 @@
   <li><a href="#wikidata" id="toc-wikidata" class="nav-link" data-scroll-target="#wikidata">Wikidata</a></li>
   <li><a href="#how-to-add-an-item-to-wikidata" id="toc-how-to-add-an-item-to-wikidata" class="nav-link" data-scroll-target="#how-to-add-an-item-to-wikidata">How to add an item to Wikidata</a></li>
   </ul></li>
-  <li><a href="#er-model-for-an-artwork" id="toc-er-model-for-an-artwork" class="nav-link" data-scroll-target="#er-model-for-an-artwork">ER model for an artwork</a></li>
+  <li><a href="#artwork-er-model" id="toc-artwork-er-model" class="nav-link" data-scroll-target="#artwork-er-model">Artwork ER model</a></li>
   <li><a href="#using-jupyter-notebooks-and-mybinder" id="toc-using-jupyter-notebooks-and-mybinder" class="nav-link" data-scroll-target="#using-jupyter-notebooks-and-mybinder">2. Using Jupyter Notebooks and MyBinder</a></li>
   <li><a href="#entity-relationship-models-for-art-exhibitions" id="toc-entity-relationship-models-for-art-exhibitions" class="nav-link" data-scroll-target="#entity-relationship-models-for-art-exhibitions">3. Entity-relationship models for art exhibitions</a></li>
   <li><a href="#quarto-publishing-for-exhibition-catalogues" id="toc-quarto-publishing-for-exhibition-catalogues" class="nav-link" data-scroll-target="#quarto-publishing-for-exhibition-catalogues">4. Quarto publishing for exhibition catalogues</a></li>
@@ -206,10 +206,14 @@
 <p>The purpose of this guide is to provide curators with a practical approach to making public records of art works in an exhibition.</p>
 <p>This can be done from the following sources:</p>
 <ul>
-<li>Retrospective from exhibition book catalogues, or data records, and spreadsheets.</li>
-<li>Current from ongoing exhibition records, museum databases, and digital catalogues.</li>
+<li>Retrospective - from exhibition book catalogues, data records, and spreadsheets.</li>
+<li>Current - from ongoing exhibition records, museum databases, and digital catalogues.</li>
 </ul>
-<p>The process is aligned with relevant cultural heritage data standards - primarily <a href="https://cidoc-crm.org/">CIDOC CRM</a> and <a href="https://linked.art/">Linked Art</a>.</p>
+<p>The process is aligned with relevant cultural heritage data standards - primarily <a href="https://cidoc-crm.org/">CIDOC CRM</a>, its simplified derivative <a href="https://linked.art/">Linked Art</a>, <a href="https://www.lido-schema.org/">LIDO</a>, <a href="https://www.getty.edu/research/tools/vocabularies/aat/">Art &amp; Architecture Thesaurus® Online - AAT</a>, <a href="https://www.inconclass.org/">InConClass</a>, and the many community-built <a href="https://www.wikidata.org/wiki/Wikidata:WikiProject_Arts">Wikidata schemas</a> and related property guidance for exhibition data.</p>
+<ul>
+<li>WikiProject Visual Arts: https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Visual_arts</li>
+<li>Wikiproject Exhibitions: https://www.wikidata.org/wiki/Wikidata:WikiProject_Exhibitions</li>
+</ul>
 <p>The results of the process are:</p>
 <ul>
 <li>Public records of artworks and exhibitions in a structured, machine-readable format, and compliance with cultural heritage data standards</li>
@@ -227,7 +231,7 @@
 <li>Making Linked Open Data entries in Wikidata</li>
 <li>Using Jupyter Notebooks</li>
 <li>Data standards for art exhibitions</li>
-<li>Publishing exhibition catalogues</li>
+<li>Publishing an exhibition catalogue</li>
 </ol>
 </section>
 </section>
@@ -235,25 +239,27 @@
 <h2 class="anchored" data-anchor-id="making-linked-open-data-entries-in-wikidata">1. Making Linked Open Data entries in Wikidata</h2>
 <section id="wikidata" class="level3">
 <h3 class="anchored" data-anchor-id="wikidata">Wikidata</h3>
-<p>The exercise is to make an artwork entry in Wikidata.</p>
-<p>Select an artwork from the list. The full artwork list from the exhibition catalogue OCR scan can be found in <a href="./01-baldessari-ocr-data-preview.html">catalogue-baldessari.qmd</a>.</p>
+<p><strong>Exercise #1:</strong> Make an artwork entry in Wikidata.</p>
+<p>Select an artwork from the list. The full artwork list from the exhibition catalogue OCR scan can be found in <a href="./01-baldessari-ocr-data-preview.html">catalogue-baldessari.qmd</a>. The ones with Q numbers at start have already been added.</p>
 <p>Here is an example artwork in Wikidata <a href="https://www.wikidata.org/wiki/Q141749370">https://www.wikidata.org/wiki/Q141749370</a> (John Baldessari, “Duck Pond Bar, National City, California”, 1967)</p>
 </section>
 <section id="how-to-add-an-item-to-wikidata" class="level3">
 <h3 class="anchored" data-anchor-id="how-to-add-an-item-to-wikidata">How to add an item to Wikidata</h3>
-<p>https://www.wikidata.org/ (Wikidata main page)</p>
+<p>Login or create an account at <a href="https://www.wikidata.org/">https://www.wikidata.org/</a> (Wikidata main page)</p>
+<p><strong>IMPORTANT! Use the Artwork ER model data field list below!</strong></p>
 <ol type="1">
 <li>Sign in to Wikidata and choose the “Create a new item” option.</li>
-<li>Give the artwork a clear label <code>'&lt;Artwork Title&gt;'</code> and a short description.</li>
+<li>Give the artwork a clear label <code>'Artwork Title'</code> and a short description.</li>
 <li>Add the key statements for the work: title, type, date, materials, dimensions, and exhibition history.</li>
 <li>Use the relevant Wikidata properties, such as P1476 for title, P31 for instance of, and P571 for inception date.</li>
 <li>Save the item and check that the new record is consistent with the existing data model.</li>
 </ol>
 </section>
 </section>
-<section id="er-model-for-an-artwork" class="level2">
-<h2 class="anchored" data-anchor-id="er-model-for-an-artwork">ER model for an artwork</h2>
+<section id="artwork-er-model" class="level2">
+<h2 class="anchored" data-anchor-id="artwork-er-model">Artwork ER model</h2>
 <p>Add data for these fields.</p>
+<p><strong>IMPORTANT! Use <em>work of art</em> Q838948 for the instance of field “Instance of” P31, and use the title: <em>while something is happening here, something else is happening there : works 1988 - 1999</em> Q141747732 for the “Exhibition history” P608</strong></p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 11%">
@@ -344,7 +350,7 @@
 <li><strong>P31 (instance of)</strong>: usually a single main value is enough; add only the most specific artwork type and avoid conflicting classes, e.g., painting, photograph, etc. <a href="https://www.wikidata.org/wiki/Q838948">Q838948</a> (work of art)</li>
 </ol></li>
 <li><ol start="2" type="1">
-<li><strong>P1476 (title)</strong>: use the preferred title in its original language, add language qualifiers (en) or a translated title as a second statement.</li>
+<li><strong>P1476 (title)</strong>: use the preferred title in its original language, add language qualifiers (en) or a translated title as a second statement. The field for setting language appears ontop of the title input box.</li>
 </ol></li>
 <li><ol start="3" type="1">
 <li><strong>P170 (creator)</strong>: if there are multiple contributors, add separate creator statements and consider a role qualifier such as P3831 to say whether the person was artist, photographer, or designer. Add: John Baldessari (this will link to artist Wikidata entry)</li>
