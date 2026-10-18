@@ -52,6 +52,8 @@ Exhibition information (DNB publication record) is included for reference. [http
 
 # Introduction
 
+See the [Curator's Guide](00-the-guide.qmd) for more information on how to document exhibitions.     
+
 ## Workflows
 
 Workflows can be from active curating project or retrospective documentation of past exhibitions.
@@ -65,17 +67,19 @@ Enter data manually into Wikidata, see: Curators' Guide
 #### OCR Workflow
 
 ```text
-Book > OCR > Dataset > Wikidata > Publication > Data deposit (PIDs)   
+Book > OCR > Dataset > Wikidata > Publication > Deposit (Mint PIDs)   
 ```
 
 This is the minimal Linked Open Exhibition process: a source book is converted through OCR into a FAIR dataset, then structured data is published to Wikidata and rendered as a Quarto publication.
 
 # Example Notebooks
 
-The computational workflow is documented in the notebook set:
+The computational publishing notebook set:
 
+- [Catalogue OCR](notebooks/03-catalogue-ocr.ipynb)
 - [Exhibition data](notebooks/01-exhibition.ipynb)
 - [Artwork data](notebooks/02-artworks.ipynb)
+- [Catalogue generation](02-catalogue.qmd)
 
 ## The prototype
 
@@ -119,9 +123,15 @@ GitHub Copilot in Visual Studio Code, using Anthropic Claude models (Claude Haik
 
 The project is aiming to move to open-source and open weight LLM models.  
 
-# Credits
+# Acknowledgements
 
+[Linked Open Exhibitions](https://nfdi4culture.github.io/linked-open-exhibition/)
 
+A project made with the students of the Bachelor of Arts [Information Management (BIM)](https://f3.hs-hannover.de/en/courses/bachelor-studiengaenge/information-management-bim) of Hannover University of the Applied Science and Arts in partnership with [Computational Publishing Service](https://nfdi4culture.de/services/details/computational-publishing-service.html) from the Open Science Lab, [TIB](https://www.tib.eu/en/) – Leibniz Information Centre for Science and Technology and University Library, and with [NFDI4Culture](https://www.nfdi4culture.de/) – Consortium for Research Data on Material and Immaterial Cultural Heritage, as part of National Research Data Infrastructure (NFDI) 
+
+<img src="images/hsh-logo.png" alt="csm_hs-hannover" width="200"/>
+<img src="images/tib-logo.png" alt="TIB" width="200"/>
+<img src="images/nfdi4c-logo.jpg" alt="NFDI4Culture" width="200"/>
 
 # References
 

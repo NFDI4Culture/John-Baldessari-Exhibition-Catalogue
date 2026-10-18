@@ -1,6 +1,6 @@
 ---
 title: "Data Out: Catalogue Publication"
-subtitle: "while something is happening here, something else is happening there"
+subtitle: "Exhibition Title: while something is happening here, something else is happening there"
 format:
   html:
     toc: true

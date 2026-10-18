@@ -76,7 +76,7 @@ div.csl-indent {
 <meta name="citation_year" content="2026">
 <meta name="citation_online_date" content="2026-10-18">
 <meta name="citation_language" content="en">
-<meta name="citation_reference" content="citation_title=The FAIR guiding principles for scientific data management and stewardship;,citation_author=Mark D Wilkinson;,citation_author=Michel Dumontier;,citation_author=IJsbrand Jan Aalbersberg;,citation_author=Gabrielle Appleton;,citation_author=Myles Axton;,citation_author=Arie Baak;,citation_author=Niklas Blomberg;,citation_author=Jan-Willem Boiten;,citation_author=Luiz Bonino Silva Santos;,citation_author=Philip E Bourne;,citation_author=others;,citation_publication_date=2016;,citation_cover_date=2016;,citation_year=2016;,citation_volume=3;,citation_journal_title=Scientific Data;,citation_publisher=Nature Publishing Group;">
+<meta name="citation_reference" content="citation_title=The FAIR guiding principles for scientific data management and stewardship;,citation_author=Mark D Wilkinson;,citation_author=Michel Dumontier;,citation_author=IJsbrand Jan Aalbersberg;,citation_author=Gabrielle Appleton;,citation_author=Myles Axton;,citation_author=Arie Baak;,citation_author=Niklas Blomberg;,citation_author=Jan-Willem Boiten;,citation_author=Luiz Bonino Silva Santos;,citation_author=Philip E Bourne;,citation_author=others;,citation_publication_date=2016;,citation_cover_date=2016;,citation_year=2016;,citation_fulltext_html_url=https://doi.org/10.1038/sdata.2016.18;,citation_doi=10.1038/sdata.2016.18;,citation_volume=3;,citation_journal_title=Scientific Data;,citation_publisher=Nature Publishing Group;">
 <meta name="citation_reference" content="citation_title=UNESCO recommendation on open science;,citation_author=UNESCO;,citation_publication_date=2021;,citation_cover_date=2021;,citation_year=2021;,citation_fulltext_html_url=https://unesdoc.unesco.org/ark:/48223/pf0000379949;,citation_doi=10.54677/MNMH8546;,citation_technical_report_institution=UNESCO;">
 </head>
 
@@ -175,7 +175,7 @@ div.csl-indent {
   <li><a href="#reproducibility-notes" id="toc-reproducibility-notes" class="nav-link" data-scroll-target="#reproducibility-notes"><span class="header-section-number">5</span> Reproducibility Notes</a></li>
   <li><a href="#copyright-and-licensing" id="toc-copyright-and-licensing" class="nav-link" data-scroll-target="#copyright-and-licensing"><span class="header-section-number">6</span> Copyright and Licensing</a></li>
   <li><a href="#ai-llm-use" id="toc-ai-llm-use" class="nav-link" data-scroll-target="#ai-llm-use"><span class="header-section-number">7</span> AI LLM use</a></li>
-  <li><a href="#credits" id="toc-credits" class="nav-link" data-scroll-target="#credits"><span class="header-section-number">8</span> Credits</a></li>
+  <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements"><span class="header-section-number">8</span> Acknowledgements</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">9</span> References</a></li>
   </ul>
 <div class="quarto-alternate-notebooks"><h2>Notebooks</h2><ul><li><a href="00-the-guide-preview.html"><i class="bi bi-journal-code"></i>Curators' Guide</a></li><li><a href="01-baldessari-ocr-data-preview.html"><i class="bi bi-journal-code"></i>Data In: Baldessari OCR</a></li><li><a href="02-catalogue-preview.html"><i class="bi bi-journal-code"></i>Data Out: Catalogue Publication</a></li><li><a href="exhibition-datamodel-preview.html"><i class="bi bi-journal-code"></i>ER Model: Art Exhibition</a></li><li><a href="artist-datamodel-preview.html"><i class="bi bi-journal-code"></i>ER Model: Artist</a></li><li><a href="item-in-exhibition-datamodel-preview.html"><i class="bi bi-journal-code"></i>ER Model: Artwork in an Exhibition</a></li><li><a href="dnb-catalogue-datamodel-preview.html"><i class="bi bi-journal-code"></i>ER Model: DNB Catalogue (Book)</a></li><li><a href="notebooks\02-artworks-preview.html"><i class="bi bi-journal-code"></i>Notebook: Artwork</a></li><li><a href="notebooks\01-exhibition-preview.html"><i class="bi bi-journal-code"></i>Notebook: Exhibition</a></li><li><a href="notebooks\03-catalogue-ocr-preview.html"><i class="bi bi-journal-code"></i>Notebook: Exhibition Catalogue OCR Pipeline</a></li><li><a href="references-preview.html"><i class="bi bi-journal-code"></i>References</a></li></ul></div></nav>
@@ -202,6 +202,7 @@ div.csl-indent {
 </section>
 <section id="introduction" class="level1" data-number="2">
 <h1 data-number="2"><span class="header-section-number">2</span> Introduction</h1>
+<p>See the <a href="./00-the-guide-preview.html">Curator’s Guide</a> for more information on how to document exhibitions.</p>
 <section id="workflows" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="workflows"><span class="header-section-number">2.1</span> Workflows</h2>
 <p>Workflows can be from active curating project or retrospective documentation of past exhibitions.</p>
@@ -213,7 +214,7 @@ div.csl-indent {
 <h3 data-number="2.1.2" class="anchored" data-anchor-id="retrospective-workflow"><span class="header-section-number">2.1.2</span> Retrospective workflow</h3>
 <section id="ocr-workflow" class="level4" data-number="2.1.2.1">
 <h4 data-number="2.1.2.1" class="anchored" data-anchor-id="ocr-workflow"><span class="header-section-number">2.1.2.1</span> OCR Workflow</h4>
-<pre class="text"><code>Book &gt; OCR &gt; Dataset &gt; Wikidata &gt; Publication &gt; Data deposit (PIDs)   </code></pre>
+<pre class="text"><code>Book &gt; OCR &gt; Dataset &gt; Wikidata &gt; Publication &gt; Deposit (Mint PIDs)   </code></pre>
 <p>This is the minimal Linked Open Exhibition process: a source book is converted through OCR into a FAIR dataset, then structured data is published to Wikidata and rendered as a Quarto publication.</p>
 </section>
 </section>
@@ -221,10 +222,12 @@ div.csl-indent {
 </section>
 <section id="example-notebooks" class="level1" data-number="3">
 <h1 data-number="3"><span class="header-section-number">3</span> Example Notebooks</h1>
-<p>The computational workflow is documented in the notebook set:</p>
+<p>The computational publishing notebook set:</p>
 <ul>
+<li><a href="./notebooks/03-catalogue-ocr-preview.html">Catalogue OCR</a></li>
 <li><a href="./notebooks/01-exhibition-preview.html">Exhibition data</a></li>
 <li><a href="./notebooks/02-artworks-preview.html">Artwork data</a></li>
+<li><a href="./02-catalogue-preview.html">Catalogue generation</a></li>
 </ul>
 <section id="the-prototype" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="the-prototype"><span class="header-section-number">3.1</span> The prototype</h2>
@@ -264,8 +267,11 @@ div.csl-indent {
 <p>GitHub Copilot in Visual Studio Code, using Anthropic Claude models (Claude Haiku 4.5 and Claude Sonnet 5.5), assisted with the data model documentation, Quarto and Python configuration, notebook set-up and drafting of text. The OCR notebook (<a href="./notebooks/03-catalogue-ocr-preview.html">03-catalogue-ocr</a>) is based on AI LLM use for text extraction. All outputs were reviewed by the authors. See the <a href="https://www.tib.eu/en/tib/policies/ai-policy">TIB AI policy</a>.</p>
 <p>The project is aiming to move to open-source and open weight LLM models.</p>
 </section>
-<section id="credits" class="level1" data-number="8">
-<h1 data-number="8"><span class="header-section-number">8</span> Credits</h1>
+<section id="acknowledgements" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Acknowledgements</h1>
+<p><a href="https://nfdi4culture.github.io/linked-open-exhibition/">Linked Open Exhibitions</a></p>
+<p>A project made with the students of the Bachelor of Arts <a href="https://f3.hs-hannover.de/en/courses/bachelor-studiengaenge/information-management-bim">Information Management (BIM)</a> of Hannover University of the Applied Science and Arts in partnership with <a href="https://nfdi4culture.de/services/details/computational-publishing-service.html">Computational Publishing Service</a> from the Open Science Lab, <a href="https://www.tib.eu/en/">TIB</a> – Leibniz Information Centre for Science and Technology and University Library, and with <a href="https://www.nfdi4culture.de/">NFDI4Culture</a> – Consortium for Research Data on Material and Immaterial Cultural Heritage, as part of National Research Data Infrastructure (NFDI)</p>
+<p><img src="images/hsh-logo.png" alt="csm_hs-hannover" width="200"> <img src="images/tib-logo.png" alt="TIB" width="200"> <img src="images/nfdi4c-logo.jpg" alt="NFDI4Culture" width="200"></p>
 </section>
 <section id="references" class="level1" data-number="9">
 <h1 data-number="9"><span class="header-section-number">9</span> References</h1>
@@ -278,7 +284,7 @@ div.csl-indent {
 UNESCO. 2021. <em>UNESCO Recommendation on Open Science</em>. UNESCO. <a href="https://doi.org/10.54677/MNMH8546">https://doi.org/10.54677/MNMH8546</a>.
 </div>
 <div id="ref-wilkinson2016fair" class="csl-entry" role="listitem">
-<span class="nocase">Wilkinson, Mark D, Michel Dumontier, IJsbrand Jan Aalbersberg, et al.</span> 2016. <span>“The FAIR Guiding Principles for Scientific Data Management and Stewardship.”</span> <em>Scientific Data</em> 3: 160018.
+<span class="nocase">Wilkinson, Mark D, Michel Dumontier, IJsbrand Jan Aalbersberg, et al.</span> 2016. <span>“The FAIR Guiding Principles for Scientific Data Management and Stewardship.”</span> <em>Scientific Data</em> 3: 160018. <a href="https://doi.org/10.1038/sdata.2016.18">https://doi.org/10.1038/sdata.2016.18</a>.
 </div>
 </div></section></div></main>
 <!-- /main column -->
